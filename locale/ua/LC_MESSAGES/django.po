@@ -46,3 +46,277 @@ msgstr "Пошук"
 
 msgid "Самоуправление"
 msgstr "Самоврядування"
+
+msgid "Main Page Text"
+msgstr ""
+"Криму потрібна твоя праця, твоя креативність і ініціатива! Наш півострів "
+"населяють розумні, небайдужі й самовіддані люди, здатні до самоорганізації. "
+"Навіть на нашому гербі написано: «Процвітання в єдності».\n"
+"\n"
+"Громада Крим допоможе тобі доєднатися до великої спільноти кримчан, "
+"які щодня підтримують одне одного і будують систему спільної дії і прийняття рішень.\n"
+"\n"
+"Об'єднуйся з тими, з ким ти живеш, навчаєшся та працюєш. Втілюй власні ідеї. "
+"Захищай свій півострів від тих, хто загрожує свободі людей, які на ньому живуть. "
+"Заради себе, заради своєї землі і її народу, заради своїх дітей і внуків."
+
+msgid "Main Page Button"
+msgstr "Почати діяти"
+
+msgid "Question 1"
+msgstr "Навіщо потрібна Громада Крим?"
+
+msgid "Answer 1"
+msgstr ""
+"Громада Крим допомагає знайти натхнення і ідеї, дає можливість приєднатися до "
+"вже існуючої ініціативи і знайти виконавця або необхідні ресурси для свого "
+"власного проєкту. Ми завжди готові допомогти даними або надати консультацію. "
+"Коротше кажучи, Громада Крим – це простір, у якому можливе втілення ідей і цілей. \n"
+"\n"
+"Одна з наших задач – залучити якомога більше кримчан до громадської діяльності. "
+"Ми об’єднуємо людей і ініціативи, щоб створити в Криму систему низового самоврядування: "
+"систему, яка зможе спільно й організовано ухвалювати рішення і діяти на "
+"благо всіх кримчан. За допомогою Громади Крим ти можеш долучитися до цієї системи "
+"і висловити свій голос."
+
+msgid "Question 2"
+msgstr "Навіщо МЕНІ брати в цьому участь?"
+
+msgid "Answer 2"
+msgstr ""
+"Сучасна людина часто відчуває себе самотньою і нездатною на щось вплинути. "
+"Виникає парадоксальна ситуація: наше майбутнє у глобалізованому світі як ніколи "
+"залежить одне від одного, але ми як ніколи одне від одного відірвані. У Громаді Крим "
+"твій голос буде почутий. Ти станеш частиною спільноти і через неї безпосередньо "
+"впливатимеш на майбутнє своєї землі і, відповідно, своє майбутнє."
+
+msgid "Question 3"
+msgstr "Все одно нічого не змінити."
+
+msgid "Answer 3"
+msgstr ""
+"Ми з цим абсолютно не згодні! Історія знає мільйони прикладів, коли розумні, "
+"креативні й ініціативні громадяни змінювали її хід. Щодня ми спостерігаємо, "
+"як учасники нашого руху ставлять цілі і досягають їх, і ми бачимо, як ці невеликі "
+"кроки ведуть нас до глобальних змін. Нас дуже багато, ми велика сила, і ми "
+"безпосередньо впливаємо на майбутнє нашої землі."
+
+msgid "Question 4"
+msgstr "У мене немає на це часу. Я маю займатись своїм життям."
+
+msgid "Answer 4"
+msgstr ""
+"Тобі не потрібно витрачати на громадську активність багато часу. Нижче ти можеш "
+"обрати завдання, виконання якого займе лише близько 15 хвилин – швидше, ніж "
+"проголосувати на виборах. Кожен твій маленький крок – це частина великого спільного шляху. "
+"Участь у громадському житті – це ознака таких якостей, як відповідальність і свідомість, "
+"без яких навряд чи можна досягти успіху і в інших сферах життя."
+
+msgid "Question 5"
+msgstr "Як влаштована Громада Крим?"
+
+msgid "Answer 5"
+msgstr ""
+"Наш рух децентралізований: це означає, що у нас немає жодного “центру” або “керівництва”. "
+"Громадою Крим керують її учасники, а учасником може стати будь-хто, хто поділяє нашу "
+"спільну мету."
+
+msgid "Question 6"
+msgstr "Як мені взяти в цьому участь?"
+
+msgid "Answer 6"
+msgstr ""
+"Щоб стати учасником нашої спільноти, тобі потрібно просто створити на нашій "
+"онлайн-платформі свою ініціативу або приєднатися до вже існуючої. Ми надамо тобі будь-яку "
+"допомогу, яку тільки зможемо: надамо консультацію і необхідні дані, "
+"знайдемо виконавців завдань, спробуємо допомогти твоїй ініціативі грошима і іншими ресурсами. "
+"Нижче ти знайдеш приклади завдань, виконання яких займе не більше 15 хвилин."
+
+msgid "Survey"
+msgstr "Опитування"
+
+msgid "Survey Age Question"
+msgstr "Вік"
+
+msgid "Survey Income Question"
+msgstr "Дохід (якщо в тебе нема власного доходу, вкажи середній дохід на члена родини)"
+
+msgid "Survey Income Question Answer 1"
+msgstr "Менше 15.000 рублів"
+
+msgid "Survey Income Question Answer 2"
+msgstr "15.000-25.000 рублів"
+
+msgid "Survey Income Question Answer 3"
+msgstr "25.000-40.000 рублів"
+
+msgid "Survey Income Question Answer 4"
+msgstr "40.000-65.000 рублів"
+
+msgid "Survey Income Question Answer 5"
+msgstr "65.000-90.000 рублів"
+
+msgid "Survey Income Question Answer 6"
+msgstr "90.000-140.000 рублів"
+
+msgid "Survey Income Question Answer 7"
+msgstr "Більше за 140.000 рублів"
+
+msgid "Survey Social Status Question"
+msgstr "Соціальний статус"
+
+msgid "Survey Social Status Question Answer 1"
+msgstr "Школяр чи студент"
+
+msgid "Survey Social Status Question Answer 2"
+msgstr "Безробітний"
+
+msgid "Survey Social Status Question Answer 3"
+msgstr "Підприємець"
+
+msgid "Survey Social Status Question Answer 4"
+msgstr "Працівник"
+
+msgid "Survey Social Status Question Answer 5"
+msgstr "Індивідуальний підприємець"
+
+msgid "Survey Education Question"
+msgstr "Освіта"
+
+msgid "Survey Education Question Answer 1"
+msgstr "Навчаюсь у школі (1-9 клас)"
+
+msgid "Survey Education Question Answer 2"
+msgstr "Базова освіта (9 класів)"
+
+msgid "Survey Education Question Answer 3"
+msgstr "Навчаюсь у школі (10-11 клас)"
+
+msgid "Survey Education Question Answer 4"
+msgstr "Середня загальна"
+
+msgid "Survey Education Question Answer 5"
+msgstr "Навчаюсь у закладі середньої спеціальної освіти (ПТУ, коледжі)"
+
+msgid "Survey Education Question Answer 6"
+msgstr "Середня спеціальна"
+
+msgid "Survey Education Question Answer 7"
+msgstr "Навчаюсь у закладі вищої освіти"
+
+msgid "Survey Education Question Answer 8"
+msgstr "Вища освіта"
+
+msgid "Survey Veterans Question"
+msgstr "У тебе є родичі або близькі друзі, які воювали чи воюють на СВО? Або, можливо, ти сам таким є?"
+
+msgid "Survey Dead Veterans Question"
+msgstr "У тебе є родичі або близькі друзі, які загинули на СВО?"
+
+msgid "Yes"
+msgstr "Так"
+
+msgid "No"
+msgstr "Ні"
+
+msgid "Survey Birth Place Question"
+msgstr "Де ти народився?"
+
+msgid "Survey Residence Question"
+msgstr "В якому населеному пункті ти живеш зараз?"
+
+msgid "Start entering"
+msgstr "Почни вводити"
+
+msgid "Survey Participating Question"
+msgstr "Як ти долучався до громадського життя?"
+
+msgid "Survey Participating Question Answer 1"
+msgstr "Голосував на виборах"
+
+msgid "Survey Participating Question Answer 2"
+msgstr "Брав участь в діяльності політичних партій"
+
+msgid "Survey Participating Question Answer 3"
+msgstr "Був спостерігачем на виборах"
+
+msgid "Survey Participating Question Answer 4"
+msgstr "Займався політичним чи громадянським активізмом"
+
+msgid "Survey Participating Question Answer 5"
+msgstr "Волонтерив"
+
+msgid "Survey Participating Question Answer 6"
+msgstr "Реалізовував спільні ініціативи з сусідями"
+
+msgid "Survey Participating Question Answer 7"
+msgstr "Реалізовував спільні ініціативи з людьми, з якими ти навчався чи навчаєшся"
+
+msgid "Survey Participating Question Answer 8"
+msgstr "Реалізовував спільні ініціативи з людьми, з якими ти працював чи працюєш"
+
+msgid "Survey Participating Question Answer 9"
+msgstr "Реалізовував інші громадянські ініціативи"
+
+msgid "Survey Participating Question Answer 10"
+msgstr "Долучався до громадського або політичного життя в якийсь інший спосіб"
+
+msgid "Survey Participating Question Answer 11"
+msgstr "Ніяк не долучався"
+
+msgid "Survey Participating About Question"
+msgstr "Якщо хочеш, можеш докладніше розказати про свою участь в житті громадського суспільства"
+
+msgid "Survey Participating Reasons Question"
+msgstr "Що спонукало тебе брати (або не брати) участі в житті громадського суспільства?"
+
+msgid "Survey Participating More Question"
+msgstr "Що могло б спонукало тебе брати більше участі в житті громадського суспільства?"
+
+msgid "Survey Political Interest Question"
+msgstr "Наскільки ти зацікавлений в політичному житті?"
+
+msgid "Survey Civil Interest Question"
+msgstr "Наскільки ти зацікавлений в громадському житті?"
+
+msgid "Survey Why So Question"
+msgstr "Чому так?"
+
+msgid "Survey Government Question"
+msgstr "Для чого, на твою думку, найбільше потрібна держава? Обери до 3 варіантів"
+
+msgid "Survey Government Question Answer 1"
+msgstr "Для розподілу благ і забезпечення соціальних гарантій (зарплат, пенсій)"
+
+msgid "Survey Government Question Answer 2"
+msgstr "Для безпеки в країні"
+
+msgid "Survey Government Question Answer 3"
+msgstr "Щоб дотримуватись прав громадян і захищати їх"
+
+msgid "Survey Government Question Answer 4"
+msgstr "Для захисту від зовнішніх ворогів"
+
+msgid "Survey Government Question Answer 5"
+msgstr "Щоб захищати культурний, історичний і/або релігійний спадок країни"
+
+msgid "Survey Government Question Answer 6"
+msgstr "Щоб карати винних"
+
+msgid "Survey Government Question Answer 7"
+msgstr "Щоб виконувати волю громадян"
+
+msgid "Survey Government Question Answer 8"
+msgstr "Щоб визначати напрямок розвитку суспільства"
+
+msgid "Survey Government Additional Question"
+msgstr "Сюди можеш вписати власні варіанти і роздуми щодо цього"
+
+msgid "Survey Social Status Additional Question 1"
+msgstr "Яка твоя професія?"
+
+msgid "Survey Social Status Additional Question 2"
+msgstr "У якій сфері ти працюєш?"
+
+msgid "Send"
+msgstr "Надіслати"

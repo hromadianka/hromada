@@ -46,3 +46,268 @@ msgstr "Search"
 
 msgid "Самоуправление"
 msgstr "Self-government"
+
+msgid "Main Page Text"
+msgstr ""
+"Crimea needs your work, your creativity, and your initiative! Our peninsula "
+"is home to intelligent, caring, and dedicated people capable of self-organization. "
+"Even our coat of arms says: “Prosperity in unity.”\n"
+"\n"
+"Hromada Crimea will help you join a vast community of Crimeans who help each "
+"other every day and build a system of collective action and decision-making.\n"
+"\n"
+"Unite with those you live, study, and work with. Implement your own ideas. "
+"Protect your peninsula from anyone who threatens the freedom of its people. "
+"For yourself, for your land and people who live there, for your children and grandchildren."
+
+msgid "Main Page Button"
+msgstr "Take Action"
+
+msgid "Question 1"
+msgstr "Why is Hromada Crimea needed?"
+
+msgid "Answer 1"
+msgstr ""
+"Hromada Crimea helps find inspiration and ideas, gives an opportunity to join an existing initiative, "
+"and find performers or resources for your own project. We are always ready to help with data or provide "
+"consultations. In short, Hromada Crimea is a space where ideas and goals become possible to realize. \n"
+"\n"
+"One of our tasks is to engage as many Crimeans as possible in civic activities. "
+"We unite people and initiatives to create a grassroots self-governance system in Crimea: "
+"a system that can collectively and efficiently make decisions and act for the benefit of all Crimeans. "
+"With Hromada Crimea, you can join this system and make your voice heard."
+
+msgid "Question 2"
+msgstr "Why should I participate in this?"
+
+msgid "Answer 2"
+msgstr ""
+"A modern person often feels lonely and powerless to influence anything. "
+"It creates a paradoxical situation: our future in a globalized world depends on each other more than ever, "
+"but we are more disconnected than ever. In Hromada Crimea, your voice will be heard. You will become part of a community, "
+"and through it, you will directly influence the future of your land and, consequently, your own future."
+
+msgid "Question 3"
+msgstr "Nothing will change anyway."
+
+msgid "Answer 3"
+msgstr ""
+"We absolutely disagree with that! History knows countless examples where smart, "
+"creative, and proactive citizens changed its course. Every day we see participants in our movement "
+"setting goals and achieving them, and we see how these small steps lead us to major changes. "
+"There are many of us, we are a great force, and we directly influence the future of our land."
+
+msgid "Question 4"
+msgstr "I don't have time for this. I need to focus on my own life."
+
+msgid "Answer 4"
+msgstr ""
+"You don’t need to spend much time on civic engagement. Below, you can choose a task that will take "
+"only about 15 minutes to complete—faster than voting in an election. Every small step you take is part of a bigger journey. "
+"Participating in civic life is a sign of responsibility and awareness, qualities essential for success in any area of life."
+
+msgid "Question 5"
+msgstr "How is Hromada Crimea organized?"
+
+msgid "Answer 5"
+msgstr ""
+"Our movement is decentralized, meaning there is no 'center' or 'leadership.' "
+"Hromada Crimea is governed by its participants, and anyone who shares our common goal can become a member."
+
+msgid "Question 6"
+msgstr "How can I participate?"
+
+msgid "Answer 6"
+msgstr ""
+"To become a member of our community, you simply need to create your own initiative on our online platform "
+"or join an existing one. We will provide any help we can: consultations, necessary data, connections with task performers, "
+"and even financial and other resources for your initiative. Below, you will find examples of tasks that take no more than 15 minutes to complete."
+
+msgid "Survey"
+msgstr "Survey"
+
+msgid "Survey Age Question"
+msgstr "Age"
+
+msgid "Survey Income Question"
+msgstr "Income (if you don't have your own income, indicate the average income per family member)"
+
+msgid "Survey Income Question Answer 1"
+msgstr "Less than 15,000 rubles"
+
+msgid "Survey Income Question Answer 2"
+msgstr "15,000-25,000 rubles"
+
+msgid "Survey Income Question Answer 3"
+msgstr "25,000-40,000 rubles"
+
+msgid "Survey Income Question Answer 4"
+msgstr "40,000-65,000 rubles"
+
+msgid "Survey Income Question Answer 5"
+msgstr "65,000-90,000 rubles"
+
+msgid "Survey Income Question Answer 6"
+msgstr "90,000-140,000 rubles"
+
+msgid "Survey Income Question Answer 7"
+msgstr "More than 140,000 rubles"
+
+msgid "Survey Social Status Question"
+msgstr "Social status"
+
+msgid "Survey Social Status Question Answer 1"
+msgstr "School student or university student"
+
+msgid "Survey Social Status Question Answer 2"
+msgstr "Unemployed"
+
+msgid "Survey Social Status Question Answer 3"
+msgstr "Entrepreneur"
+
+msgid "Survey Social Status Question Answer 4"
+msgstr "Employee"
+
+msgid "Survey Social Status Question Answer 5"
+msgstr "Self-employed"
+
+msgid "Survey Education Question"
+msgstr "Education"
+
+msgid "Survey Education Question Answer 1"
+msgstr "Studying in school (grades 1-9)"
+
+msgid "Survey Education Question Answer 2"
+msgstr "Basic education (9 grades)"
+
+msgid "Survey Education Question Answer 3"
+msgstr "Studying in school (grades 10-11)"
+
+msgid "Survey Education Question Answer 4"
+msgstr "General secondary education"
+
+msgid "Survey Education Question Answer 5"
+msgstr "Studying at a secondary vocational institution (technical school, college)"
+
+msgid "Survey Education Question Answer 6"
+msgstr "Secondary vocational education"
+
+msgid "Survey Education Question Answer 7"
+msgstr "Studying at a higher education institution"
+
+msgid "Survey Education Question Answer 8"
+msgstr "Higher education"
+
+msgid "Survey Veterans Question"
+msgstr "Do you have relatives or close friends who have fought or are currently fighting in the SMO? Or are you one of them?"
+
+msgid "Survey Dead Veterans Question"
+msgstr "Do you have relatives or close friends who died in the SMO?"
+
+msgid "Yes"
+msgstr "Yes"
+
+msgid "No"
+msgstr "No"
+
+msgid "Survey Birth Place Question"
+msgstr "Where were you born?"
+
+msgid "Survey Residence Question"
+msgstr "In which settlement do you currently live?"
+
+msgid "Start entering"
+msgstr "Start entering"
+
+msgid "Survey Participating Question"
+msgstr "How did you participate in public life?"
+
+msgid "Survey Participating Question Answer 1"
+msgstr "Voted in elections"
+
+msgid "Survey Participating Question Answer 2"
+msgstr "Participated in political party activities"
+
+msgid "Survey Participating Question Answer 3"
+msgstr "Was an election observer"
+
+msgid "Survey Participating Question Answer 4"
+msgstr "Engaged in political or civic activism"
+
+msgid "Survey Participating Question Answer 5"
+msgstr "Did volunteer work"
+
+msgid "Survey Participating Question Answer 6"
+msgstr "Implemented joint initiatives with neighbors"
+
+msgid "Survey Participating Question Answer 7"
+msgstr "Implemented joint initiatives with people you studied or are studying with"
+
+msgid "Survey Participating Question Answer 8"
+msgstr "Implemented joint initiatives with people you worked or are working with"
+
+msgid "Survey Participating Question Answer 9"
+msgstr "Implemented other civic initiatives"
+
+msgid "Survey Participating Question Answer 10"
+msgstr "Participated in public or political life in another way"
+
+msgid "Survey Participating Question Answer 11"
+msgstr "Did not participate in any way"
+
+msgid "Survey Participating About Question"
+msgstr "If you want, you can share more details about your participation in public life"
+
+msgid "Survey Participating Reasons Question"
+msgstr "What motivated you to participate (or not participate) in public life?"
+
+msgid "Survey Participating More Question"
+msgstr "What could encourage you to participate more in public life?"
+
+msgid "Survey Political Interest Question"
+msgstr "How interested are you in political life?"
+
+msgid "Survey Civil Interest Question"
+msgstr "How interested are you in civic life?"
+
+msgid "Survey Why So Question"
+msgstr "Why is that?"
+
+msgid "Survey Government Question"
+msgstr "In your opinion, what is the primary role of the government? Select up to 3 options"
+
+msgid "Survey Government Question Answer 1"
+msgstr "To distribute wealth and provide social guarantees (salaries, pensions)"
+
+msgid "Survey Government Question Answer 2"
+msgstr "To ensure security in the country"
+
+msgid "Survey Government Question Answer 3"
+msgstr "To uphold and protect citizens' rights"
+
+msgid "Survey Government Question Answer 4"
+msgstr "To defend against external threats"
+
+msgid "Survey Government Question Answer 5"
+msgstr "To preserve the country's cultural, historical, and/or religious heritage"
+
+msgid "Survey Government Question Answer 6"
+msgstr "To punish wrongdoers"
+
+msgid "Survey Government Question Answer 7"
+msgstr "To fulfill the will of the citizens"
+
+msgid "Survey Government Question Answer 8"
+msgstr "To determine the direction of societal development"
+
+msgid "Survey Government Additional Question"
+msgstr "You can write your own options and thoughts here"
+
+msgid "Survey Social Status Additional Question 1"
+msgstr "What is your profession?"
+
+msgid "Survey Social Status Additional Question 2"
+msgstr "In which field do you work?"
+
+msgid "Send"
+msgstr "Send"

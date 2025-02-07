@@ -46,3 +46,282 @@ msgstr "Qıdırmaq"
 
 msgid "Самоуправление"
 msgstr "Öz-idaresi"
+
+msgid "Main Page Text"
+msgstr ""
+"Qırımğa seniñ emeğin, kreativligiñ ve teşebbüsüñ kerek! Bizim yarımadamızda "
+"aqıllı, qayğıruvçı ve fedakâr insanlar yaşay, olar öz-özüni teşkil ete bilirler. "
+"Hatta tamğamızda bile: «Birlikte refah» dep yazılğan.\n"
+"\n"
+"Hromada Qırım seni er künü birbirine yardam berip, ortak hareket ve qarar "
+"qabul etüv sisteması qura turğan büyük bir qırımtatar cemaatine qoşulmağa "
+"yardam etecek.\n"
+"\n"
+"Öz yaqınlarıñ, oquvdaşlarıñ ve işdaşlarıñ ile birleş. Öz fikirleriñni hayata "
+"keçir. Yarımadañnı, onda yaşağan insanlarnıñ azatlığına tehdit olğanlardan "
+"müdafaa et. Özüñ içün, yeriñ ve halqıñ içün, evlatlarıñ ve torunlarıñ içün."
+
+msgid "Main Page Button"
+msgstr "Hareketke keç"
+
+msgid "Question 1"
+msgstr "Hromada Qırım ne içün kerek?"  
+
+msgid "Answer 1"
+msgstr ""
+"Hromada Qırım ilham ve fikir tapmağa yardam ete, bar olğan bir teşebbüske qoşulmaq, "
+"ve ya öz teşebbüsiñiz içün icracı ve resurslar tapmaq imkânı berir. Biz sizge her zaman "
+"malümat bermege ve maslahat bermege hazırmız. Qısqaçası, Hromada Qırım – "
+"fikirler ve meqsedlerni hayata keçirme mümküniyetini temin etken bir meydandır.\n"
+"\n"
+"Bizim vazifelerimizden biri mümkün qadar çoq qırımlını vatandaş faaliyetine celb etmek. "
+"Biz insanlarnı ve teşebbüslerni birleşdirip, Qırımda bir yerel öz-idare sistemi "
+"yaratmaq istedikte, bu sistem ümumen ve tertipli bir şekilde qarar qabul etip, "
+"bütün qırımlılar içün faydalı iş bilecek. Hromada Qırım'ğa qoşulıp, bu sisteme iştirak etip, "
+"öz sesiñizni qaldıra bilirsiniz."
+
+msgid "Question 2"
+msgstr "Men ne içün bunge iştirak eteyim?"
+
+msgid "Answer 2"
+msgstr ""
+"Bugünki insan çoğu vaqıt yalğız ve dünyanıñ gidişatına tesir ete bilmegen kibi "
+"hiss ete. Neticede bir paradoks peyda olğan: globalleşken dünyada "
+"biz bir-birimizge eñ çok bağlıyız, amma bir-birimizden eñ çok uzaqta bulunamız. "
+"Hromada Qırım'da sesiñiz eşitilecek. Siz bir cemaatniñ bir parçası olıp, "
+"ve bu vasıta ile öz toprağıñıznıñ ve öz kelcegiñizniñ üstünde "
+"doğrudan-doğruya tesir etesiñiz."
+
+msgid "Question 3"
+msgstr "Baribir heç bir şey deñişmez."
+
+msgid "Answer 3"
+msgstr ""
+"Biz bunı asla qabul etmeymiz! Tarix, aqıllı, kretiv ve tesirli vatandaşlarnıñ "
+"onıñ yolunu nasıl deñiştirgeni aqqında milyonla misallerni bilip. "
+"Her kün bizniñ arefdeşlerimizniñ meqsed qoyğanını ve onı yerine ketirgenini körip, "
+"bu kiçik adımlarnıñ nasıl büyük deñişikliklerge yol açqanını körümüz. "
+"Bizniñ sayımız çoq, biz büyük bir küçmüz ve öz toprağıñıznıñ kelcegine "
+"doğrudan tesir ete bilimiz."
+
+msgid "Question 4"
+msgstr "Menda bunğa vaqt yoq. Men öz hayatımnen meşğul olmağa kerek."
+
+msgid "Answer 4"
+msgstr ""
+"Vatandaş faaliyeti içün çoq vaqt sarf etmege mecbur degilsiz. "
+"Aşağıda 15 daqiqadan fazla almayacaq vazifelerni sayladıq – "
+"bu, saylavlarda ses bermege ketirgen vaqttan da kısa. "
+"Her kiçik adımıñız büyük bir yolun bir parçasıdır. "
+"Vatandaş hayata iştirak etmek mesüliyet ve şuurlılıq belgileridir, "
+"bu hususiyetler er bir sahada muvafaqiyet qazanmaq içün şarttır."
+
+msgid "Question 5"
+msgstr "Hromada Qırım nasıl teşkil etilgen?"
+
+msgid "Answer 5"
+msgstr ""
+"Hareketimiz merkeziyetsizdir: yani bizniñ 'merkez' ve ya 'başçılıq' degildir. "
+"Hromada Qırım öz iştirakçılarnen idare etile, ve bizniñ umumi meqsedimizni "
+"paylaşqan er kim iştirakçı ola bilir."
+
+msgid "Question 6"
+msgstr "Men bunge nasıl iştirak ete bilirim?"
+
+msgid "Answer 6"
+msgstr ""
+"Bizniñ cemaatimizniñ bir parçası olmaq içün online platformamızda "
+"öz teşebbüsüñizni yaratıp ya da bar olğan teşebbüske qoşulmanız yeterlidir. "
+"Biz size elimizden kelgen yardamnı beremez: maslahat beririz, lazım olğan malümatnı "
+"temin etemez, icracılarnen tanıştıra bilemiz ve teşebbüsüñiz içün "
+"maliye ve başka resurslar tapmağa çalışamız. Aşağıda 15 daqiqadan çoq "
+"olmaycaq vazifelerni tapabilirsiniz."
+
+msgid "Survey"
+msgstr "Sorğu"
+
+msgid "Survey Age Question"
+msgstr "Yaş"
+
+msgid "Survey Income Question"
+msgstr "Kirim (eger öz kirimiñiz yoqsa, aile azasına ortalama kirimni belgileñiz)"
+
+msgid "Survey Income Question Answer 1"
+msgstr "15.000 rublden az"
+
+msgid "Survey Income Question Answer 2"
+msgstr "15.000-25.000 rubl"
+
+msgid "Survey Income Question Answer 3"
+msgstr "25.000-40.000 rubl"
+
+msgid "Survey Income Question Answer 4"
+msgstr "40.000-65.000 rubl"
+
+msgid "Survey Income Question Answer 5"
+msgstr "65.000-90.000 rubl"
+
+msgid "Survey Income Question Answer 6"
+msgstr "90.000-140.000 rubl"
+
+msgid "Survey Income Question Answer 7"
+msgstr "140.000 rublden fazla"
+
+msgid "Survey Social Status Question"
+msgstr "Sotsial status"
+
+msgid "Survey Social Status Question Answer 1"
+msgstr "Mektep talebesi ya da student"
+
+msgid "Survey Social Status Question Answer 2"
+msgstr "İşsiz"
+
+msgid "Survey Social Status Question Answer 3"
+msgstr "Ticaretçi"
+
+msgid "Survey Social Status Question Answer 4"
+msgstr "İşçi"
+
+msgid "Survey Social Status Question Answer 5"
+msgstr "Ferdi ticaretçi"
+
+msgid "Survey Education Question"
+msgstr "Tahsil"
+
+msgid "Survey Education Question Answer 1"
+msgstr "Mektepte oqıyman (1-9 sınıf)"
+
+msgid "Survey Education Question Answer 2"
+msgstr "Esasi tahsil (9 sınıf)"
+
+msgid "Survey Education Question Answer 3"
+msgstr "Mektepte oqıyman (10-11 sınıf)"
+
+msgid "Survey Education Question Answer 4"
+msgstr "Orta umumi tahsil"
+
+msgid "Survey Education Question Answer 5"
+msgstr "Orta meslek tahsili müessesesinde oqıyman (PTU, kolledj)"
+
+msgid "Survey Education Question Answer 6"
+msgstr "Orta meslek tahsili"
+
+msgid "Survey Education Question Answer 7"
+msgstr "Ali tahsil müessesesinde oqıyman"
+
+msgid "Survey Education Question Answer 8"
+msgstr "Ali tahsil"
+
+msgid "Survey Veterans Question"
+msgstr "Sizniñ SVO’da savaşqan ya da su vaqıtta savaşqan qardaşlarıñız ya da yaqın dostlarıñız barmı? Yoki, siz özünüz oylemiñiz?"
+
+msgid "Survey Dead Veterans Question"
+msgstr "Sizniñ SVO’da halâk olğan qardaşlarıñız ya da yaqın dostlarıñız barmı?"
+
+msgid "Yes"
+msgstr "Evet"
+
+msgid "No"
+msgstr "Yoq"
+
+msgid "Survey Birth Place Question"
+msgstr "Siz qay yerde doğduñız?"
+
+msgid "Survey Residence Question"
+msgstr "Siz qay şeer ya da köyde yaşıysıñız?"
+
+msgid "Start entering"
+msgstr "Yazmağa başlayıñız"
+
+msgid "Survey Participating Question"
+msgstr "Siz cemaat hayatına nasıl iştirak ettiniz?"
+
+msgid "Survey Participating Question Answer 1"
+msgstr "Seçimlerde oydım"
+
+msgid "Survey Participating Question Answer 2"
+msgstr "Siyasiy partiyeler faaliyetine qatnaştım"
+
+msgid "Survey Participating Question Answer 3"
+msgstr "Seçimlerge nezaretçi oldım"
+
+msgid "Survey Participating Question Answer 4"
+msgstr "Siyasiy ya da cemaat faaliyetine qatnaştım"
+
+msgid "Survey Participating Question Answer 5"
+msgstr "Gönüllü oldım"
+
+msgid "Survey Participating Question Answer 6"
+msgstr "Qomşularımnen birlikde ortak teşebbüslerni hayata keçirdim"
+
+msgid "Survey Participating Question Answer 7"
+msgstr "Oquğan ya da oquyğan adamlarımnen ortak teşebbüslerni hayata keçirdim"
+
+msgid "Survey Participating Question Answer 8"
+msgstr "İşlegen ya da işlemegen adamlarımnen ortak teşebbüslerni hayata keçirdim"
+
+msgid "Survey Participating Question Answer 9"
+msgstr "Başqa cemaat teşebbüslerini hayata keçirdim"
+
+msgid "Survey Participating Question Answer 10"
+msgstr "Cemaat ya da siyasiy hayata başqa bir şekilde iştirak ettim"
+
+msgid "Survey Participating Question Answer 11"
+msgstr "Hiç bir şekilde iştirak etmedim"
+
+msgid "Survey Participating About Question"
+msgstr "İsterseniz, cemaat hayatına iştirak etmek aqqında daha ayrıntılı ayta bilirsiniz"
+
+msgid "Survey Participating Reasons Question"
+msgstr "Sizni cemaat hayatına iştirak etmekke (ya da etmemekke) ne sebep oldı?"
+
+msgid "Survey Participating More Question"
+msgstr "Sizni cemaat hayatına daa ziyade iştirak etmekke ne teşvik ete bilirdi?"
+
+msgid "Survey Political Interest Question"
+msgstr "Siyasiy hayatqa ne qadar qızıqasınız?"
+
+msgid "Survey Civil Interest Question"
+msgstr "Cemaat hayatqa ne qadar qızıqasınız?"
+
+msgid "Survey Why So Question"
+msgstr "Ne içün böyle?"
+
+msgid "Survey Government Question"
+msgstr "Sizce, devlet ne içün en ziyade lâzım? 3 variantqa qadar saylaŋız"
+
+msgid "Survey Government Question Answer 1"
+msgstr "Sosial ta’minât (maaşlar, pensiyalar) ve baylıqnı paylaşmaq içün"
+
+msgid "Survey Government Question Answer 2"
+msgstr "Memlekette asayişni temin etmek içün"
+
+msgid "Survey Government Question Answer 3"
+msgstr "Vatandaşlarnıñ aqqını qorumaq içün"
+
+msgid "Survey Government Question Answer 4"
+msgstr "Tışqı düşmanlarden qorunmaq içün"
+
+msgid "Survey Government Question Answer 5"
+msgstr "Memleketniñ medeniy, tarihi ve/yaki dini mirasını saqlamaq içün"
+
+msgid "Survey Government Question Answer 6"
+msgstr "Cezalandırmaq içün"
+
+msgid "Survey Government Question Answer 7"
+msgstr "Vatandaşlarnıñ iradesini yerine ketirmek içün"
+
+msgid "Survey Government Question Answer 8"
+msgstr "Cemiyetniñ inkişaf yolunu belirlemek içün"
+
+msgid "Survey Government Additional Question"
+msgstr "Bu yerge öz fikirleriñizni ve variantlarıñıznı yaza bilirsiniz"
+
+msgid "Survey Social Status Additional Question 1"
+msgstr "Qaysı meslekte çalışasıñ?"
+
+msgid "Survey Social Status Additional Question 2"
+msgstr "Qaysı sahede çalışasıñ?"
+
+msgid "Send"
+msgstr "Ibermeq"

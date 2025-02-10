@@ -165,6 +165,10 @@ header .container {
     padding-bottom: 5px;
 }
 
+header ul {
+    list-style: none;
+}
+
 .burger-menu {
     display: flex;
     align-items: center;

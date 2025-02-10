@@ -104,8 +104,9 @@ p, h4, h5, h6 {
 
 a {
     font-family: var(--font-main);
-    color: var(--black-color);
-    text-decoration: none;
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: inherit;
     font-weight: 600;
     transition: color 0.4s ease;
 }

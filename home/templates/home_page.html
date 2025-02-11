@@ -7,6 +7,14 @@
 
 <div class="container">
 
+    {% if messages %}
+    <div class="callout">
+        {% for message in messages %}
+        <div class="message {{ message.tags }}">{{ message }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
     <div class="main-page-text">
         <p>{{ _("Main Page Text")|linebreaks }}</p>
         <a href="#taskSection" class="button" style="margin-top: 30px">{% trans "Main Page Button" %}</a>
@@ -145,7 +153,8 @@
             <img src="{% static 'images/icons/laptop-girl-emoji.png' %}" alt="" />
             <span>{% trans 'Survey Callout Text' %}</span>
         </div>
-        <form>
+        <form method="POST" action="{% url 'survey' %}">
+            {% csrf_token %}
             <div class="sociology-survey">
                 <div class="survey-question">
                     <label for="age">{% trans 'Survey Age Question' %}</label>
@@ -454,7 +463,7 @@
                     <textarea class="form-field" id="government-additional-question" name="government-additional-question"></textarea>
                 </div>
             </div>
-            <button class="button hidden" style="margin-top: 25px">{% trans "Send" %}</button>
+            <button class="button hidden" style="margin-top: 25px" type="submit">{% trans "Send" %}</button>
         </form>
     </div>
 </div>

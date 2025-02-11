@@ -77,11 +77,74 @@
     </div>
 
     <div class="task-section" id="taskSection">
-
+        <h1>{% trans 'Task Section Heading' %}</h1>
+        <div class="callout">
+            <img src="{% static 'images/icons/briefcase-emoji.png' %}" alt="" />
+            <span>
+                {% trans 'Task Section Text' %}
+            </span>
+        </div>
+        <form>
+            <div class="task-container">
+                <div class="task">
+                    <label>
+                        <input type="checkbox">
+                        <span>{% trans 'Task 1' %}</span>
+                    </label>
+                </div>
+                <div class="task">
+                    <label>
+                        <input type="checkbox">
+                        <span>{% trans 'Task 2' %}</span>
+                    </label>
+                </div>
+                <div class="task">
+                    <label>
+                        <input type="checkbox">
+                        <span>{% trans 'Task 3' %}</span>
+                    </label>
+                </div>
+                <div class="task">
+                    <label>
+                        <input type="checkbox">
+                        <span>{% trans 'Task 4' %} <a href="mailto:go-hromada@proton.me">go-hromada@proton.me</a></span>
+                    </label>
+                </div>
+                <div class="task">
+                    <label>
+                        <input type="checkbox">
+                        <span>{% trans 'Task 5' %} <a href="mailto:go-hromada@proton.me">go-hromada@proton.me</a></span>
+                    </label>
+                </div>
+                <div class="task">
+                    <label>
+                        <input type="checkbox">
+                        <span>{% trans 'Task 6' %}</span>
+                    </label>
+                </div>
+                <div class="task">
+                    <label>
+                        <input type="checkbox">
+                        <span>{% trans 'Task 7' %}</span>
+                    </label>
+                </div>
+                <div class="task">
+                    <label>
+                        <input type="checkbox">
+                        <span>{% trans 'Task 8' %}</span>
+                    </label>
+                </div>
+            </div>
+            <button class="button" style="margin-top: 20px; margin-bottom: 20px">{% trans 'Task Section Button' %}</button>
+        </form>
     </div>
 
     <div class="survey-section">
         <h1>{% trans 'Survey' %}</h1>
+        <div class="callout">
+            <img src="{% static 'images/icons/laptop-girl-emoji.png' %}" alt="" />
+            <span>{% trans 'Survey Callout Text' %}</span>
+        </div>
         <form>
             <div class="sociology-survey">
                 <div class="survey-question">
@@ -436,10 +499,10 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const questions = document.querySelectorAll(".survey-question"); // Все вопросы
-        const socialStatusOptions = document.querySelectorAll('input[name="social-status-option"]'); // Чекбоксы соц. статуса
-        const educationQuestion = document.querySelector('[name="education-option"]').closest(".survey-question"); // Вопрос про образование
-        const sendButton = document.querySelector(".button.hidden"); // Кнопка отправки
+        const questions = document.querySelectorAll(".survey-question");
+        const socialStatusOptions = document.querySelectorAll('input[name="social-status-option"]');
+        const educationQuestion = document.querySelector('[name="education-option"]').closest(".survey-question");
+        const sendButton = document.querySelector(".button.hidden");
 
         const option4 = document.getElementById("option4");
         const option5 = document.getElementById("option5");
@@ -451,19 +514,16 @@
             fieldQuestion.classList.toggle("hidden", !option5.checked);
         }
 
-        // При изменении любого чекбокса соц. статуса показываем образование
         socialStatusOptions.forEach(option => {
             option.addEventListener("change", function () {
                 educationQuestion.classList.remove("hidden");
-                toggleVisibility(); // Проверяем, выбраны ли 4 или 5
+                toggleVisibility();
             });
         });
 
-        // При изменении 4 или 5 показываем соответствующие вопросы
         option4.addEventListener("change", toggleVisibility);
         option5.addEventListener("change", toggleVisibility);
 
-        // Показываем следующий вопрос при вводе текста
         questions.forEach((question, index) => {
             const inputs = question.querySelectorAll("input, textarea");
 
@@ -476,7 +536,6 @@
             });
         });
 
-        // Показываем кнопку при вводе в последнем поле
         const lastTextarea = document.getElementById("government-additional-question");
         lastTextarea.addEventListener("input", function () {
             sendButton.classList.remove("hidden");

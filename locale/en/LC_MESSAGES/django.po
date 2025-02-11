@@ -126,6 +126,11 @@ msgstr ""
 msgid "Survey"
 msgstr "Survey"
 
+msgid "Survey Callout Text"
+msgstr ""
+"Take part in the survey! It will help us better determine our strategies to engage as many "
+"people as possible in civic activities."
+
 msgid "Survey Age Question"
 msgstr "Age"
 
@@ -311,3 +316,47 @@ msgstr "In which field do you work?"
 
 msgid "Send"
 msgstr "Send"
+
+msgid "Task Section Heading"
+msgstr "Take Action"
+
+msgid "Task Section Text"
+msgstr ""
+"Here, you can choose a task that resonates with you the most and commit to completing it. Each of these tasks "
+"takes an average of about 15 minutes, but this will be an important step forward because we are many, and together we are a great force. "
+"You can choose as many tasks as you like, but we recommend starting with one or two."
+
+msgid "Task 1"
+msgstr "Tell a friend about the Crimean Community"
+
+msgid "Task 2"
+msgstr "Post about the Crimean Community on your social media"
+
+msgid "Task 3"
+msgstr "Complete the survey below"
+
+msgid "Task 4"
+msgstr "Design a flyer aimed at engaging people in civic activities. Send your design to "
+
+msgid "Task 5"
+msgstr "Come up with an idea for an event aimed at engaging people in civic activities. Send your idea to "
+
+msgid "Task 6"
+msgstr "Create a chat for neighbors, colleagues, or classmates (if one doesn’t exist yet) and put up announcements in the building"
+
+msgid "Task 7"
+msgstr "Attend a neighborhood meeting (or organize one) and work together to improve or enrich community life"
+
+msgid "Task 8"
+msgstr "Identify goals for fighting for your rights or other common issues at your place of study or work. "
+"Create a chat to work towards these shared goals or simply invite your peers to join the initiative"
+
+msgid "Task 9"
+msgstr "Put up a few flyers using ready-made templates"
+
+msgid "Task 10"
+msgstr "Order flyer distribution using ready-made templates as part of the Wave campaign"
+
+msgid "Task Section Button"
+msgstr "Choose a task"
+

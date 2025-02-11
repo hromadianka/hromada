@@ -580,4 +580,76 @@ input[type="range"] {
         background: #b92a2a;
     }
 
+/* Callout */
 
+.callout {
+    display: flex;
+    gap: 25px;
+    background: var(--white-color);
+    padding: 10px 15px;
+    font-family: var(--font-accent);
+    color: var(--black-color);
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+    /*max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+
+.callout img {
+    width: 50px;
+    height: fit-content;
+}
+
+/* Task Section */
+
+.task-container > div {
+    display: flex;
+    padding: 5px;
+    gap: 15px;
+    font-size: 18px;
+    font-family: var(--font-main);
+    width: 100%;
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.task label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font-main);
+    cursor: pointer;
+    background: transparent;
+    transition: background 0.3s, color 0.3s;
+    margin: 0;
+}
+
+.task input {
+    appearance: none;
+    min-width: 20px;
+    min-height: 20px;
+    border: 2px solid var(--white-color);
+    background: var(--white-color);
+    cursor: pointer;
+    transition: background 0.3s;
+    position: relative;
+}
+
+    .task input:checked {
+        background: var(--red-color);
+    }
+
+        .task input:checked + span {
+            background: var(--white-color);
+            color: var(--black-color);
+            padding: 5px;
+        }

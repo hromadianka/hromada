@@ -140,6 +140,11 @@ msgstr ""
 msgid "Survey"
 msgstr "Sorğu"
 
+msgid "Survey Callout Text"
+msgstr ""
+"Anketamızğa iştirak et! Bu bizge strategiïâlarımıznı daa yahşı belgiläp, "
+"cemaât faaliyetine mümkün qadar çoq insan cälb etmekke yardim etecek."
+
 msgid "Survey Age Question"
 msgstr "Yaş"
 
@@ -325,3 +330,46 @@ msgstr "Qaysı sahede çalışasıñ?"
 
 msgid "Send"
 msgstr "Ibermeq"
+
+msgid "Task Section Heading"
+msgstr "Hareket et!"
+
+msgid "Task Section Text"
+msgstr ""
+"Bu yerde özüne en yakın vazifeni seçip, onı yerine ketirmek içün söz berebilirsin. Bu vazifelerden biri "
+"ortalama olaraq 15 daqıqa alır, ama bu areket içün müim bir adım olacaqtır, çünki biz çoquz ve beraber büyük bir quvetmız. "
+"Ne qadar isterseñ vazife seçebilirsin, ama biz bir ya da eki vazifeden başlamaqnı tavsiye etemiz."
+
+msgid "Task 1"
+msgstr "Bir tanışına Qırım Cemaati aqqında añlatmaq"
+
+msgid "Task 2"
+msgstr "Qırım Cemaati aqqında sosial mediyada paylaşıq yapmak"
+
+msgid "Task 3"
+msgstr "Aşağıdaki sorğuda iştirak etmek"
+
+msgid "Task 4"
+msgstr "İnsanlarnı ictimai faaliyete celp etmek içün bir afişa tasarlamaq. Dizaynı şu yere yolla: "
+
+msgid "Task 5"
+msgstr "İnsanlarnı ictimai faaliyete celp etmek içün bir aksiya fikrini uydurmaq. Fikri şu yere yolla: "
+
+msgid "Task 6"
+msgstr "Komşılarnıñ, işdaşlarınıñ ya da talebelerniñ sohbet guruhını yaratmaq (eger o yoqsa) ve binada ilân yapıştırmaq"
+
+msgid "Task 7"
+msgstr "Komşılar ile topraşmaq (ya da toplaşuv teşkil etmek) ve beraber evniñ hayatını nasıl yahşılaştırmaq olacağı aqqında müzakere etmek"
+
+msgid "Task 8"
+msgstr "Öğrenim ya da iş yerinde insan aqqı yahut başqa ortak meseleler içün müim saiklerni belirlemek. "
+"Bu ortak saikler içün bir sohbet yaratmaq ya da adiyen işdaşlarıñı bu faaliyete celp etmek"
+
+msgid "Task 9"
+msgstr "Hazır tasarımlarğa köre bir qaç afişanı yapıştırmaq"
+
+msgid "Task 10"
+msgstr "«Dalğa» aksiyası çerçivesinde hazır tasarımlarğa köre afişa yapıştırmasını sipariş etmek"
+
+msgid "Task Section Button"
+msgstr "Vazifeni sayla"

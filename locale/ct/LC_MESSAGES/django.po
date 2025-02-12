@@ -373,3 +373,12 @@ msgstr "«Dalğa» aksiyası çerçivesinde hazır tasarımlarğa köre afişa y
 
 msgid "Task Section Button"
 msgstr "Vazifeni sayla"
+
+msgid "Survey Success Message"
+msgstr "Cevabınız muvafaqiyetli olaraq saqlandı. İştirakınız içün size büyük minnettarlığımızı bildirimiz❤"
+
+msgid "Tasks Success Message"
+msgstr "🎉 Bir yerlere yazıp qoy. Siz özenize şu vazifeleri aldınız:"
+
+msgid "Tasks Failure Message"
+msgstr "Of, siz heç bir vazife seçmediniz :("

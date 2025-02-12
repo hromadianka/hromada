@@ -8,12 +8,15 @@
 <div class="container">
 
     {% if messages %}
+    {% for message in messages %}
     <div class="callout">
-        {% for message in messages %}
-        <div class="message {{ message.tags }}">{{ message }}</div>
-        {% endfor %}
+        <div class="message {{ message.tags }}">
+            {{ message|safe }}
+        </div>
     </div>
+    {% endfor %}
     {% endif %}
+
 
     <div class="main-page-text">
         <p>{{ _("Main Page Text")|linebreaks }}</p>
@@ -92,53 +95,54 @@
                 {% trans 'Task Section Text' %}
             </span>
         </div>
-        <form>
+        <form method="POST" action="{% url 'choose_tasks' %}">
+            {% csrf_token %}
             <div class="task-container">
                 <div class="task">
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" name="tasks" value="{% trans 'Task 1' %}">
                         <span>{% trans 'Task 1' %}</span>
                     </label>
                 </div>
                 <div class="task">
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" name="tasks" value="{% trans 'Task 2' %}">
                         <span>{% trans 'Task 2' %}</span>
                     </label>
                 </div>
                 <div class="task">
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" name="tasks" value="{% trans 'Task 3' %}">
                         <span>{% trans 'Task 3' %}</span>
                     </label>
                 </div>
                 <div class="task">
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" name="tasks" value="{% trans 'Task 4' %}">
                         <span>{% trans 'Task 4' %} <a href="mailto:go-hromada@proton.me">go-hromada@proton.me</a></span>
                     </label>
                 </div>
                 <div class="task">
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" name="tasks" value="{% trans 'Task 5' %}">
                         <span>{% trans 'Task 5' %} <a href="mailto:go-hromada@proton.me">go-hromada@proton.me</a></span>
                     </label>
                 </div>
                 <div class="task">
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" name="tasks" value="{% trans 'Task 6' %}">
                         <span>{% trans 'Task 6' %}</span>
                     </label>
                 </div>
                 <div class="task">
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" name="tasks" value="{% trans 'Task 7' %}">
                         <span>{% trans 'Task 7' %}</span>
                     </label>
                 </div>
                 <div class="task">
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" name="tasks" value="{% trans 'Task 8' %}">
                         <span>{% trans 'Task 8' %}</span>
                     </label>
                 </div>

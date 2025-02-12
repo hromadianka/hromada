@@ -603,6 +603,10 @@ input[type="range"] {
     height: fit-content;
 }
 
+.callout ul {
+    margin-bottom: 0;
+}
+
 /* Task Section */
 
 .task-container > div {

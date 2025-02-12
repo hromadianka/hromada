@@ -1,15 +1,13 @@
-﻿from django.shortcuts import render
+﻿from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import SurveyResponse
+from django.utils.safestring import mark_safe
+from django.utils.translation import gettext as _
 
 # Create your views here.
 
 def home_page(request):
     return render(request, 'home_page.html')
-
-from django.shortcuts import render
-from django.contrib import messages
-from .models import SurveyResponse  # Подключаем модель
 
 def survey(request):
     if request.method == "POST":
@@ -30,6 +28,27 @@ def survey(request):
 
         SurveyResponse.objects.create(**data)
 
-        messages.success(request, "Ваша відповідь успішно збережена. Ми дуже вдячні вам за участь❤")
+        messages.success(request, _("Survey Success Message"))
 
-    return render(request, "home_page.html")
+    return redirect("home_page")
+
+
+def choose_tasks(request):
+    if request.method == "POST":
+        selected_tasks = request.POST.getlist("tasks")
+
+        task_mapping = {
+            _("Task 4"): _("Task 4") + ' <a href="mailto:go-hromada@proton.me">go-hromada@proton.me</a>',
+            _("Task 5"): _("Task 5") + ' <a href="mailto:go-hromada@proton.me">go-hromada@proton.me</a>',
+        }
+
+        task_list = "".join(f"<li>{task_mapping.get(task, task)}</li>" for task in selected_tasks)
+
+        if selected_tasks:
+            messages.success(request, mark_safe(
+                _("Tasks Success Message") + f"<ul>{task_list}</ul>"
+            ))
+        else:
+            messages.warning(request, _("Tasks Failure Message"))
+
+    return redirect("home_page")

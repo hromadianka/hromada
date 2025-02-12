@@ -360,3 +360,11 @@ msgstr "Order flyer distribution using ready-made templates as part of the Wave 
 msgid "Task Section Button"
 msgstr "Choose a task"
 
+msgid "Survey Success Message"
+msgstr "Your response has been successfully saved. We really appreciate your participation❤"
+
+msgid "Tasks Success Message"
+msgstr "🎉 Write it down somewhere. You have taken on the following tasks:"
+
+msgid "Tasks Failure Message"
+msgstr "Oops, you didn't choose any tasks :("

@@ -6,3 +6,4 @@ psycopg2-binary==2.9.10
 sqlparse==0.5.1
 tzdata==2024.2
 whitenoise==6.9.0
+mysqlclient

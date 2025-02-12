@@ -610,6 +610,10 @@ input[type="range"] {
 
 /* Task Section */
 
+.task-section {
+    padding-top: 34px;
+}
+
 .task-container > div {
     display: flex;
     padding: 5px;

@@ -610,7 +610,8 @@ input[type="range"] {
 
 .callout img {
     width: 50px;
-    height: fit-content;
+    max-height: fit-content;
+    height: auto;
 }
 
 .callout ul {
@@ -618,6 +619,10 @@ input[type="range"] {
 }
 
 /* Task Section */
+
+.task-section {
+    padding-top: 34px;
+}
 
 .task-container > div {
     display: flex;

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="container">
+
+    <h1>{% trans "My account" %}</h1>
+
+    <section style="display: flex; flex-direction: column; gap: 16px; width: fit-content;">
+        <a href="{% url 'password_change' %}" class="button">{% trans "Change password" %}</a>
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="button white">{% trans "Log out" %}</button>
+        </form>
+    </section>
+
+    <section style="margin-top: 20px;">
+        <h3> {{ user.username }}</h3>
+        <p style="font-size: 18px"> {{ user.email }}</p>
+        {% if user.profile.description %}
+        <p> {{ user.profile.description }}</p>
+        {% endif %}
+    </section>
+
+</div>
+{% endblock %}

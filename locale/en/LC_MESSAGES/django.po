@@ -368,3 +368,90 @@ msgstr "🎉 Write it down somewhere. You have taken on the following tasks:"
 
 msgid "Tasks Failure Message"
 msgstr "Oops, you didn't choose any tasks :("
+
+msgid "My account"
+msgstr "My account"
+
+msgid "Change password"
+msgstr "Change password"
+
+msgid "Log out"
+msgstr "Log out"
+
+msgid "Log-in"
+msgstr "Log-in"
+
+msgid "Your username and password didn't match. Please try again"
+msgstr "Your username and password didn't match. Please try again"
+
+msgid "Log-in Button"
+msgstr "Log-in"
+
+msgid "Register Button"
+msgstr "Sign-up"
+
+msgid "Forgotten password Button"
+msgstr "Forgotten password?"
+
+msgid "Sign-up"
+msgstr "Sign-up"
+
+msgid "Change your password"
+msgstr "Change your password"
+
+msgid "Change"
+msgstr "Change"
+
+msgid "Forgotten your password?"
+msgstr "Forgotten your password?"
+
+msgid "Enter your e-mail address to obtain a new password"
+msgstr "Enter your e-mail address to obtain a new password"
+
+msgid "Send e-mail"
+msgstr "Send e-mail"
+
+msgid "Reset your password"
+msgstr "Reset your password"
+
+msgid "Please enter your new password twice"
+msgstr "Please enter your new password twice"
+
+msgid "The password reset link was invalid, possibly because it has already been used. Please request a new password reset"
+msgstr "The password reset link was invalid, possibly because it has already been used. Please request a new password reset"
+
+msgid "Someone requested a password reset for the email {{ email }}."
+msgstr "Someone requested a password reset for the email {{ email }}."
+
+msgid "Follow the link below to reset your password:"
+msgstr "Follow the link below to reset your password:"
+
+msgid "Your username, in case you've forgotten: {{ username }}"
+msgstr "Your username, in case you've forgotten: {{ username }}"
+
+msgid "We've emailed you instructions for setting your password."
+msgstr "We've emailed you instructions for setting your password."
+
+msgid "If you don't receive an email, make sure you entered the address you registered with."
+msgstr "If you don't receive an email, make sure you entered the address you registered with."
+
+msgid "Password set"
+msgstr "Password set"
+
+msgid "Your password has been set. You can <a href=\"%(url)s\">log in now</a>."
+msgstr "Your password has been set. You can <a href=\"%(url)s\">log in now</a>."
+
+msgid "Username"
+msgstr "Username"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Repeat password"
+msgstr "Repeat password"
+
+msgid "Passwords don't match"
+msgstr "Passwords don't match"

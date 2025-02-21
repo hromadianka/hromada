@@ -382,3 +382,90 @@ msgstr "🎉 Bir yerlere yazıp qoy. Siz özenize şu vazifeleri aldınız:"
 
 msgid "Tasks Failure Message"
 msgstr "Of, siz heç bir vazife seçmediniz :("
+
+msgid "My account"
+msgstr "Meniñ hesabım"
+
+msgid "Change password"
+msgstr "Parolni deñiştir"
+
+msgid "Log out"
+msgstr "Çıq"
+
+msgid "Log-in"
+msgstr "Kiriş"
+
+msgid "Your username and password didn't match. Please try again"
+msgstr "Qullanıcı adıñız ve parolñız uyuşmay. Lütfen yañıdan deneyiñiz"
+
+msgid "Log-in Button"
+msgstr "Kiriş"
+
+msgid "Register Button"
+msgstr "Qayd etil"
+
+msgid "Forgotten password Button"
+msgstr "Parolni unuttıñızmı?"
+
+msgid "Sign-up"
+msgstr "Qayd etilüv"
+
+msgid "Change your password"
+msgstr "Parolñıznı deñiştir"
+
+msgid "Change"
+msgstr "Deñiştir"
+
+msgid "Forgotten your password?"
+msgstr "Parolñıznı unuttıñızmı?"
+
+msgid "Enter your e-mail address to obtain a new password"
+msgstr "Yañı parol almak içün e-mail adresiñizni kirsetiñiz"
+
+msgid "Send e-mail"
+msgstr "E-mail yolla"
+
+msgid "Reset your password"
+msgstr "Parolñıznı sıfırla"
+
+msgid "Please enter your new password twice"
+msgstr "Lütfen yañı parolñıznı eki kere kirsetiñiz"
+
+msgid "The password reset link was invalid, possibly because it has already been used. Please request a new password reset"
+msgstr "Parol sıfırlav içün berilgen bağlama geçersiz, belek ki, o, artıq qullanıldı. Lütfen yañıdan sıfırlav talap etiñiz"
+
+msgid "Someone requested a password reset for the email {{ email }}."
+msgstr "Kimdir {{ email }} e-mail içün parol sıfırlavını talap etti."
+
+msgid "Follow the link below to reset your password:"
+msgstr "Parolñıznı sıfırlamaq içün aşağıdaki bağlamanı basıñız:"
+
+msgid "Your username, in case you've forgotten: {{ username }}"
+msgstr "Eger unutqan bolsañız, qullanıcı adıñız: {{ username }}"
+
+msgid "We've emailed you instructions for setting your password."
+msgstr "Parolñıznı quraştırmaq içün talimatlarnı sizge e-mailnen yolladıq."
+
+msgid "If you don't receive an email, make sure you entered the address you registered with."
+msgstr "Eger e-mail almadıñızsa, qaydiyattan keçken adresiñizni doğru kirsettiñizmi, onı teklifiñiz."
+
+msgid "Password set"
+msgstr "Parol quraştırıldı"
+
+msgid "Your password has been set. You can <a href=\"%(url)s\">log in now</a>."
+msgstr "Parolñız quraştırıldı. Endi <a href=\"%(url)s\">kire bilesiñiz</a>."
+
+msgid "Username"
+msgstr "Qullanıcı adı"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Password"
+msgstr "Parol"
+
+msgid "Repeat password"
+msgstr "Parolni tekrar kirsetiñiz"
+
+msgid "Passwords don't match"
+msgstr "Parollar uyuşmay"

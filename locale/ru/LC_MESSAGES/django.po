@@ -381,3 +381,90 @@ msgstr "🎉 Запиши где-нибудь. Ты взял на себя та�
 
 msgid "Tasks Failure Message"
 msgstr "Ой, ты не выбрал ни одной задачи :("
+
+msgid "My account"
+msgstr "Мой аккаунт"
+
+msgid "Change password"
+msgstr "Изменить пароль"
+
+msgid "Log out"
+msgstr "Выйти"
+
+msgid "Log-in"
+msgstr "Вход"
+
+msgid "Your username and password didn't match. Please try again"
+msgstr "Твоё имя пользователя и пароль не совпадают. Попробуй еще раз"
+
+msgid "Log-in Button"
+msgstr "Войти"
+
+msgid "Register Button"
+msgstr "Зарегистрироваться"
+
+msgid "Forgotten password Button"
+msgstr "Забыл пароль?"
+
+msgid "Sign-up"
+msgstr "Регистрация"
+
+msgid "Change your password"
+msgstr "Изменить пароль"
+
+msgid "Change"
+msgstr "Изменить"
+
+msgid "Forgotten your password?"
+msgstr "Забыл пароль?"
+
+msgid "Enter your e-mail address to obtain a new password"
+msgstr "Введи свой адрес электронной почты, чтобы получить новый пароль"
+
+msgid "Send e-mail"
+msgstr "Отправить письмо"
+
+msgid "Reset your password"
+msgstr "Сброс пароля"
+
+msgid "Please enter your new password twice"
+msgstr "Пожалуйста, введи новый пароль дважды"
+
+msgid "The password reset link was invalid, possibly because it has already been used. Please request a new password reset"
+msgstr "Ссылка для сброса пароля недействительна, возможно, она уже была использована. Запроси сброс пароля снова"
+
+msgid "Someone requested a password reset for the email {{ email }}."
+msgstr "Кто-то запросил сброс пароля для электронной почты {{ email }}."
+
+msgid "Follow the link below to reset your password:"
+msgstr "Перейди по ссылке ниже, чтобы сбросить пароль:"
+
+msgid "Your username, in case you've forgotten: {{ username }}"
+msgstr "Твоё имя пользователя, если ты не помнишь: {{ username }}"
+
+msgid "We've emailed you instructions for setting your password."
+msgstr "Мы отправили тебе инструкции по установке пароля на электронную почту."
+
+msgid "If you don't receive an email, make sure you entered the address you registered with."
+msgstr "Если ты не получил письмо, убедись, что ты ввёл адрес, на который регистрировал аккаунт."
+
+msgid "Password set"
+msgstr "Пароль установлен"
+
+msgid "Your password has been set. You can <a href=\"%(url)s\">log in now</a>."
+msgstr "Пароль был установлен. Ты можешь <a href=\"%(url)s\">войти сейчас</a>."
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "Email"
+msgstr "Электронная почта"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Repeat password"
+msgstr "Повтори пароль"
+
+msgid "Passwords don't match"
+msgstr "Пароли не совпадают"

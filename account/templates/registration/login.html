@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load custom_filters %}
+
+{% block content %}
+<div class="container">
+    <h1 style="margin-bottom: 51px;">{% trans "Log-in" %}</h1>
+
+    {% if form.errors %}
+    <p>{% trans "Your username and password didn't match. Please try again" %}</p>
+    {% endif %}
+
+    <div class="login-form">
+        <form action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+
+            {% for field in form %}
+            <p>{{ field.label_tag }} {{ field|add_class:"form-field" }}</p>
+            {% endfor %}
+
+            <input type="hidden" name="next" value="{{ next }}" />
+            <p><input type="submit" class="button" style="margin-left: auto; margin-right: auto; margin-top: 51px; margin-bottom: 16px" value="{% trans 'Log-in' %}"></p>
+        </form>
+
+        <p>
+            <a href="{% url 'register' %}" class="button white" style="margin-left: auto; margin-right: auto; margin-bottom: 16px">{% trans "Register Button" %}</a>
+        </p>
+
+        <p>
+            <a href="{% url 'password_reset' %}" class="button black" style="margin-left: auto; margin-right: auto">{% trans "Forgotten password Button" %}</a>
+        </p>
+    </div>
+</div>
+{% endblock %}
+

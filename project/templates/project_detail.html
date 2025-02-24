@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container">
+    <h1>{{ project.title }}</h1>
+    <p>{{project.description }}</p>
+    <h6 style="text-transform: uppercase">{{ project.author }}</h6>
+</div>
+
+{% endblock %}

@@ -23,4 +23,5 @@ urlpatterns = [
     path('set-language/', set_language, name='set_language'),
     path('', include('home.urls')),
     path('account/', include('account.urls')),
+    path('project/', include('project.urls')),
 ]

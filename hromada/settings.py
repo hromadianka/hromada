@@ -88,6 +88,7 @@ AUTH_USER_MODEL = "account.User"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 jawsdb_url = os.environ.get('JAWSDB_URL') 
+DATABASE_URL = os.environ['JAWSDB_URL']
 
 if jawsdb_url:
     url = urlparse(jawsdb_url)
@@ -100,8 +101,11 @@ if jawsdb_url:
             'PASSWORD': url.password,
             'HOST': url.hostname,
             'PORT': url.port,
+            'OPTIONS': {  
+                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+            }  
         }
-    }
+    } 
 
 
 # Password validation

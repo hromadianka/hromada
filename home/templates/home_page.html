@@ -23,454 +23,461 @@
         <a href="#taskSection" class="button" style="margin-top: 30px">{% trans "Main Page Button" %}</a>
     </div>
 
-    <div class="featured-projects">
+    <div class="featured-projects" style="margin-top: 30px">
+        <div class="projects-container">
+            {% for project in featured_projects %}
+            <div class="card">
+                <h3><a href="{% url 'project_detail' project.id %}">{{ project.title }}</a></h3>
+                <h6 style="text-transform: uppercase">{{ project.author }}</h6>
+                <p>{{ project.description|striptags|truncatechars:160|safe|default:"" }}</p>
+            </div>
+            {% endfor %}
+        </div>
 
-    </div>
+        <div class="faq-section">
+            <div class="faq-question">
+                <ul>
+                    <li>{% trans "Question 1" %}</li>
+                </ul>
+                <p>{{ _("Answer 1")|linebreaks }}</p>
+            </div>
+            <div class="faq-question">
+                <ul>
+                    <li>{% trans "Question 2" %}</li>
+                </ul>
+                <p>{{ _("Answer 2")|linebreaks }}</p>
+            </div>
+            <div class="faq-question">
+                <ul>
+                    <li>{% trans "Question 3" %}</li>
+                </ul>
+                <p>{{ _("Answer 3")|linebreaks }}</p>
+            </div>
+            <div class="faq-question">
+                <ul>
+                    <li>{% trans "Question 4" %}</li>
+                </ul>
+                <p>{{ _("Answer 4")|linebreaks }}</p>
+            </div>
+            <div class="faq-question">
+                <ul>
+                    <li>{% trans "Question 5" %}</li>
+                </ul>
+                <p>{{ _("Answer 5")|linebreaks }}</p>
+            </div>
+            <div class="faq-question" style="margin-bottom: 0;">
+                <ul>
+                    <li>{% trans "Question 6" %}</li>
+                </ul>
+                <p style="margin-bottom: 0;">{{ _("Answer 6")|linebreaks }}</p>
+            </div>
+        </div>
 
-    <div class="faq-section">
-        <div class="faq-question">
-            <ul>
-                <li>{% trans "Question 1" %}</li>
-            </ul>
-            <p>{{ _("Answer 1")|linebreaks }}</p>
-        </div>
-        <div class="faq-question">
-            <ul>
-                <li>{% trans "Question 2" %}</li>
-            </ul>
-            <p>{{ _("Answer 2")|linebreaks }}</p>
-        </div>
-        <div class="faq-question">
-            <ul>
-                <li>{% trans "Question 3" %}</li>
-            </ul>
-            <p>{{ _("Answer 3")|linebreaks }}</p>
-        </div>
-        <div class="faq-question">
-            <ul>
-                <li>{% trans "Question 4" %}</li>
-            </ul>
-            <p>{{ _("Answer 4")|linebreaks }}</p>
-        </div>
-        <div class="faq-question">
-            <ul>
-                <li>{% trans "Question 5" %}</li>
-            </ul>
-            <p>{{ _("Answer 5")|linebreaks }}</p>
-        </div>
-        <div class="faq-question" style="margin-bottom: 0;">
-            <ul>
-                <li>{% trans "Question 6" %}</li>
-            </ul>
-            <p style="margin-bottom: 0;">{{ _("Answer 6")|linebreaks }}</p>
-        </div>
-    </div>
-
-    <style>
-        .faq-question li {
-            display: flex;
-            align-items: center;
-        }
-
-            .faq-question li::before {
-                content: "";
-                display: block;
-                min-width: 45px;
-                min-height: 45px;
-                margin-right: 18px;
-                background: url("{% static 'images/icons/think-emodji.png' %}") no-repeat;
-                background-size: cover;
+        <style>
+            .faq-question li {
+                display: flex;
+                align-items: center;
             }
-    </style>
 
-    <div class="social-section">
+                .faq-question li::before {
+                    content: "";
+                    display: block;
+                    min-width: 45px;
+                    min-height: 45px;
+                    margin-right: 18px;
+                    background: url("{% static 'images/icons/think-emodji.png' %}") no-repeat;
+                    background-size: cover;
+                }
+        </style>
 
-    </div>
+        <div class="social-section">
 
-    <div class="task-section" id="taskSection">
-        <h1>{% trans 'Task Section Heading' %}</h1>
-        <div class="callout">
-            <img src="{% static 'images/icons/briefcase-emoji.png' %}" alt="" />
-            <span>
-                {% trans 'Task Section Text' %}
-            </span>
         </div>
-        <form method="POST" action="{% url 'choose_tasks' %}">
-            {% csrf_token %}
-            <div class="task-container">
-                <div class="task">
-                    <label>
-                        <input type="checkbox" name="tasks" value="{% trans 'Task 1' %}">
-                        <span>{% trans 'Task 1' %}</span>
-                    </label>
-                </div>
-                <div class="task">
-                    <label>
-                        <input type="checkbox" name="tasks" value="{% trans 'Task 2' %}">
-                        <span>{% trans 'Task 2' %}</span>
-                    </label>
-                </div>
-                <div class="task">
-                    <label>
-                        <input type="checkbox" name="tasks" value="{% trans 'Task 3' %}">
-                        <span>{% trans 'Task 3' %}</span>
-                    </label>
-                </div>
-                <div class="task">
-                    <label>
-                        <input type="checkbox" name="tasks" value="{% trans 'Task 4' %}">
-                        <span>{% trans 'Task 4' %} <a href="mailto:go-hromada@proton.me">go-hromada@proton.me</a></span>
-                    </label>
-                </div>
-                <div class="task">
-                    <label>
-                        <input type="checkbox" name="tasks" value="{% trans 'Task 5' %}">
-                        <span>{% trans 'Task 5' %} <a href="mailto:go-hromada@proton.me">go-hromada@proton.me</a></span>
-                    </label>
-                </div>
-                <div class="task">
-                    <label>
-                        <input type="checkbox" name="tasks" value="{% trans 'Task 6' %}">
-                        <span>{% trans 'Task 6' %}</span>
-                    </label>
-                </div>
-                <div class="task">
-                    <label>
-                        <input type="checkbox" name="tasks" value="{% trans 'Task 7' %}">
-                        <span>{% trans 'Task 7' %}</span>
-                    </label>
-                </div>
-                <div class="task">
-                    <label>
-                        <input type="checkbox" name="tasks" value="{% trans 'Task 8' %}">
-                        <span>{% trans 'Task 8' %}</span>
-                    </label>
-                </div>
-            </div>
-            <button class="button" style="margin-top: 20px; margin-bottom: 0">{% trans 'Task Section Button' %}</button>
-        </form>
-    </div>
 
-    <div class="survey-section">
-        <h1>{% trans 'Survey' %}</h1>
-        <div class="callout">
-            <img src="{% static 'images/icons/laptop-girl-emoji.png' %}" alt="" />
-            <span>{% trans 'Survey Callout Text' %}</span>
+        <div class="task-section" id="taskSection">
+            <h1>{% trans 'Task Section Heading' %}</h1>
+            <div class="callout">
+                <img src="{% static 'images/icons/briefcase-emoji.png' %}" alt="" />
+                <span>
+                    {% trans 'Task Section Text' %}
+                </span>
+            </div>
+            <form method="POST" action="{% url 'choose_tasks' %}">
+                {% csrf_token %}
+                <div class="task-container">
+                    <div class="task">
+                        <label>
+                            <input type="checkbox" name="tasks" value="{% trans 'Task 1' %}">
+                            <span>{% trans 'Task 1' %}</span>
+                        </label>
+                    </div>
+                    <div class="task">
+                        <label>
+                            <input type="checkbox" name="tasks" value="{% trans 'Task 2' %}">
+                            <span>{% trans 'Task 2' %}</span>
+                        </label>
+                    </div>
+                    <div class="task">
+                        <label>
+                            <input type="checkbox" name="tasks" value="{% trans 'Task 3' %}">
+                            <span>{% trans 'Task 3' %}</span>
+                        </label>
+                    </div>
+                    <div class="task">
+                        <label>
+                            <input type="checkbox" name="tasks" value="{% trans 'Task 4' %}">
+                            <span>{% trans 'Task 4' %} <a href="mailto:go-hromada@proton.me">go-hromada@proton.me</a></span>
+                        </label>
+                    </div>
+                    <div class="task">
+                        <label>
+                            <input type="checkbox" name="tasks" value="{% trans 'Task 5' %}">
+                            <span>{% trans 'Task 5' %} <a href="mailto:go-hromada@proton.me">go-hromada@proton.me</a></span>
+                        </label>
+                    </div>
+                    <div class="task">
+                        <label>
+                            <input type="checkbox" name="tasks" value="{% trans 'Task 6' %}">
+                            <span>{% trans 'Task 6' %}</span>
+                        </label>
+                    </div>
+                    <div class="task">
+                        <label>
+                            <input type="checkbox" name="tasks" value="{% trans 'Task 7' %}">
+                            <span>{% trans 'Task 7' %}</span>
+                        </label>
+                    </div>
+                    <div class="task">
+                        <label>
+                            <input type="checkbox" name="tasks" value="{% trans 'Task 8' %}">
+                            <span>{% trans 'Task 8' %}</span>
+                        </label>
+                    </div>
+                </div>
+                <button class="button" style="margin-top: 20px; margin-bottom: 0">{% trans 'Task Section Button' %}</button>
+            </form>
         </div>
-        <form method="POST" action="{% url 'survey' %}">
-            {% csrf_token %}
-            <div class="sociology-survey">
-                <div class="survey-question">
-                    <label for="age">{% trans 'Survey Age Question' %}</label>
-                    <input type="number" id="age" name="age" min="0" max="120" class="form-field">
-                </div>
-                <div class="survey-question hidden">
-                    <p>{% trans "Survey Income Question" %}</p>
 
-                    <label class="radio-option">
-                        <input type="radio" name="income-option" value="option1">
-                        <span>{% trans "Survey Income Question Answer 1" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="income-option" value="option2">
-                        <span>{% trans "Survey Income Question Answer 2" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="income-option" value="option3">
-                        <span>{% trans "Survey Income Question Answer 3" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="income-option" value="option4">
-                        <span>{% trans "Survey Income Question Answer 4" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="income-option" value="option5">
-                        <span>{% trans "Survey Income Question Answer 5" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="income-option" value="option6">
-                        <span>{% trans "Survey Income Question Answer 6" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="income-option" value="option7">
-                        <span>{% trans "Survey Income Question Answer 7" %}</span>
-                    </label>
-                </div>
-
-                <div class="survey-question hidden">
-                    <p>{% trans 'Survey Social Status Question' %}</p>
-
-                    <label class="radio-option">
-                        <input type="checkbox" name="social-status-option" value="option1">
-                        <span>{% trans "Survey Social Status Question Answer 1" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="checkbox" name="social-status-option" value="option2">
-                        <span>{% trans "Survey Social Status Question Answer 2" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="checkbox" name="social-status-option" value="option3">
-                        <span>{% trans "Survey Social Status Question Answer 3" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="checkbox" name="social-status-option" value="option4" id="option4">
-                        <span>{% trans "Survey Social Status Question Answer 4" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="checkbox" name="social-status-option" value="option5" id="option5">
-                        <span>{% trans "Survey Social Status Question Answer 5" %}</span>
-                    </label>
-                </div>
-
-                <div id="profession-question" class="survey-question hidden">
-                    <label>{% trans "Survey Social Status Additional Question 1" %}</label>
-                    <input type="text" name="profession" class="form-field">
-                </div>
-
-                <div id="field-question" class="survey-question hidden">
-                    <label>{% trans "Survey Social Status Additional Question 2" %}</label>
-                    <input type="text" name="field" class="form-field">
-                </div>
-
-                <div class="survey-question hidden">
-                    <p>{% trans "Survey Education Question" %}</p>
-                    <label class="radio-option">
-                        <input type="radio" name="education-option" value="option1" class="input">
-                        <span>{% trans "Survey Education Question Answer 1" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="education-option" value="option2">
-                        <span>{% trans "Survey Education Question Answer 2" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="education-option" value="option3">
-                        <span>{% trans "Survey Education Question Answer 3" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="education-option" value="option4">
-                        <span>{% trans "Survey Education Question Answer 4" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="education-option" value="option5">
-                        <span>{% trans "Survey Education Question Answer 5" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="education-option" value="option6">
-                        <span>{% trans "Survey Education Question Answer 6" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="education-option" value="option7">
-                        <span>{% trans "Survey Education Question Answer 7" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="education-option" value="option8">
-                        <span>{% trans "Survey Education Question Answer 8" %}</span>
-                    </label>
-                </div>
-
-                <div class="survey-question hidden">
-                    <p>{% trans "Survey Veterans Question" %}</p>
-                    <label class="radio-option">
-                        <input type="radio" name="veterans-option" value="option1">
-                        <span>{% trans "Yes" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="veterans-option" value="option2">
-                        <span>{% trans "No" %}</span>
-                    </label>
-                </div>
-
-                <div class="survey-question hidden">
-                    <p>{% trans "Survey Dead Veterans Question" %}</p>
-                    <label class="radio-option">
-                        <input type="radio" name="dead-veterans-option" value="option1">
-                        <span>{% trans "Yes" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="radio" name="dead-veterans-option" value="option2">
-                        <span>{% trans "No" %}</span>
-                    </label>
-                </div>
-
-                <div class="survey-question hidden">
-                    <label for="birthplace">{% trans "Survey Birth Place Question" %}</label>
-                    <input type="text" id="birthplace" name="birthplace" class="form-field" placeholder="{% trans " Start entering" %}...">
-                </div>
-
-                <div class="survey-question hidden">
-                    <label for="residence">{% trans "Survey Residence Question" %}</label>
-                    <input type="text" id="residence" name="residence" class="form-field" placeholder="Почни вводити">
-                </div>
+        <div class="survey-section">
+            <h1>{% trans 'Survey' %}</h1>
+            <div class="callout">
+                <img src="{% static 'images/icons/laptop-girl-emoji.png' %}" alt="" />
+                <span>{% trans 'Survey Callout Text' %}</span>
             </div>
+            <form method="POST" action="{% url 'survey' %}">
+                {% csrf_token %}
+                <div class="sociology-survey">
+                    <div class="survey-question">
+                        <label for="age">{% trans 'Survey Age Question' %}</label>
+                        <input type="number" id="age" name="age" min="0" max="120" class="form-field">
+                    </div>
+                    <div class="survey-question hidden">
+                        <p>{% trans "Survey Income Question" %}</p>
 
-            <div class="politics-survey">
-                <div class="survey-question hidden">
-                    <p>{% trans 'Survey Participating Question' %}</p>
+                        <label class="radio-option">
+                            <input type="radio" name="income-option" value="option1">
+                            <span>{% trans "Survey Income Question Answer 1" %}</span>
+                        </label>
 
-                    <label class="radio-option">
-                        <input type="checkbox" name="participating-option" value="option1">
-                        <span>{% trans "Survey Participating Question Answer 1" %}</span>
-                    </label>
+                        <label class="radio-option">
+                            <input type="radio" name="income-option" value="option2">
+                            <span>{% trans "Survey Income Question Answer 2" %}</span>
+                        </label>
 
-                    <label class="radio-option">
-                        <input type="checkbox" name="participating-option" value="option2">
-                        <span>{% trans "Survey Participating Question Answer 2" %}</span>
-                    </label>
+                        <label class="radio-option">
+                            <input type="radio" name="income-option" value="option3">
+                            <span>{% trans "Survey Income Question Answer 3" %}</span>
+                        </label>
 
-                    <label class="radio-option">
-                        <input type="checkbox" name="participating-option" value="option3">
-                        <span>{% trans "Survey Participating Question Answer 3" %}</span>
-                    </label>
+                        <label class="radio-option">
+                            <input type="radio" name="income-option" value="option4">
+                            <span>{% trans "Survey Income Question Answer 4" %}</span>
+                        </label>
 
-                    <label class="radio-option">
-                        <input type="checkbox" name="participating-option" value="option4">
-                        <span>{% trans "Survey Participating Question Answer 4" %}</span>
-                    </label>
+                        <label class="radio-option">
+                            <input type="radio" name="income-option" value="option5">
+                            <span>{% trans "Survey Income Question Answer 5" %}</span>
+                        </label>
 
-                    <label class="radio-option">
-                        <input type="checkbox" name="participating-option" value="option5">
-                        <span>{% trans "Survey Participating Question Answer 5" %}</span>
-                    </label>
+                        <label class="radio-option">
+                            <input type="radio" name="income-option" value="option6">
+                            <span>{% trans "Survey Income Question Answer 6" %}</span>
+                        </label>
 
-                    <label class="radio-option">
-                        <input type="checkbox" name="participating-option" value="option6">
-                        <span>{% trans "Survey Participating Question Answer 6" %}</span>
-                    </label>
+                        <label class="radio-option">
+                            <input type="radio" name="income-option" value="option7">
+                            <span>{% trans "Survey Income Question Answer 7" %}</span>
+                        </label>
+                    </div>
 
-                    <label class="radio-option">
-                        <input type="checkbox" name="participating-option" value="option7">
-                        <span>{% trans "Survey Participating Question Answer 7" %}</span>
-                    </label>
+                    <div class="survey-question hidden">
+                        <p>{% trans 'Survey Social Status Question' %}</p>
 
-                    <label class="radio-option">
-                        <input type="checkbox" name="participating-option" value="option8">
-                        <span>{% trans "Survey Participating Question Answer 8" %}</span>
-                    </label>
+                        <label class="radio-option">
+                            <input type="checkbox" name="social-status-option" value="option1">
+                            <span>{% trans "Survey Social Status Question Answer 1" %}</span>
+                        </label>
 
-                    <label class="radio-option">
-                        <input type="checkbox" name="participating-option" value="option9">
-                        <span>{% trans "Survey Participating Question Answer 9" %}</span>
-                    </label>
+                        <label class="radio-option">
+                            <input type="checkbox" name="social-status-option" value="option2">
+                            <span>{% trans "Survey Social Status Question Answer 2" %}</span>
+                        </label>
 
-                    <label class="radio-option">
-                        <input type="checkbox" name="participating-option" value="option10">
-                        <span>{% trans "Survey Participating Question Answer 10" %}</span>
-                    </label>
+                        <label class="radio-option">
+                            <input type="checkbox" name="social-status-option" value="option3">
+                            <span>{% trans "Survey Social Status Question Answer 3" %}</span>
+                        </label>
 
-                    <label class="radio-option">
-                        <input type="checkbox" name="participating-option" value="option11">
-                        <span>{% trans "Survey Participating Question Answer 11" %}</span>
-                    </label>
-                </div>
+                        <label class="radio-option">
+                            <input type="checkbox" name="social-status-option" value="option4" id="option4">
+                            <span>{% trans "Survey Social Status Question Answer 4" %}</span>
+                        </label>
 
-                <div class="survey-question hidden">
-                    <label for="participating-about-question">{% trans "Survey Participating About Question" %}</label>
-                    <textarea class="form-field" id="participating-about-question" name="participating-about-question"></textarea>
-                </div>
+                        <label class="radio-option">
+                            <input type="checkbox" name="social-status-option" value="option5" id="option5">
+                            <span>{% trans "Survey Social Status Question Answer 5" %}</span>
+                        </label>
+                    </div>
 
-                <div class="survey-question hidden">
-                    <label for="participating-reasons-question">{% trans "Survey Participating Reasons Question" %}</label>
-                    <textarea class="form-field" id="participating-reasons-question" name="participating-reasons-question"></textarea>
-                </div>
+                    <div id="profession-question" class="survey-question hidden">
+                        <label>{% trans "Survey Social Status Additional Question 1" %}</label>
+                        <input type="text" name="profession" class="form-field">
+                    </div>
 
-                <div class="survey-question hidden">
-                    <label for="participating-more-question">{% trans "Survey Participating More Question" %}</label>
-                    <textarea class="form-field" id="participating-more-question" name="participating-more-question"></textarea>
-                </div>
+                    <div id="field-question" class="survey-question hidden">
+                        <label>{% trans "Survey Social Status Additional Question 2" %}</label>
+                        <input type="text" name="field" class="form-field">
+                    </div>
 
-                <div class="survey-question hidden">
-                    <div class="interest-level">
-                        <label for="interest-range-1">{% trans "Survey Political Interest Question" %}</label>
-                        <input type="range" id="interest-range-1" name="interest-level-1" min="0" max="100" value="50">
-                        <span id="interest-value-1">50%</span>
+                    <div class="survey-question hidden">
+                        <p>{% trans "Survey Education Question" %}</p>
+                        <label class="radio-option">
+                            <input type="radio" name="education-option" value="option1" class="input">
+                            <span>{% trans "Survey Education Question Answer 1" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="education-option" value="option2">
+                            <span>{% trans "Survey Education Question Answer 2" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="education-option" value="option3">
+                            <span>{% trans "Survey Education Question Answer 3" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="education-option" value="option4">
+                            <span>{% trans "Survey Education Question Answer 4" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="education-option" value="option5">
+                            <span>{% trans "Survey Education Question Answer 5" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="education-option" value="option6">
+                            <span>{% trans "Survey Education Question Answer 6" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="education-option" value="option7">
+                            <span>{% trans "Survey Education Question Answer 7" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="education-option" value="option8">
+                            <span>{% trans "Survey Education Question Answer 8" %}</span>
+                        </label>
+                    </div>
+
+                    <div class="survey-question hidden">
+                        <p>{% trans "Survey Veterans Question" %}</p>
+                        <label class="radio-option">
+                            <input type="radio" name="veterans-option" value="option1">
+                            <span>{% trans "Yes" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="veterans-option" value="option2">
+                            <span>{% trans "No" %}</span>
+                        </label>
+                    </div>
+
+                    <div class="survey-question hidden">
+                        <p>{% trans "Survey Dead Veterans Question" %}</p>
+                        <label class="radio-option">
+                            <input type="radio" name="dead-veterans-option" value="option1">
+                            <span>{% trans "Yes" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="dead-veterans-option" value="option2">
+                            <span>{% trans "No" %}</span>
+                        </label>
+                    </div>
+
+                    <div class="survey-question hidden">
+                        <label for="birthplace">{% trans "Survey Birth Place Question" %}</label>
+                        <input type="text" id="birthplace" name="birthplace" class="form-field" placeholder="{% trans " Start entering" %}...">
+                    </div>
+
+                    <div class="survey-question hidden">
+                        <label for="residence">{% trans "Survey Residence Question" %}</label>
+                        <input type="text" id="residence" name="residence" class="form-field" placeholder="Почни вводити">
                     </div>
                 </div>
 
-                <div class="survey-question hidden">
-                    <div class="interest-level">
-                        <label for="interest-range-2">{% trans "Survey Civil Interest Question" %}</label>
-                        <input type="range" id="interest-range-2" name="interest-level-2" min="0" max="100" value="50">
-                        <span id="interest-value-2">50%</span>
+                <div class="politics-survey">
+                    <div class="survey-question hidden">
+                        <p>{% trans 'Survey Participating Question' %}</p>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="participating-option" value="option1">
+                            <span>{% trans "Survey Participating Question Answer 1" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="participating-option" value="option2">
+                            <span>{% trans "Survey Participating Question Answer 2" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="participating-option" value="option3">
+                            <span>{% trans "Survey Participating Question Answer 3" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="participating-option" value="option4">
+                            <span>{% trans "Survey Participating Question Answer 4" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="participating-option" value="option5">
+                            <span>{% trans "Survey Participating Question Answer 5" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="participating-option" value="option6">
+                            <span>{% trans "Survey Participating Question Answer 6" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="participating-option" value="option7">
+                            <span>{% trans "Survey Participating Question Answer 7" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="participating-option" value="option8">
+                            <span>{% trans "Survey Participating Question Answer 8" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="participating-option" value="option9">
+                            <span>{% trans "Survey Participating Question Answer 9" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="participating-option" value="option10">
+                            <span>{% trans "Survey Participating Question Answer 10" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="participating-option" value="option11">
+                            <span>{% trans "Survey Participating Question Answer 11" %}</span>
+                        </label>
+                    </div>
+
+                    <div class="survey-question hidden">
+                        <label for="participating-about-question">{% trans "Survey Participating About Question" %}</label>
+                        <textarea class="form-field" id="participating-about-question" name="participating-about-question"></textarea>
+                    </div>
+
+                    <div class="survey-question hidden">
+                        <label for="participating-reasons-question">{% trans "Survey Participating Reasons Question" %}</label>
+                        <textarea class="form-field" id="participating-reasons-question" name="participating-reasons-question"></textarea>
+                    </div>
+
+                    <div class="survey-question hidden">
+                        <label for="participating-more-question">{% trans "Survey Participating More Question" %}</label>
+                        <textarea class="form-field" id="participating-more-question" name="participating-more-question"></textarea>
+                    </div>
+
+                    <div class="survey-question hidden">
+                        <div class="interest-level">
+                            <label for="interest-range-1">{% trans "Survey Political Interest Question" %}</label>
+                            <input type="range" id="interest-range-1" name="interest-level-1" min="0" max="100" value="50">
+                            <span id="interest-value-1">50%</span>
+                        </div>
+                    </div>
+
+                    <div class="survey-question hidden">
+                        <div class="interest-level">
+                            <label for="interest-range-2">{% trans "Survey Civil Interest Question" %}</label>
+                            <input type="range" id="interest-range-2" name="interest-level-2" min="0" max="100" value="50">
+                            <span id="interest-value-2">50%</span>
+                        </div>
+                    </div>
+
+                    <div class="survey-question hidden">
+                        <label for="why-interest-rate-question" style="text-align: center">{% trans "Survey Why So Question" %}</label>
+                        <textarea class="form-field" id="why-interest-rate-question" name="why-interest-rate-question"></textarea>
+                    </div>
+
+                    <div class="survey-question hidden">
+                        <p>{% trans 'Survey Government Question' %}</p>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="government-option" value="option1">
+                            <span>{% trans "Survey Government Question Answer 1" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="government-option" value="option2">
+                            <span>{% trans "Survey Government Question Answer 2" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="government-option" value="option3">
+                            <span>{% trans "Survey Government Question Answer 3" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="government-option" value="option4">
+                            <span>{% trans "Survey Government Question Answer 4" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="government-option" value="option5">
+                            <span>{% trans "Survey Government Question Answer 5" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="government-option" value="option6">
+                            <span>{% trans "Survey Government Question Answer 6" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="government-option" value="option7">
+                            <span>{% trans "Survey Government Question Answer 7" %}</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="checkbox" name="government-option" value="option8">
+                            <span>{% trans "Survey Government Question Answer 8" %}</span>
+                        </label>
+                    </div>
+
+                    <div class="survey-question hidden">
+                        <label for="government-additional-question">{% trans "Survey Government Additional Question" %}</label>
+                        <textarea class="form-field" id="government-additional-question" name="government-additional-question"></textarea>
                     </div>
                 </div>
-
-                <div class="survey-question hidden">
-                    <label for="why-interest-rate-question" style="text-align: center">{% trans "Survey Why So Question" %}</label>
-                    <textarea class="form-field" id="why-interest-rate-question" name="why-interest-rate-question"></textarea>
-                </div>
-
-                <div class="survey-question hidden">
-                    <p>{% trans 'Survey Government Question' %}</p>
-
-                    <label class="radio-option">
-                        <input type="checkbox" name="government-option" value="option1">
-                        <span>{% trans "Survey Government Question Answer 1" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="checkbox" name="government-option" value="option2">
-                        <span>{% trans "Survey Government Question Answer 2" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="checkbox" name="government-option" value="option3">
-                        <span>{% trans "Survey Government Question Answer 3" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="checkbox" name="government-option" value="option4">
-                        <span>{% trans "Survey Government Question Answer 4" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="checkbox" name="government-option" value="option5">
-                        <span>{% trans "Survey Government Question Answer 5" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="checkbox" name="government-option" value="option6">
-                        <span>{% trans "Survey Government Question Answer 6" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="checkbox" name="government-option" value="option7">
-                        <span>{% trans "Survey Government Question Answer 7" %}</span>
-                    </label>
-
-                    <label class="radio-option">
-                        <input type="checkbox" name="government-option" value="option8">
-                        <span>{% trans "Survey Government Question Answer 8" %}</span>
-                    </label>
-                </div>
-
-                <div class="survey-question hidden">
-                    <label for="government-additional-question">{% trans "Survey Government Additional Question" %}</label>
-                    <textarea class="form-field" id="government-additional-question" name="government-additional-question"></textarea>
-                </div>
-            </div>
-            <button class="button hidden" style="margin-top: 25px" type="submit">{% trans "Send" %}</button>
-        </form>
+                <button class="button hidden" style="margin-top: 25px" type="submit">{% trans "Send" %}</button>
+            </form>
+        </div>
     </div>
-</div>
 
 <script>
     function initAutocomplete() {

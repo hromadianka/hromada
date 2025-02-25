@@ -94,7 +94,7 @@ DATABASES = {
     }
 }
 
-jawsdb_url = os.environ('JAWSDB_URL')
+jawsdb_url = os.environ.get('JAWSDB_URL')
 
 if jawsdb_url:
     url = urlparse(jawsdb_url)

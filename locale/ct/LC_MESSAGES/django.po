@@ -469,3 +469,15 @@ msgstr "Parolni tekrar kirsetiñiz"
 
 msgid "Passwords don't match"
 msgstr "Parollar uyuşmay"
+
+msgid "Create project"
+msgstr "Layihanı yarat"
+
+msgid "Project name"
+msgstr "Layihanıñ adı"
+
+msgid "Project description"
+msgstr "Layihanıñ tarifı"
+
+msgid "Create"
+msgstr "Yarat"

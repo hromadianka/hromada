@@ -464,3 +464,15 @@ msgstr "Повтори пароль"
 
 msgid "Passwords don't match"
 msgstr "Паролі не збігаються"
+
+msgid "Create project"
+msgstr "Створити проєкт"
+
+msgid "Project name"
+msgstr "Назва проєкту"
+
+msgid "Project description"
+msgstr "Опис проєкту"
+
+msgid "Create"
+msgstr "Створити"

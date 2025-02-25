@@ -455,3 +455,15 @@ msgstr "Repeat password"
 
 msgid "Passwords don't match"
 msgstr "Passwords don't match"
+
+msgid "Create project"
+msgstr "Create project"
+
+msgid "Project name"
+msgstr "Project name"
+
+msgid "Project description"
+msgstr "Project description"
+
+msgid "Create"
+msgstr "Create"

@@ -6,13 +6,14 @@
     --font-main: 'Roboto Condensed', sans-serif;
 }
 
-* {
+*, a {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     overflow-wrap: break-word;
     font-size: 100%;
     vertical-align: baseline;
+    transition: color 0s ease;
 }
 
 body {
@@ -64,7 +65,7 @@ body {
 h1 {
     font-family: var(--font-accent);
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 2.5rem;
     text-align: center;
 }
@@ -334,12 +335,12 @@ header ul {
         }
 
 main {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 @media (max-width: 768px) {
     main {
-        margin-top: 90px;
+        margin-top: 60px;
     }
 }
 
@@ -352,8 +353,7 @@ main {
 }
 
 .faq-section {
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding-top: 30px;
 }
 
 .faq-question {
@@ -399,7 +399,7 @@ main {
         outline: none;
         cursor: pointer;
         border: none;
-        padding: ;
+        padding: 7px 12px;
     }
 
     .button.white {
@@ -423,7 +423,21 @@ main {
         box-shadow: none;
     }
 
+@media (max-width: 768px) {
+    .buttons-section {
+        width: 100%;
+    }
+
+    .buttons-section .button {
+        width: 100%;
+    }
+}
+
 /* Survey */
+
+.survey-section {
+    padding-top: 30px;
+}
 
 .survey-question {
     padding-top: 10px;
@@ -621,7 +635,7 @@ input[type="range"] {
 /* Task Section */
 
 .task-section {
-    padding-top: 34px;
+    padding-top: 30px;
 }
 
 .task-container > div {
@@ -672,3 +686,89 @@ input[type="range"] {
             color: var(--black-color);
             padding: 5px;
         }
+
+ /* Projects Cards */
+
+ .projects-container {
+     display: flex;
+     gap: 50px;
+     flex-wrap: wrap;
+ }
+
+ .projects-container .card {
+     width: calc((100% - 100px) / 3);
+     background: var(--white-color);
+     color: var(--black-color);
+     padding: 15px;
+ }
+
+    .projects-container .card:hover {
+        background: var(--red-color);
+        color: var(--white-color);
+    }
+
+    .projects-container .card:hover .button {
+        background: var(--white-color);
+        color: var(--black-color);
+    }
+
+        .projects-container .card:hover .button.white {
+            border: 1px solid var(--black-color);
+        }
+
+.projects-container .card:hover .button:hover {
+    background: var(--black-color);
+    color: var(--white-color);
+    border: none;
+}
+
+    .projects-container .card a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .projects-container .card a:hover {
+        color: inherit;
+    }
+
+@media (max-width: 768px) {
+    .projects-container {
+        gap: 25px;
+    }
+
+    .projects-container .card {
+        width: 100%;
+    }
+
+}
+
+/* Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--black-color);
+    color: var(--white-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: var(--black-color);
+    color: var(--white-color);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    border: 1px solid var(--white-color)
+}
+
+.modal button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}

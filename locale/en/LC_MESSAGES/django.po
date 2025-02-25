@@ -467,3 +467,36 @@ msgstr "Project description"
 
 msgid "Create"
 msgstr "Create"
+
+msgid "Projects"
+msgstr "Projects"
+
+msgid "Delete"
+msgstr "Delete"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Are you sure you want to delete this project?"
+msgstr "Are you sure you want to delete this project?"
+
+msgid "Unable to delete project"
+msgstr "Unable to delete project"
+
+msgid "You are not allowed to delete this project"
+msgstr "You are not allowed to delete this project"
+
+msgid "Project deleted successfully"
+msgstr "Project deleted successfully"
+
+msgid "You are not allowed to edit this project"
+msgstr "You are not allowed to edit this project"
+
+msgid "Edit project"
+msgstr "Edit project"
+
+msgid "Save"
+msgstr "Save"
+
+msgid "Edit"
+msgstr "Edit"

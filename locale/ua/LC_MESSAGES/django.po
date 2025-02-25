@@ -476,3 +476,36 @@ msgstr "Опис проєкту"
 
 msgid "Create"
 msgstr "Створити"
+
+msgid "Projects"
+msgstr "Проєкти"
+
+msgid "Delete"
+msgstr "Видалити"
+
+msgid "Cancel"
+msgstr "Скасувати"
+
+msgid "Are you sure you want to delete this project?"
+msgstr "Ти впевнений, що хочеш видалити цей проєкт?"
+
+msgid "Unable to delete project"
+msgstr "Не вдалося видалити проєкт"
+
+msgid "You are not allowed to delete this project"
+msgstr "Ти не маєш права видаляти цей проєкт"
+
+msgid "Project deleted successfully"
+msgstr "Проєкт успішно видалено"
+
+msgid "You are not allowed to edit this project"
+msgstr "Ти не маєш права редагувати цей проєкт"
+
+msgid "Edit project"
+msgstr "Редагувати проєкт"
+
+msgid "Save"
+msgstr "Зберегти"
+
+msgid "Edit"
+msgstr "Редагувати"

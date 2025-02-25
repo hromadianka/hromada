@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<style>
+    .ck p {
+        color: var(--black-color);
+    }
+
+    .ck-placeholder {
+        font-weight: 400;
+    }
+</style>
+
+<div class="container">
+    <h1>{% trans 'Edit project' %}</h1>
+    <form method="POST" action="{% url 'project_edit' project.id %}" class="form">
+        {% csrf_token %}
+        <input required class="form-field" placeholder="{% trans 'Project name' %}" name="title" value="{{ project.title }}" style="margin-bottom: 10px" />
+        <textarea name="description" id="projectDescription">{{ project.description }}</textarea>
+        <button type="submit" class="button" style="margin-left: auto; margin-right: auto; margin-top: 25px">{% trans 'Save' %}</button>
+    </form>
+</div>
+
+<script>
+    ClassicEditor
+        .create(document.querySelector('#projectDescription'), {
+            toolbar: ['heading', '|', 'bold', 'italic', '|', 'link', '|', 'bulletedList', 'numberedList', 'blockQuote']
+        })
+        .catch(error => {
+            console.error(error);
+        });
+</script>
+
+{% endblock %}

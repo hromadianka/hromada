@@ -480,3 +480,36 @@ msgstr "Описание проекта"
 
 msgid "Create"
 msgstr "Создать"
+
+msgid "Projects"
+msgstr "Проекты"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Are you sure you want to delete this project?"
+msgstr "Ты уверен, что хочешь удалить этот проект?"
+
+msgid "Unable to delete project"
+msgstr "Невозможно удалить проект"
+
+msgid "You are not allowed to delete this project"
+msgstr "Ты не имеешь права удалять этот проект"
+
+msgid "Project deleted successfully"
+msgstr "Проект успешно удалён"
+
+msgid "You are not allowed to edit this project"
+msgstr "Ты не имеешь права редактировать этот проект"
+
+msgid "Edit project"
+msgstr "Редактировать проект"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Edit"
+msgstr "Редактировать"

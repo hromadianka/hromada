@@ -481,3 +481,37 @@ msgstr "Layihanıñ tarifı"
 
 msgid "Create"
 msgstr "Yarat"
+
+msgid "Projects"
+msgstr "Layihalar"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Cancel"
+msgstr "İptal et"
+
+msgid "Are you sure you want to delete this project?"
+msgstr "Sen bu layiheni silmek istegeniñge eminmisiñ?"
+
+msgid "Unable to delete project"
+msgstr "Layiheni silmek mümkün degil"
+
+msgid "You are not allowed to delete this project"
+msgstr "Sen bu layiheni silmek aqqına sahip degilsiñ"
+
+msgid "Project deleted successfully"
+msgstr "Layihe başarınen silindi"
+
+msgid "You are not allowed to edit this project"
+msgstr "Sen bu layiheni tahrir etmek aqqına sahip degilsiñ"
+
+msgid "Edit project"
+msgstr "Layihanı tahrir et"
+
+msgid "Save"
+msgstr "Saqlа"
+
+msgid "Edit"
+msgstr "Tahrir et"
+

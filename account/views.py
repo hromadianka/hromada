@@ -4,6 +4,7 @@ from .forms import UserRegistrationForm
 from .models import Profile
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
+from project.models import Project
 
 User = get_user_model() 
 
@@ -24,4 +25,5 @@ def register(request):
 
 @login_required
 def account(request):
-    return render(request, "account/account.html", {"user": request.user})
+    projects = Project.objects.filter(author=request.user)
+    return render(request, "account/account.html", {"user": request.user, "projects": projects})

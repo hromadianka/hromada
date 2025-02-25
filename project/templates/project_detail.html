@@ -5,8 +5,8 @@
 
 <div class="container">
     <h1>{{ project.title }}</h1>
-    <h6 style="text-transform: uppercase; margin-bottom: 20px; text-align: center">{{ project.author }}</h6>
     <p>{% autoescape off %}{{project.description }}{% endautoescape %}</p>
+    <h6 style="text-transform: uppercase; margin-top: 20px;">{{ project.author }}</h6>
 </div>
 
 {% endblock %}

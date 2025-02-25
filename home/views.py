@@ -7,7 +7,8 @@ from django.utils.translation import gettext as _
 # Create your views here.
 
 def home_page(request):
-    return render(request, 'home_page.html')
+    featured_projects = Project.objects.filter(is_featured=True).order_by("-created_at")
+    return render(request, 'home_page.html', {'featured_projects': featured_projects})
 
 def survey(request):
     if request.method == "POST":

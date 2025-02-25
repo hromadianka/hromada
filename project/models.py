@@ -10,4 +10,5 @@ class Project(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField(blank = True)
     created_at = models.DateTimeField(auto_now_add=True)
+    is_featured = models.BooleanField(default=False)
 

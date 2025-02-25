@@ -3,6 +3,7 @@ from django.contrib import messages
 from .models import SurveyResponse
 from django.utils.safestring import mark_safe
 from django.utils.translation import gettext as _
+from project.models import Project
 
 # Create your views here.
 

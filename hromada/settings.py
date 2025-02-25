@@ -87,14 +87,14 @@ AUTH_USER_MODEL = "account.User"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-jawsdb_url = os.environ.get('JAWSDB_URL')  # Тут была ошибка в твоём коде
+jawsdb_url = os.environ.get('JAWSDB_URL') 
 
 if jawsdb_url:
     url = urlparse(jawsdb_url)
 
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',  # Убедись, что это MySQL
+            'ENGINE': 'django.db.backends.mysql', 
             'NAME': url.path[1:],
             'USER': url.username,
             'PASSWORD': url.password,

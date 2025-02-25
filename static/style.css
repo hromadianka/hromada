@@ -731,7 +731,12 @@ input[type="range"] {
         color: inherit;
     }
 
+    .projects-container p {
+        margin-bottom: 0;
+    }
+
 @media (max-width: 768px) {
+
     .projects-container {
         gap: 25px;
     }

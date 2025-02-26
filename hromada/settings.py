@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['hromada-b4df642e405d.herokuapp.com']
 
@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
     'project.apps.ProjectConfig',
-    'create.apps.CreateConfig'
+    'create.apps.CreateConfig',
+    'search.apps.SearchConfig'
 ]
 
 MIDDLEWARE = [

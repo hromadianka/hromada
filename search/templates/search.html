@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container">
+    <div class="projects-container">
+        {% for project in all_projects %}
+        <div class="card">
+            <h3><a href="{% url 'project_detail' project.id %}">{{ project.title }}</a></h3>
+            <h6 style="text-transform: uppercase">{{ project.author }}</h6>
+            <p>{{ project.description|striptags|truncatechars:160|safe|default:"" }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

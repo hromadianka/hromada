@@ -500,3 +500,15 @@ msgstr "Save"
 
 msgid "Edit"
 msgstr "Edit"
+
+msgid "Delete my data"
+msgstr "Delete my data"
+
+msgid "Are you sure you want to delete your account and all associated data?"
+msgstr "Are you sure you want to delete your account and all associated data?"
+
+msgid "Unable to delete account"
+msgstr "Unable to delete account"
+
+msgid "Account deleted"
+msgstr "Account deleted"

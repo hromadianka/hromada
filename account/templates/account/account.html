@@ -8,11 +8,23 @@
     <h1>{% trans "My account" %}</h1>
 
     <section style="display: flex; flex-direction: column; gap: 16px;" class="buttons-section">
-        <a href="{% url 'password_change' %}" class="button">{% trans "Change password" %}</a>
+        <a href="{% url 'password_change' %}" class="button white">{% trans "Change password" %}</a>
         <form action="{% url 'logout' %}" method="post">
             {% csrf_token %}
-            <button type="submit" class="button white">{% trans "Log out" %}</button>
+            <button type="submit" class="button black">{% trans "Log out" %}</button>
         </form>
+        <button class="button delete-user-btn">
+            {% trans 'Delete my data' %}
+        </button>
+
+        <div id="deleteUserModal" class="modal">
+            <div class="modal-content">
+                <p>{% trans 'Are you sure you want to delete your account and all associated data?' %}</p>
+                <button id="confirmDeleteUser" class="button">{% trans 'Delete' %}</button>
+                <button id="cancelDeleteUser" class="button white">{% trans 'Cancel' %}</button>
+            </div>
+        </div>
+
     </section>
 
     <section style="margin-top: 30px;">
@@ -89,7 +101,7 @@
             })
                 .then(response => response.json())
                 .then(data => {
-                    if (data.message) { 
+                    if (data.message) {
                         window.location.reload();
                     } else {
                         alert("Error: " + (data.error || "{% trans 'Unable to delete project' %}"));
@@ -108,4 +120,48 @@
     });
 
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const deleteUserBtn = document.querySelector(".delete-user-btn");
+        const userModal = document.getElementById("deleteUserModal");
+        const confirmUserBtn = document.getElementById("confirmDeleteUser");
+        const cancelUserBtn = document.getElementById("cancelDeleteUser");
+        let deleteUserUrl = "/account/delete-data/";
+
+        deleteUserBtn.addEventListener("click", function () {
+            userModal.style.display = "flex";
+        });
+
+        cancelUserBtn.addEventListener("click", function () {
+            userModal.style.display = "none";
+        });
+
+        confirmUserBtn.addEventListener("click", function () {
+            fetch(deleteUserUrl, {
+                method: "POST",
+                headers: {
+                    "X-CSRFToken": "{{ csrf_token }}"
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.message) {
+                        window.location.href = "/";
+                    } else {
+                        alert("Error: " + (data.error || "{% trans 'Unable to delete account' %}"));
+                    }
+                })
+                .catch(error => console.error("Error:", error));
+
+            userModal.style.display = "none";
+        });
+
+        window.addEventListener("click", function (e) {
+            if (e.target === userModal) {
+                userModal.style.display = "none";
+            }
+        });
+    });
+</script>
+
 {% endblock %}

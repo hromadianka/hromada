@@ -513,3 +513,15 @@ msgstr "Сохранить"
 
 msgid "Edit"
 msgstr "Редактировать"
+
+msgid "Delete my data"
+msgstr "Удалить мои данные"
+
+msgid "Are you sure you want to delete your account and all associated data?"
+msgstr "Ты уверен, что хочешь удалить свой аккаунт и все связанные данные?"
+
+msgid "Unable to delete account"
+msgstr "Не удалось удалить аккаунт"
+
+msgid "Account deleted"
+msgstr "Аккаунт удалён"

@@ -515,3 +515,14 @@ msgstr "Saqlа"
 msgid "Edit"
 msgstr "Tahrir et"
 
+msgid "Delete my data"
+msgstr "Meniñ malümatlarımnı öçür"
+
+msgid "Are you sure you want to delete your account and all associated data?"
+msgstr "Eminsiñmi ki, hesabıñnı ve bağlı malümatlarnı öçürmek isteysiñ?"
+
+msgid "Unable to delete account"
+msgstr "Hesap öçürülemedi"
+
+msgid "Account deleted"
+msgstr "Hesap öçürüldi"

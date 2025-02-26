@@ -9,8 +9,21 @@
         <form method="post">
             {% csrf_token %}
 
+             {% if user_form.errors %}
+                <div>
+                    {% for field, errors in user_form.errors.items %}
+                        {% for error in errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+
             {% for field in user_form %}
             <p>{{ field.label_tag }} {{ field }}</p>
+             {% if field.errors %}
+                <span>{{ field.errors.0 }}</span>
+             {% endif %}
             {% endfor %}
 
             <p>

@@ -512,3 +512,12 @@ msgstr "Unable to delete account"
 
 msgid "Account deleted"
 msgstr "Account deleted"
+
+msgid "Why do our activists take part in Hromada?"
+msgstr "Why do our activists take part in Hromada?"
+
+msgid "You can add your own reason to inspire others"
+msgstr "You can add your own reason to inspire others"
+
+msgid "Your reason has been submitted for moderation"
+msgstr "Your reason has been submitted for moderation"

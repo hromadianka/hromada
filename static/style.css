@@ -632,6 +632,30 @@ input[type="range"] {
     margin-bottom: 0;
 }
 
+/* Social Section */
+
+.social-reasons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.social-reasons-container .card {
+    background: var(--white-color);
+    color: var(--black-color);
+    padding: 0 8px;
+    width: fit-content;
+}
+
+    .social-reasons-container .button {
+        border: 1px solid var(--red-color)
+    }
+    
+    .social-reasons-container .button:hover {
+        border: 1px solid var(--white-color);
+    }
+
 /* Task Section */
 
 .task-section {

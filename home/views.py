@@ -4,12 +4,25 @@ from .models import SurveyResponse
 from django.utils.safestring import mark_safe
 from django.utils.translation import gettext as _
 from project.models import Project
+from .models import SocialReason
+from django.http import JsonResponse
+from django.utils.translation import get_language
 
 # Create your views here.
 
 def home_page(request):
     featured_projects = Project.objects.filter(is_featured=True).order_by("-created_at")
-    return render(request, 'home_page.html', {'featured_projects': featured_projects})
+
+    selected_language = get_language()
+    if not SocialReason.objects.filter(language=selected_language).exists():
+        selected_language = "en"
+    social_reasons = SocialReason.objects.filter(was_approved=True, language=selected_language)
+
+    context = {
+        'featured_projects': featured_projects,
+        'social_reasons': social_reasons,
+    }
+    return render(request, 'home_page.html', context)
 
 def survey(request):
     if request.method == "POST":
@@ -54,3 +67,15 @@ def choose_tasks(request):
             messages.warning(request, _("Tasks Failure Message"))
 
     return redirect("home_page")
+
+def add_reason(request):
+    if request.method == 'POST':
+        reason_text = request.POST.get('reason_text')
+
+        if not reason_text:
+            return JsonResponse({"error": "Reason cannot be empty"}, status=400)
+
+        SocialReason.objects.create(text=reason_text)
+        return JsonResponse({"success": True})
+
+    return JsonResponse({"error": "Invalid request"}, status=400)

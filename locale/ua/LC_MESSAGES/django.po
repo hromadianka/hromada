@@ -521,3 +521,12 @@ msgstr "Не вдалося видалити акаунт"
 
 msgid "Account deleted"
 msgstr "Акаунт видалено"
+
+msgid "Why do our activists take part in Hromada?"
+msgstr "Чому наші активісти беруть участь у Громаді?"
+
+msgid "You can add your own reason to inspire others"
+msgstr "Ти можеш додати свою причину, щоб надихнути інших"
+
+msgid "Your reason has been submitted for moderation"
+msgstr "Твою причину відправлено на модерацію"

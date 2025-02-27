@@ -1,4 +1,4 @@
-from django.db import models
+﻿from django.db import models
 
 # Create your models here.
 
@@ -27,3 +27,19 @@ class SurveyResponse(models.Model):
 
     def __str__(self):
         return f"SurveyResponse {self.id} - {self.age} years old"
+
+
+class SocialReason(models.Model):
+    LANGUAGE_CHOICES = [
+        ('en', 'English'),
+        ('ru', 'Русский'),
+        ('ua', 'Українська'),
+        ('ct', 'Qırımtatarca'),
+    ]
+
+    text = models.CharField(max_length=255, blank=True, null=True)
+    was_approved = models.BooleanField(default=False)
+    language = models.CharField(max_length=2, choices=LANGUAGE_CHOICES, blank=True)
+
+    def __str__(self):
+        return self.text

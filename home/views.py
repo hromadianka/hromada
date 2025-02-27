@@ -14,8 +14,6 @@ def home_page(request):
     featured_projects = Project.objects.filter(is_featured=True).order_by("-created_at")
 
     selected_language = get_language()
-    if not SocialReason.objects.filter(language=selected_language).exists():
-        selected_language = "en"
     social_reasons = SocialReason.objects.filter(was_approved=True, language=selected_language)
 
     context = {

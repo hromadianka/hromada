@@ -66,11 +66,11 @@
             </ul>
             <p>{{ _("Answer 5")|linebreaks }}</p>
         </div>
-        <div class="faq-question" style="margin-bottom: 0;">
+        <div class="faq-question" style="margin-bottom: 0; padding-bottom: 0">
             <ul>
                 <li>{% trans "Question 6" %}</li>
             </ul>
-            <p style="margin-bottom: 0;">{{ _("Answer 6")|linebreaks }}</p>
+            <p>{{ _("Answer 6")|linebreaks }}</p>
         </div>
     </div>
 
@@ -89,17 +89,28 @@
                 background: url("{% static 'images/icons/think-emodji.png' %}") no-repeat;
                 background-size: cover;
             }
+
+        .faq-question:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .faq-question:last-child p {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
     </style>
 
     <div class="social-section" style="margin-top: 20px">
-        <h1 style="margin-bottom: 5px">{% trans 'Why do our activists take part in Hromada?' %}</h1>
+        <h1 style="margin-bottom: 15px">{% trans 'Why do our activists take part in Hromada?' %}</h1>
         <p style="margin-bottom: 30px; text-align: center">{% trans 'You can add your own reason to inspire others' %}</p>
         <div class="social-reasons-container">
             {% for reason in social_reasons %}
             <div class="card">{{ reason.text }}</div>
             {% endfor %}
             <form id="reasonForm" style="display: flex; align-items: center; gap: 6px">
-                <input type="text" name="reason_text" class="form-field" style="padding: 1px 8px; width: 100px" required />
+                <input type="text" name="reason_text" class="form-field" style="padding: 1px 8px;" required />
                 <button type="submit" class="button" style="border-radius: 50%; width: min-content; height: min-content; padding: 1px 11px; font-size: 26px">+</button>
             </form>
 

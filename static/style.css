@@ -68,6 +68,7 @@ h1 {
     margin-bottom: 30px;
     font-size: 2.5rem;
     text-align: center;
+    line-height: 140%;
 }
 
 h2 {
@@ -211,14 +212,14 @@ header ul {
 @media (max-width: 768px) {
 
        .logo {
-        width: 80px;
-        height: 80px;
+        width: 95px;
+        height: 95px;
     }
 
     .bar {
-        width: 44px;
+        width: 55px;
         height: 3px;
-        margin: 7px 0;
+        margin: 9px 0;
     }
 
     .menu {
@@ -485,6 +486,7 @@ label, form p {
         align-items: center;
         justify-content: center;
         position: relative;
+        flex-shrink: 0;
     }
 
         .radio-option input:checked {
@@ -656,6 +658,23 @@ input[type="range"] {
         border: 1px solid var(--white-color);
     }
 
+    .social-reasons-container input {
+        width: 100px;
+    }
+
+    @media (max-width: 768px) {
+
+        .social-reasons-container form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .social-reasons-container input {
+            width: 150px;
+        }
+
+}
+
 /* Task Section */
 
 .task-section {
@@ -699,6 +718,7 @@ input[type="range"] {
     cursor: pointer;
     transition: background 0.3s;
     position: relative;
+    flex-shrink: 0;
 }
 
     .task input:checked {
@@ -710,6 +730,19 @@ input[type="range"] {
             color: var(--black-color);
             padding: 5px;
         }
+
+@media (max-width: 768px) {
+
+    .task-section button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .task {
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+}
 
  /* Projects Cards */
 

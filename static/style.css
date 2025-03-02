@@ -353,7 +353,9 @@ body {
 }
 
 main {
-    flex-grow: 0.5;
+    flex-grow: 0.6;
+    display: flex;
+    align-items: center;
 }
 
     /* Main Page */

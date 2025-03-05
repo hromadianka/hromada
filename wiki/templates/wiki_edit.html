@@ -1,0 +1,91 @@
+﻿{% extends 'base.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>{% trans 'Editing' %}: {{ node.content|safe }}</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <textarea class="editor" id="proposed_content_{{ node.id }}" name="proposed_content_{{ node.id }}" required>
+        {{ node.content|truncatechars:50 }}
+    </textarea>
+
+        {% for child in children %}
+        <h3 style="margin-bottom: 16px; margin-top: 30px">{% trans 'Editing Ghild' %}:</h3>
+        <textarea class="editor" id="proposed_content_{{ child.id }}" name="proposed_content_{{ child.id }}" required>
+            {{ child.content }}
+        </textarea>
+        {% endfor %}
+
+        <button type="submit" class="button" style="margin-top: 30px; margin-left: auto; margin-right: auto">{% trans 'Save' %}</button>
+    </form>
+
+    <a href="{% url 'wiki' %}" class="button black" style="margin-top: 16px; margin-left: auto; margin-right: auto">{% trans 'Back to Wiki' %}</a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".editor").forEach(textarea => {
+                ClassicEditor
+                    .create(textarea, {
+                        toolbar: [
+                            'heading', '|', 'bold', 'italic', '|', 'link', 'imageUpload', 'mediaEmbed', '|',
+                            'bulletedList', 'numberedList', 'blockQuote'
+                        ],
+                        ckfinder: {
+                            uploadUrl: '/ckeditor/upload/'
+                        }
+                    })
+                    .catch(error => console.error(error));
+            });
+        });
+    </script>
+
+    <div id="successModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <p>✅ {% trans 'Your edits have been submitted for moderation!' %}</p>
+            <button id="closeSuccessModal">OK</button>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            fetch(window.location.href, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "X-CSRFToken": "{{ csrf_token }}"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById("successModal").style.display = "flex";
+                } else {
+                    alert(data.error || "{% trans 'Something went wrong' %}");
+                }
+            })
+            .catch(error => console.error("Error:", error));
+        });
+
+        document.getElementById("closeSuccessModal").addEventListener("click", function () {
+            document.getElementById("successModal").style.display = "none";
+            window.location.href = "{% url 'wiki' %}"
+        });
+    });
+    </script>
+</div>
+
+{% endblock %}
+

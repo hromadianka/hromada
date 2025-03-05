@@ -31,6 +31,7 @@ body {
 .container {
     padding: 20px;
     margin: 0 auto;
+    width: 1200px;
     max-width: 1200px;
 }
 
@@ -619,6 +620,15 @@ input[type="range"] {
         background: #b92a2a;
     }
 
+.ck p {
+    color: var(--black-color);
+    font-weight: 400;
+}
+
+.ck-placeholder {
+    font-weight: 400;
+}
+
 /* Callout */
 
 .callout {
@@ -847,3 +857,18 @@ input[type="range"] {
     margin-right: auto;
     margin-top: 15px;
 }
+
+/* Toggle */
+
+.toggle {
+    padding-inline-start: 0em;
+    list-style-type: none;
+}
+
+    .toggle > li > details {
+        padding-left: 1.7em;
+    }
+
+        .toggle > li > details > summary {
+            margin-left: -1.1em;
+        }

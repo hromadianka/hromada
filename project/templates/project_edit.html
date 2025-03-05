@@ -3,16 +3,6 @@
 
 {% block content %}
 
-<style>
-    .ck p {
-        color: var(--black-color);
-    }
-
-    .ck-placeholder {
-        font-weight: 400;
-    }
-</style>
-
 <div class="container">
     <h1>{% trans 'Edit project' %}</h1>
     <form method="POST" action="{% url 'project_edit' project.id %}" class="form">

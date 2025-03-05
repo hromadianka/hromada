@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>{% trans 'Вики' %}</h1>
+
+    <div class="callout">
+        <img src="{% static 'images/icons/books-emoji.png' %}" alt="" />
+        <span>
+            {% trans 'Це наша Вікі: інформація, яку ти можеш використовувати у своєму активізмі. Ти можеш редагувати і доповнювати цю інформацію' %}
+        </span>
+    </div>
+
+    <ul class="toggle">
+        {% for node in nodes %}
+        {% include "wiki_node.html" with node=node %}
+        {% empty %}
+        <li style="list-style: none;">{% trans 'Тут поки немає контенту. Але він невдовзі з\'явиться!' %}</li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+<li>
+    {% if node.children.exists %}
+    <style>
+        summary * {
+            display: inline;
+        }
+    </style>
+    <details>
+        <summary>
+            <strong>{% autoescape off %}{{ node.content }}{% endautoescape %}</strong>
+            <a href="{% url 'wiki_edit' node.id %}" class="edit-link">✏️ Edit</a>
+        </summary>
+        <ul class="toggle">
+            {% for child in node.children.all %}
+            {% include "wiki_node.html" with node=child %}
+            {% endfor %}
+        </ul>
+    </details>
+    {% else %}
+    {% autoescape off %}{{ node.content }}{% endautoescape %}
+    {% endif %}
+</li>
+

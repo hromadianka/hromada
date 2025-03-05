@@ -536,3 +536,20 @@ msgstr "Sen başqalarını ilhamlandırmaq içün öz sebebiñni qoşabilesiñ"
 msgid "Your reason has been submitted for moderation"
 msgstr "Sebebiñ moderatsiya içün yiberildi"
 
+msgid "Editing"
+msgstr "Tahrirlash"
+
+msgid "Editing Child"
+msgstr "Bölümni tahrirlav"
+
+msgid "Back to Wiki"
+msgstr "Vikige qaytış"
+
+msgid "Something went wrong"
+msgstr "Bir şey yanlış ketti"
+
+msgid "Це наша Вікі: інформація, яку ти можеш використовувати у своєму активізмі. Ти можеш редагувати і доповнювати цю інформацію"
+msgstr "Bu bizim Viki'mizdir: bu malümatnı öz aktivizmiñizde qullana bileceksiniz. Onı tahrirlap ve toluqlap olabilirsiniz."
+
+msgid "Тут поки немає контенту. Але він невдовзі з'явиться!"
+msgstr "Bu yerde içerik yoq. Amma yaqında peyda olacaq!"

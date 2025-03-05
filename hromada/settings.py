@@ -42,10 +42,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ckeditor',
     'home.apps.HomeConfig',
     'project.apps.ProjectConfig',
     'create.apps.CreateConfig',
-    'search.apps.SearchConfig'
+    'search.apps.SearchConfig',
+    'wiki.apps.WikiConfig'
 ]
 
 MIDDLEWARE = [
@@ -183,3 +185,17 @@ EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = os.environ['DEFAULT_FROM_EMAIL']
+
+# CKEditor
+
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+CKEDITOR_IMAGE_BACKEND = "pillow"
+CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' 
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'extraAllowedContent': 'iframe[*]; img[*]; video[*]; source[*]; figure(*)',
+        'removePlugins': 'exportpdf',
+        'extraPlugins': 'image2,embed,autoembed',
+    }
+}

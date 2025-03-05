@@ -54,36 +54,41 @@
     </div>
 
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector("form");
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
 
-            const formData = new FormData(form);
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
 
-            fetch(window.location.href, {
-                method: "POST",
-                body: formData,
-                headers: {
-                    "X-CSRFToken": "{{ csrf_token }}"
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    document.getElementById("successModal").style.display = "flex";
-                } else {
-                    alert(data.error || "{% trans 'Something went wrong' %}");
-                }
-            })
-            .catch(error => console.error("Error:", error));
+                const formData = new FormData(form);
+
+                fetch(window.location.href, {
+                    method: "POST",
+                    body: formData,
+                    headers: {
+                        "X-Requested-With": "XMLHttpRequest",
+                        "X-CSRFToken": "{{ csrf_token }}"
+                    }
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            document.getElementById("successModal").style.display = "flex";
+                        } else {
+                            alert(data.error || "{% trans 'Something went wrong' %}");
+                        }
+                    })
+                    .catch(() => {
+                        alert("{% trans 'Something went wrong' %}");
+                    });
+            });
+
+            document.getElementById("closeSuccessModal").addEventListener("click", function () {
+                document.getElementById("successModal").style.display = "none";
+                window.location.href = "{% url 'wiki' %}";
+            });
         });
 
-        document.getElementById("closeSuccessModal").addEventListener("click", function () {
-            document.getElementById("successModal").style.display = "none";
-            window.location.href = "{% url 'wiki' %}"
-        });
-    });
     </script>
 </div>
 

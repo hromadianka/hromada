@@ -9,7 +9,7 @@
 
     <h1>{% trans 'Вики' %}</h1>
 
-    <div class="callout">
+    <div class="callout" style="margin-bottom: 30px">
         <img src="{% static 'images/icons/books-emoji.png' %}" alt="" />
         <span>
             {% trans 'Це наша Вікі: інформація, яку ти можеш використовувати у своєму активізмі. Ти можеш редагувати і доповнювати цю інформацію' %}
@@ -20,7 +20,8 @@
         {% for node in nodes %}
         {% include "wiki_node.html" with node=node %}
         {% empty %}
-        <li style="list-style: none;">{% trans 'Тут поки немає контенту. Але він невдовзі з\'явиться!' %}</li>
+    </ul>
+        <p>{% trans 'Тут поки немає контенту. Але він невдовзі з\'явиться!' %}</li>
         {% endfor %}
     </ul>
 

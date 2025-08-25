@@ -25,6 +25,14 @@
         {% endfor %}
     </ul>
 
+    <button id="addRootToggle" class="button" style="margin-top: 30px">+ {% trans 'Add New Toggle' %}</button>
+
 </div>
+
+<script>
+    document.getElementById("addRootToggle").addEventListener("click", function () {
+        window.location.href = "/wiki/add/";
+    });
+</script>
 
 {% endblock %}

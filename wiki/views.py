@@ -1,7 +1,9 @@
-from django.shortcuts import render, get_object_or_404
+﻿from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 from .models import WikiNode, WikiEdit
 from django.utils.translation import get_language
+from django.urls import reverse
+from django.contrib import messages
 
 # Create your views here.
 
@@ -40,3 +42,54 @@ def wiki_edit(request, node_id):
         return JsonResponse({"success": True})
 
     return render(request, "wiki_edit.html", {"node": node, "children": children})
+
+def wiki_add(request, parent_id=None):
+    parent = None
+    selected_language = get_language()
+    if parent_id:
+        parent = get_object_or_404(WikiNode, id=parent_id)
+
+    if request.method == "POST":
+        content = request.POST.get("content", "").strip()
+
+        if not content:
+            if request.headers.get("x-requested-with") == "XMLHttpRequest":
+                return JsonResponse({"success": False, "error": _("Content cannot be empty")}, status=400)
+            messages.error(request, _("Content cannot be empty"))
+            return redirect("wiki")
+
+        try:
+            new_node = WikiNode.objects.create(
+                content=content,
+                parent=parent,
+                author=request.user if request.user.is_authenticated else None,
+                language=selected_language,
+            )
+
+            WikiEdit.objects.create(
+                node=new_node,
+                proposed_content=content,
+                author=request.user if request.user.is_authenticated else None,
+                language=selected_language,
+            )
+
+            if request.headers.get("x-requested-with") == "XMLHttpRequest":
+                return JsonResponse({"success": True})
+
+            messages.success(request, _("Your edits have been submitted for moderation!"))
+            return redirect("wiki")
+
+        except Exception as e:
+            if request.headers.get("x-requested-with") == "XMLHttpRequest":
+                return JsonResponse({"success": False, "error": str(e)}, status=500)
+            messages.error(request, _("Something went wrong"))
+            return redirect("wiki")
+
+    return render(request, "wiki_add.html", {
+        "parent": parent,
+        "parent_url": parent_id and reverse('wiki_add_child', kwargs={'parent_id': parent_id}) or reverse('wiki_add'),
+    })
+
+
+
+

@@ -22,8 +22,8 @@ class WikiNode(MPTTModel):
     
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
-    language = models.CharField(max_length=2, choices=LANGUAGE_CHOICES, blank=True)
+    author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, blank=True, null=True)
+    language = models.CharField(max_length=2, choices=LANGUAGE_CHOICES, blank=True, null=True)
     
     is_moderated = models.BooleanField(default=False)
     order = models.PositiveIntegerField(default=0, editable=False)
@@ -44,11 +44,19 @@ class WikiNode(MPTTModel):
         return self.content[:50]
 
 class WikiEdit(models.Model):
+    LANGUAGE_CHOICES = [
+        ('en', 'English'),
+        ('ru', 'Русский'),
+        ('ua', 'Українська'),
+        ('ct', 'Qırımtatarca'),
+    ]
+
     node = models.ForeignKey(WikiNode, on_delete=models.CASCADE, related_name='edits')
     proposed_content = RichTextField()
     author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     is_approved = models.BooleanField(default=False)
+    language = models.CharField(max_length=2, choices=LANGUAGE_CHOICES, blank=True, null=True)
 
     class Meta:
         ordering = ['created_at']

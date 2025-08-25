@@ -7,8 +7,9 @@
     "\\home",
     "\\home\\templates",
     "\\search",
-    "\\static"
+    "\\static",
+    "\\wiki"
   ],
-  "SelectedNode": "\\home\\admin.py",
+  "SelectedNode": "\\wiki\\models.py",
   "PreviewInSolutionExplorer": false
 }

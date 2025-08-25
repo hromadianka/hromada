@@ -4,5 +4,5 @@ from project.models import Project
 # Create your views here.
 
 def search(request):
-    all_projects = Project.object.all()
-    return (request, 'search.html', {'all_projects': all_projects})
+    all_projects = Project.objects.all()
+    return render(request, 'search.html', {'all_projects': all_projects})

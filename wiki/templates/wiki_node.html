@@ -8,7 +8,8 @@
     <details>
         <summary>
             <strong>{% autoescape off %}{{ node.content }}{% endautoescape %}</strong>
-            <a href="{% url 'wiki_edit' node.id %}" class="edit-link">✏️ Edit</a>
+            <a href="{% url 'wiki_edit' node.id %}" class="edit-link" style="margin-left: 15px">Edit</a>
+            <a href="{% url 'wiki_add_child' node.id %}" class="add-child" style="margin-left: 10px">+</a>
         </summary>
         <ul class="toggle">
             {% for child in node.children.all %}
@@ -17,7 +18,12 @@
         </ul>
     </details>
     {% else %}
+    <style>
+        .toggle li {
+            display: flex;
+        }
+    </style>
     {% autoescape off %}{{ node.content }}{% endautoescape %}
+    <a href="{% url 'wiki_add_child' node.id %}" class="add-child" style="margin-left: 10px">+</a>
     {% endif %}
 </li>
-

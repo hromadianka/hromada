@@ -9,7 +9,7 @@
 
     <h1>{% trans 'Editing' %}: {{ node.content|safe }}</h1>
 
-    <form method="POST">
+    <form method="POST" id="formEdit">
         {% csrf_token %}
 
         <textarea class="editor" id="proposed_content_{{ node.id }}" name="proposed_content_{{ node.id }}" required>
@@ -17,7 +17,7 @@
     </textarea>
 
         {% for child in children %}
-        <h3 style="margin-bottom: 16px; margin-top: 30px">{% trans 'Editing Ghild' %}:</h3>
+        <h3 style="margin-bottom: 16px; margin-top: 30px">{% trans 'Editing Child' %}:</h3>
         <textarea class="editor" id="proposed_content_{{ child.id }}" name="proposed_content_{{ child.id }}" required>
             {{ child.content }}
         </textarea>
@@ -49,13 +49,29 @@
     <div id="successModal" class="modal" style="display: none;">
         <div class="modal-content">
             <p>✅ {% trans 'Your edits have been submitted for moderation!' %}</p>
-            <button id="closeSuccessModal">OK</button>
+            <button id="closeSuccessModal" style="button">OK</button>
+        </div>
+    </div>
+
+    <div id="errorModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <p id="errorMessage"></p>
+            <button id="closeErrorModal">OK</button>
         </div>
     </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const form = document.querySelector("form");
+            const form = document.getElementById('formEdit');
+            const successModal = document.getElementById("successModal");
+            const errorModal = document.getElementById("errorModal");
+            const errorMessage = document.getElementById("errorMessage");
+
+            function getCookie(name) {
+                const m = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
+                return m ? m.pop() : '';
+            }
+            const csrftoken = getCookie("csrftoken");
 
             form.addEventListener("submit", function (e) {
                 e.preventDefault();
@@ -67,30 +83,37 @@
                     body: formData,
                     headers: {
                         "X-Requested-With": "XMLHttpRequest",
-                        "X-CSRFToken": "{{ csrf_token }}"
+                        "X-CSRFToken": csrftoken,
+                        "Accept": "application/json"
                     }
                 })
                     .then(response => response.json())
                     .then(data => {
                         if (data.success) {
-                            document.getElementById("successModal").style.display = "flex";
+                            successModal.style.display = "flex";
                         } else {
-                            alert(data.error || "{% trans 'Something went wrong' %}");
+                            errorMessage.textContent = data.error || "{% trans 'Something went wrong' %}";
+                            errorModal.style.display = "flex";
                         }
                     })
                     .catch(() => {
-                        alert("{% trans 'Something went wrong' %}");
+                        errorMessage.textContent = "{% trans 'Something went wrong' %}";
+                        errorModal.style.display = "flex";
                     });
             });
 
             document.getElementById("closeSuccessModal").addEventListener("click", function () {
-                document.getElementById("successModal").style.display = "none";
+                successModal.style.display = "none";
                 window.location.href = "{% url 'wiki' %}";
             });
-        });
 
+            document.getElementById("closeErrorModal").addEventListener("click", function () {
+                errorModal.style.display = "none";
+            });
+        });
     </script>
 </div>
+
 
 {% endblock %}
 

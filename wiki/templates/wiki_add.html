@@ -1,0 +1,110 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container">
+    <h1>{% trans 'Add New Toggle' %}</h1>
+
+    <form method="POST" id="formAddToggle">
+        {% csrf_token %}
+        <textarea id="editor" name="content" class="form-field"></textarea>
+
+        {% if parent %}
+        <input type="hidden" name="parent_id" value="{{ parent.id }}">
+        {% endif %}
+
+        <button type="submit" class="button" style="margin-top: 30px; margin-left: auto; margin-right: auto">
+            {% trans 'Save' %}
+        </button>
+    </form>
+
+    <a href="{% url 'wiki' %}" class="button black" style="margin-top: 16px; margin-left: auto; margin-right: auto">
+        {% trans 'Back to Wiki' %}
+    </a>
+
+    <div id="successModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <p>✅ {% trans 'Your edits have been submitted for moderation!' %}</p>
+            <button id="closeSuccessModal" class="button">OK</button>
+        </div>
+    </div>
+
+    <div id="errorModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <p id="errorMessage"></p>
+            <button id="closeErrorModal" class="button">OK</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("formAddToggle");
+        const editorElement = document.getElementById("editor");
+        let editorInstance;
+
+        ClassicEditor.create(editorElement, {
+            toolbar: ['heading', '|', 'bold', 'italic', '|', 'link', 'imageUpload', 'mediaEmbed', '|', 'bulletedList', 'numberedList', 'blockQuote'],
+            ckfinder: { uploadUrl: '/ckeditor/upload/' }
+        }).then(ed => { editorInstance = ed; })
+            .catch(err => console.error("CKEditor error:", err));
+
+        function getCookie(name) {
+            const m = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
+            return m ? m.pop() : '';
+        }
+        const csrftoken = getCookie("csrftoken");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            if (editorInstance) {
+                editorElement.value = editorInstance.getData();
+            }
+
+            const formData = new FormData(form);
+
+            fetch(window.location.href, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "X-Requested-With": "XMLHttpRequest",
+                    "X-CSRFToken": csrftoken,
+                    "Accept": "application/json"
+                }
+            })
+                .then(resp => resp.json())
+                .then(data => {
+                    if (data.success) {
+                        document.getElementById("successModal").style.display = "flex";
+                    } else {
+                        document.getElementById("errorMessage").textContent = data.error || "{% trans 'Something went wrong' %}";
+                        document.getElementById("errorModal").style.display = "flex";
+                    }
+                })
+                .catch(() => {
+                    document.getElementById("errorMessage").textContent = "{% trans 'Something went wrong' %}";
+                    document.getElementById("errorModal").style.display = "flex";
+                });
+        });
+
+        document.getElementById("closeSuccessModal").addEventListener("click", function () {
+            document.getElementById("successModal").style.display = "none";
+            window.location.href = "{% url 'wiki' %}";
+        });
+
+        document.getElementById("closeErrorModal").addEventListener("click", function () {
+            document.getElementById("errorModal").style.display = "none";
+        });
+    });
+</script>
+
+
+
+
+
+
+{% endblock %}
+

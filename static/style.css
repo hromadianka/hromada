@@ -863,12 +863,14 @@ input[type="range"] {
 .toggle {
     padding-inline-start: 0em;
     list-style-type: none;
+    margin-left: 1.7em;
+    margin-bottom: 10px;
 }
 
-    .toggle > li > details {
-        padding-left: 1.7em;
-    }
+summary {
+    margin-bottom: 10px;
+}
 
-        .toggle > li > details > summary {
-            margin-left: -1.1em;
-        }
+.toggle *:last-child {
+    margin-bottom: 0;
+}

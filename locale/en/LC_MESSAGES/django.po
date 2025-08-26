@@ -539,3 +539,9 @@ msgstr "This is our Wiki: information you can use in your activism. You can edit
 
 msgid "Тут поки немає контенту. Але він невдовзі з'явиться!"
 msgstr "There is no content yet. But it will appear soon!"
+
+msgid "Your edits have been submitted for moderation!"
+msgstr "Your edits have been submitted for moderation!"
+
+msgid "Add New Toggle"
+msgstr "Add New Toggle"

@@ -553,3 +553,9 @@ msgstr "Bu bizim Viki'mizdir: bu malümatnı öz aktivizmiñizde qullana bilecek
 
 msgid "Тут поки немає контенту. Але він невдовзі з'явиться!"
 msgstr "Bu yerde içerik yoq. Amma yaqında peyda olacaq!"
+
+msgid "Your edits have been submitted for moderation!"
+msgstr "Tüzetişleriñiz moderatsiya içün yibерildi!"
+
+msgid "Add New Toggle"
+msgstr "Yañı bölük ekle"

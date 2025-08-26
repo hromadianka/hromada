@@ -6,7 +6,6 @@
 {% block content %}
 
 <div class="container">
-
     <h1>{% trans 'Вики' %}</h1>
 
     <div class="callout" style="margin-bottom: 30px">
@@ -20,14 +19,20 @@
         {% for node in nodes %}
         {% include "wiki_node.html" with node=node %}
         {% empty %}
-    </ul>
-        <p>{% trans 'Тут поки немає контенту. Але він невдовзі з\'явиться!' %}</li>
+        <p>{% trans "Тут поки немає контенту. Але він невдовзі з'явиться!" %}</p>
+        <style>
+            .toggle {
+                margin-left: 0;
+            }
+        </style>
         {% endfor %}
     </ul>
 
-    <button id="addRootToggle" class="button" style="margin-top: 30px">+ {% trans 'Add New Toggle' %}</button>
-
+    <button id="addRootToggle" class="button" style="margin-top: 30px">
+        + {% trans 'Add New Toggle' %}
+    </button>
 </div>
+
 
 <script>
     document.getElementById("addRootToggle").addEventListener("click", function () {

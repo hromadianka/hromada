@@ -1,5 +1,5 @@
 <li>
-    {% if node.children.exists %}
+    {% if node.visible_children and node.visible_children|length > 0 %}
     <style>
         summary * {
             display: inline;
@@ -12,7 +12,7 @@
             <a href="{% url 'wiki_add_child' node.id %}" class="add-child" style="margin-left: 10px">+</a>
         </summary>
         <ul class="toggle">
-            {% for child in node.children.all %}
+            {% for child in node.visible_children %}
             {% include "wiki_node.html" with node=child %}
             {% endfor %}
         </ul>

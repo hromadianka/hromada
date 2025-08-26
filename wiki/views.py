@@ -4,12 +4,25 @@ from .models import WikiNode, WikiEdit
 from django.utils.translation import get_language
 from django.urls import reverse
 from django.contrib import messages
+from django.db.models import Prefetch
+from django.utils.translation import gettext as _
 
 # Create your views here.
 
 def wiki(request):
     selected_language = get_language()
-    nodes = WikiNode.objects.filter(parent=None, language=selected_language).prefetch_related('children')
+
+    children_qs = WikiNode.objects.filter(
+        is_moderated=True,
+        language=selected_language,
+    ).order_by('order', 'created_at')
+
+    nodes = (
+        WikiNode.objects
+        .filter(parent=None, language=selected_language, is_moderated=True)
+        .prefetch_related(Prefetch('children', queryset=children_qs, to_attr='visible_children'))
+    )
+
     return render(request, 'wiki.html', {'nodes': nodes})
 
 def wiki_edit(request, node_id):
@@ -21,7 +34,7 @@ def wiki_edit(request, node_id):
         proposed_content = request.POST.get(f"proposed_content_{node.id}", "").strip()
 
         if not proposed_content:
-            return JsonResponse({"success": False, "error": "Content cannot be empty"}, status=400)
+            return JsonResponse({"success": False, "error": _("Content cannot be empty")}, status=400)
 
         WikiEdit.objects.create(
             node=node,

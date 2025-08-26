@@ -559,3 +559,6 @@ msgstr "Tüzetişleriñiz moderatsiya içün yibерildi!"
 
 msgid "Add New Toggle"
 msgstr "Yañı bölük ekle"
+
+msgid "Content cannot be empty"
+msgstr "Mazmun boş olamaz"

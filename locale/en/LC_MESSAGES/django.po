@@ -545,3 +545,6 @@ msgstr "Your edits have been submitted for moderation!"
 
 msgid "Add New Toggle"
 msgstr "Add New Toggle"
+
+msgid "Content cannot be empty"
+msgstr "Content cannot be empty"

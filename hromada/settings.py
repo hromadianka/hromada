@@ -32,7 +32,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['hromada-b4df642e405d.herokuapp.com']
+ALLOWED_HOSTS = ['hromada-b4df642e405d.herokuapp.com', 'hromada.me', 'www.hromada.me']
 
 
 # Application definition

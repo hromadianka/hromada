@@ -406,7 +406,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 231px;
+        min-width: 231px;
         height: 40px;
         color: var(--white-color);
         background: var(--red-color);

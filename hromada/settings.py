@@ -196,6 +196,7 @@ LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
 
 # Email server configuration
+
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
 EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
@@ -216,3 +217,8 @@ CKEDITOR_CONFIGS = {
         'extraPlugins': 'image2,embed,autoembed',
     }
 }
+
+#Security
+
+SECURE_SSL_REDIRECT = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

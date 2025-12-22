@@ -5,8 +5,13 @@ import uuid
 # Create your models here.
 
 class Project(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    author = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+    )
     title = models.CharField(max_length=255)
     description = models.TextField(blank = True)
     created_at = models.DateTimeField(auto_now_add=True)

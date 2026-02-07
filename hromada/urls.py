@@ -14,6 +14,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
 from django.urls import path, include
 from django.views.i18n import set_language
@@ -21,15 +22,16 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('set-language/', set_language, name='set_language'),
-    path('ckeditor/', include('ckeditor_uploader.urls')),
-    path('', include('home.urls')),
-    path('account/', include('account.urls')),
-    path('project/', include('project.urls')),
-    path('create/', include('create.urls')),
-    path('search/', include('search.urls')),
-    path('wiki/', include('wiki.urls'))
+    path("", include("seo.urls")),
+    path("admin/", admin.site.urls),
+    path("set-language/", set_language, name="set_language"),
+    path("ckeditor/", include("ckeditor_uploader.urls")),
+    path("", include("home.urls")),
+    path("account/", include("account.urls")),
+    path("project/", include("project.urls")),
+    path("create/", include("create.urls")),
+    path("search/", include("search.urls")),
+    path("wiki/", include("wiki.urls")),
 ]
 
 if settings.DEBUG:

@@ -562,3 +562,54 @@ msgstr "Yañı bölük ekle"
 
 msgid "Content cannot be empty"
 msgstr "Mazmun boş olamaz"
+
+msgid "Self-government"
+msgstr "Özidare"
+
+msgid "Доєднуйся до рад там, де ви живете, навчаєтесь або працюєте, і бери участь в управлінні Кримом"
+msgstr "Yasağan, oqığan ya da çalışqan yerinizdeki şuralarğa qoşulıñız ve Qırımnı idare etüvde iştirak etiñiz"
+
+msgid "Create a council"
+msgstr "Şura yaratmaq"
+
+msgid "Join"
+msgstr "Qoşulmaq"
+
+msgid "Edit council"
+msgstr "Şuranı tüzeltmek"
+
+msgid "Type of council"
+msgstr "Şura türü"
+
+msgid "General"
+msgstr "Umumiy"
+
+msgid "By place of residence"
+msgstr "Yasağan yer boyunça"
+
+msgid "By place of study"
+msgstr "Oquv yer boyunça"
+
+msgid "By place of work"
+msgstr "Çalışqan yer boyunça"
+
+msgid "Other"
+msgstr "Başqa"
+
+msgid "Location on map (optional)"
+msgstr "Haritada yerleşüv (mecburiy degil)"
+
+msgid "Save changes"
+msgstr "Değişikliklerni saqlamaq"
+
+msgid "Title of the council"
+msgstr "Şuranıñ adı"
+
+msgid "Link to a chat of the council in a secure messenger"
+msgstr "Şuranıñ qorğalğan messenjerdeki sohbetine bağlantı"
+
+msgid "Description of the council"
+msgstr "Şuranıñ tasviri"
+
+msgid "Submit to moderation"
+msgstr "Moderatsiyaga yollamaq"

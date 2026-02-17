@@ -14,6 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhMK0EuUGSMYWk9Dk0nEvcxQniPQOMsJU&libraries=places"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
 </head>
 <body>
     <header>
@@ -67,7 +77,7 @@
                         <li><a href="{% url 'wiki' %}">{% trans "Вики" %}</a></li>
                         <li><a href="{% url 'create_project' %}">{% trans "Создать" %}</a></li>
                         <li><a href="{% url 'search' %}">{% trans "Поиск" %}</a></li>
-                        <!-- <li><a href="">{% trans "Самоуправление" %}</a></li> -->
+                        <li><a href="{% url 'selfgov_list' %}">{% trans "Самоуправление" %}</a></li>
                         <li><a href="{% url 'account' %}">{% trans "My account" %}</a></li>
                     </ul>
                 </div>

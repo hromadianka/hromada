@@ -29,7 +29,8 @@ urlpatterns = [
     path('project/', include('project.urls')),
     path('create/', include('create.urls')),
     path('search/', include('search.urls')),
-    path('wiki/', include('wiki.urls'))
+    path('wiki/', include('wiki.urls')),
+    path('self-gov/', include('selfgov.urls'))
 ]
 
 if settings.DEBUG:

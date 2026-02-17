@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container">
+    <h1>{% trans 'Edit council' %}</h1>
+
+    <form method="POST" class="form">
+        {% csrf_token %}
+
+        <input
+            type="text"
+            class="form-field"
+            name="title"
+            value="{{ selfgov.title }}"
+            required
+        >
+
+        <input
+            type="url"
+            class="form-field"
+            name="chat_link"
+            value="{{ selfgov.chat_link }}"
+            required
+        >
+
+        <textarea
+            id="description-editor"
+            class="form-field"
+            name="description"
+        >{{ selfgov.description }}</textarea>
+
+        <label class="form-label">{% trans "Type of council" %}</label>
+
+        <select name="soviet_type" class="form-field">
+            <option value="0" {% if selfgov.soviet_type == 0 %}selected{% endif %}>{% trans "General" %}</option>
+            <option value="1" {% if selfgov.soviet_type == 1 %}selected{% endif %}>{% trans "By place of residence" %}</option>
+            <option value="2" {% if selfgov.soviet_type == 2 %}selected{% endif %}>{% trans "By place of study" %}</option>
+            <option value="3" {% if selfgov.soviet_type == 3 %}selected{% endif %}>{% trans "By place of work" %}</option>
+            <option value="4" {% if selfgov.soviet_type == 4 %}selected{% endif %}>{% trans "Other" %}</option>
+        </select>
+
+        <label class="form-label">{% trans "Location on map (optional)" %}</label>
+
+        <div id="map" style="height: 300px; border-radius: 8px;"></div>
+
+        <input type="hidden" name="latitude" id="latitude" value="{{ selfgov.latitude }}">
+        <input type="hidden" name="longitude" id="longitude" value="{{ selfgov.longitude }}">
+
+        <button type="submit" class="button" style="margin-left: auto; margin-right: auto">
+            {% trans 'Save changes' %}
+        </button>
+    </form>
+</div>
+
+<!-- CKEditor -->
+<script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+
+<script>
+ClassicEditor
+    .create(document.querySelector('#description-editor'))
+    .catch(error => console.error(error));
+</script>
+
+<!-- Leaflet -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const existingLat = parseFloat("{{ selfgov.latitude|default:'' }}");
+    const existingLng = parseFloat("{{ selfgov.longitude|default:'' }}");
+
+    const defaultLat = !isNaN(existingLat) ? existingLat : 50.45;
+    const defaultLng = !isNaN(existingLng) ? existingLng : 30.52;
+    const defaultZoom = !isNaN(existingLat) ? 14 : 6;
+
+    const map = L.map('map', {
+        scrollWheelZoom: true,
+        zoomControl: true
+    }).setView([defaultLat, defaultLng], defaultZoom);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    let marker = null;
+
+    if (!isNaN(existingLat) && !isNaN(existingLng)) {
+        marker = L.marker([existingLat, existingLng]).addTo(map);
+    }
+
+    map.on('click', function (e) {
+        const lat = e.latlng.lat.toFixed(6);
+        const lng = e.latlng.lng.toFixed(6);
+
+        document.getElementById('latitude').value = lat;
+        document.getElementById('longitude').value = lng;
+
+        if (marker) {
+            marker.setLatLng(e.latlng);
+        } else {
+            marker = L.marker(e.latlng).addTo(map);
+        }
+    });
+
+});
+</script>
+
+{% endblock %}

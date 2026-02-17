@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container">
+    <h1>{% trans 'Create a council' %}</h1>
+
+    <form method="POST" class="form">
+       {% csrf_token %}
+        <input type="text" class="form-field" placeholder="{% trans 'Title of the council' %}" name="title" required>
+        <input type="url" class="form-field" placeholder="{% trans 'Link to a chat of the council in a secure messenger' %}" name="chat_link" required>
+        <textarea
+        id="description-editor"
+        class="form-field"
+        placeholder="{% trans 'Description of the council' %}"
+        name="description"
+        >
+        </textarea>
+
+        <label class="form-label">{% trans "Type of council" %}</label>
+
+<select name="soviet_type" class="form-field">
+    <option value="0">{% trans "General" %}</option>
+    <option value="1">{% trans "By place of residence" %}</option>
+    <option value="2">{% trans "By place of study" %}</option>
+    <option value="3">{% trans "By place of work" %}</option>
+    <option value="4">{% trans "Other" %}</option>
+</select>
+
+<label class="form-label">{% trans "Location on map (optional)" %}</label>
+<div id="map" style="height: 300px; border-radius: 8px;"></div>
+<input type="hidden" name="latitude" id="latitude">
+<input type="hidden" name="longitude" id="longitude">
+
+
+        <button type="submit" class="button" style="margin-left: auto; margin-right: auto">{% trans 'Submit to moderation' %}</button>
+    </form>
+</div>
+
+<script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+
+<script>
+    ClassicEditor
+        .create(document.querySelector('#description-editor'), {
+            toolbar: [
+                'heading',
+                '|',
+                'bold',
+                'italic',
+                'link',
+                'bulletedList',
+                'numberedList',
+                'blockQuote',
+                '|',
+                'undo',
+                'redo'
+            ]
+        })
+        .catch(error => {
+            console.error(error);
+        });
+</script>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+    const map = L.map('map').setView([50.45, 30.52], 6);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    let marker = null;
+
+    map.on('click', function (e) {
+        const lat = e.latlng.lat.toFixed(6);
+        const lng = e.latlng.lng.toFixed(6);
+
+        document.getElementById('latitude').value = lat;
+        document.getElementById('longitude').value = lng;
+
+        if (marker) {
+            marker.setLatLng(e.latlng);
+        } else {
+            marker = L.marker(e.latlng).addTo(map);
+        }
+    });
+</script>
+
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container">
+    <h1 style="margin-bottom: 0">{{ selfgov.title }}</h1>
+    <p class="soviet-type" style="margin-bottom: 20px; text-align: center">{{ selfgov.get_soviet_type_display }}</p>
+    <div id="map" style="height: 320px; border-radius: 12px;"></div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const lat = parseFloat("{{ selfgov.latitude }}");
+  const lon = parseFloat("{{ selfgov.longitude }}");
+
+  if (!isNaN(lat) && !isNaN(lon)) {
+    const map = L.map('map', {
+      zoomControl: true,        // кнопки + и -
+      scrollWheelZoom: true     // масштаб колесом
+    }).setView([lat, lon], 14);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    L.circleMarker([lat, lon], {
+      radius: 8,
+      weight: 2
+    }).addTo(map);
+  }
+
+});
+</script>
+
+    {% if selfgov.chat_link %}
+    <a
+        class="button"
+        href="{{ selfgov.chat_link }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="margin-top: 20px; margin-bottom: 20px"
+    >
+        {% trans 'Join' %}
+    </a>
+    {% endif %}
+    {% if request.user.is_authenticated and selfgov.author == request.user %}
+    <a
+        href="{% url 'selfgov_edit' selfgov.id %}"
+        class="button white"
+        style="margin-top: 10px;"
+    >
+        {% trans "Edit council" %}
+    </a>
+{% endif %}
+    <p style="margin-top: 25px">{% autoescape off %}{{selfgov.description }}{% endautoescape %}</p>
+
+</div>
+
+{% endblock %}

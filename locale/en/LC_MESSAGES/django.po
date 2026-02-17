@@ -548,3 +548,54 @@ msgstr "Add New Toggle"
 
 msgid "Content cannot be empty"
 msgstr "Content cannot be empty"
+
+msgid "Self-government"
+msgstr "Self-government"
+
+msgid "Доєднуйся до рад там, де ви живете, навчаєтесь або працюєте, і бери участь в управлінні Кримом"
+msgstr "Join councils where you live, study, or work and take part in governing Crimea"
+
+msgid "Create a council"
+msgstr "Create a council"
+
+msgid "Join"
+msgstr "Join"
+
+msgid "Edit council"
+msgstr "Edit council"
+
+msgid "Type of council"
+msgstr "Type of council"
+
+msgid "General"
+msgstr "General"
+
+msgid "By place of residence"
+msgstr "By place of residence"
+
+msgid "By place of study"
+msgstr "By place of study"
+
+msgid "By place of work"
+msgstr "By place of work"
+
+msgid "Other"
+msgstr "Other"
+
+msgid "Location on map (optional)"
+msgstr "Location on map (optional)"
+
+msgid "Save changes"
+msgstr "Save changes"
+
+msgid "Title of the council"
+msgstr "Title of the council"
+
+msgid "Link to a chat of the council in a secure messenger"
+msgstr "Link to a chat of the council in a secure messenger"
+
+msgid "Description of the council"
+msgstr "Description of the council"
+
+msgid "Submit to moderation"
+msgstr "Submit to moderation"

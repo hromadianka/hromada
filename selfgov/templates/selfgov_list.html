@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <h1>{% trans 'Self-government' %}</h1>
+
+    <div class="callout" style="margin-bottom: 15px">
+        <img src="{% static 'images/icons/classical-building.jpg' %}" alt="" />
+        <span>
+            {% trans 'Доєднуйся до рад там, де ви живете, навчаєтесь або працюєте, і бери участь в управлінні Кримом' %}
+        </span>
+    </div>
+
+    <div class="projects-container" style="padding-top: 40px; padding-bottom: 40px">
+        {% for selfgov in all_selfgovs %}
+        <div class="card">
+            <h3 style="margin-bottom: 0"><a href="{% url 'selfgov_detail' selfgov.id %}">{{ selfgov.title }}</a></h3>
+            <p class="soviet-type soviet-type-{{ selfgov.soviet_type }}" style="margin-bottom: 10px">
+                {{ selfgov.get_soviet_type_display }}
+            </p>
+            <p>{{ selfgov.description|striptags|truncatechars:160|safe|default:"" }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <a class="button" style="margin-top: 20px" href="{% url 'selfgov_create' %}">{% trans 'Create a council'  %}</a>
+</div>
+
+{% endblock %}

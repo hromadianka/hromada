@@ -11,7 +11,7 @@
         <a href="{% url 'password_change' %}" class="button white">{% trans "Change password" %}</a>
         <form action="{% url 'logout' %}" method="post">
             {% csrf_token %}
-            <button type="submit" class="button black">{% trans "Log out" %}</button>
+            <button type="submit" class="button black" style="width: 100%">{% trans "Log out" %}</button>
         </form>
         <button class="button delete-user-btn">
             {% trans 'Delete my data' %}

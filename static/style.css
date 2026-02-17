@@ -827,6 +827,14 @@ input[type="range"] {
 
 }
 
+.soviet-type {
+    font-style: italic;
+}
+
+#map {
+    z-index: 0;
+}
+
 /* Modal */
 
 .modal {
@@ -872,5 +880,19 @@ summary {
 }
 
 .toggle *:last-child {
+    margin-bottom: 0;
+}
+
+/* Form */
+
+.form button {
+    margin-top: 25px;
+}
+
+.form-field, .form .ck-editor {
+    margin-bottom: 10px !important;
+}
+
+.form-field::last-child, .form .ck-editor::last-child {
     margin-bottom: 0;
 }

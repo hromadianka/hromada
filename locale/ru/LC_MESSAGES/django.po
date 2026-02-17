@@ -561,3 +561,54 @@ msgstr "Добавить новый раздел"
 
 msgid "Content cannot be empty"
 msgstr "Содержимое не может быть пустым"
+
+msgid "Self-government"
+msgstr "Самоуправление"
+
+msgid "Доєднуйся до рад там, де ви живете, навчаєтесь або працюєте, і бери участь в управлінні Кримом"
+msgstr "Присоединяйтесь к советам там, где вы живёте, учитесь или работаете, и участвуйте в управлении Крымом"
+
+msgid "Create a council"
+msgstr "Создать совет"
+
+msgid "Join"
+msgstr "Присоединиться"
+
+msgid "Edit council"
+msgstr "Редактировать совет"
+
+msgid "Type of council"
+msgstr "Тип совета"
+
+msgid "General"
+msgstr "Общий"
+
+msgid "By place of residence"
+msgstr "По месту проживания"
+
+msgid "By place of study"
+msgstr "По месту учёбы"
+
+msgid "By place of work"
+msgstr "По месту работы"
+
+msgid "Other"
+msgstr "Другое"
+
+msgid "Location on map (optional)"
+msgstr "Местоположение на карте (необязательно)"
+
+msgid "Save changes"
+msgstr "Сохранить изменения"
+
+msgid "Title of the council"
+msgstr "Название совета"
+
+msgid "Link to a chat of the council in a secure messenger"
+msgstr "Ссылка на чат совета в защищённом мессенджере"
+
+msgid "Description of the council"
+msgstr "Описание совета"
+
+msgid "Submit to moderation"
+msgstr "Отправить на модерацию"

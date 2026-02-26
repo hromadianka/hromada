@@ -88,6 +88,14 @@
         {% block content %} {% endblock %}
     </main>
     <footer>
+        <div class="container">
+            <div class="callout" style="margin-bottom: 0">
+                <img src="{% static 'images/icons/mail.png' %}" alt="" />
+                <span>
+                    {% trans 'Mail Callout Text' %} - <a href="mailto:hromada-mail@proton.me">hromada-mail@proton.me</a>
+                </span>
+            </div>
+        </div>
     </footer>
 
     <script>

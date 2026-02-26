@@ -612,3 +612,6 @@ msgstr "Описание совета"
 
 msgid "Submit to moderation"
 msgstr "Отправить на модерацию"
+
+msgid "Mail Callout Text"
+msgstr "Хочешь с нами связаться? Пиши"

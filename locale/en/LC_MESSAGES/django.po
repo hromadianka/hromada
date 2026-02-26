@@ -599,3 +599,6 @@ msgstr "Description of the council"
 
 msgid "Submit to moderation"
 msgstr "Submit to moderation"
+
+msgid "Mail Callout Text"
+msgstr "Want to contact us?"

@@ -608,3 +608,6 @@ msgstr "Опис ради"
 
 msgid "Submit to moderation"
 msgstr "Надіслати на модерацію"
+
+msgid "Mail Callout Text"
+msgstr "Хочеш з нами зв'язатись? Пиши"

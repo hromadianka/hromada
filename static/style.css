@@ -896,3 +896,20 @@ summary {
 .form-field::last-child, .form .ck-editor::last-child {
     margin-bottom: 0;
 }
+
+/* Footer */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    padding: 15px 0;
+    display: none;
+}

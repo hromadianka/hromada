@@ -1,0 +1,13 @@
+    {% for selfgov in selfgovs %}
+        <div class="card">
+            <h3 style="margin-bottom: 0">
+                <a href="{% url 'selfgov_detail' selfgov.id %}">{{ selfgov.title }}</a>
+            </h3>
+            <p class="soviet-type" style="margin-bottom: 10px">
+                {{ selfgov.soviet_type.name }}
+            </p>
+            <p>{{ selfgov.description|striptags|truncatechars:160|safe|default:"" }}</p>
+        </div>
+    {% empty %}
+        <p>No cards found.</p>
+    {% endfor %}

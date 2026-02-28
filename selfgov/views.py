@@ -1,8 +1,10 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponseForbidden
-from django.utils.translation import gettext as _
-
+from django.shortcuts import (
+    render,
+    redirect,
+    get_object_or_404,
+)
 from selfgov.models import (
     Soviet,
     SovietType,
@@ -11,12 +13,19 @@ from selfgov.models import (
 
 def selfgov_list(request):
     all_selfgovs = Soviet.objects.filter(moderated=True)
-    all_selfgovs_types = SovietType.objects.all()
+    all_selfgovs_types = SovietType.objects.all().order_by("order")
+
+    type_id = request.GET.get("selfgov_type")
+    if type_id:
+        all_selfgovs = all_selfgovs.filter(soviet_type=type_id)
 
     context = {
         "selfgovs": all_selfgovs,
         "selfgovs_types": all_selfgovs_types,
     }
+
+    if request.headers.get("HX-Request"):
+        return render(request, "partials/cards.html", context)
 
     return render(request, "selfgov_list.html", context)
 
@@ -28,7 +37,7 @@ def selfgov_detail(request, selfgov_id):
 
 @login_required
 def selfgov_create(request):
-    all_selfgovs_types = SovietType.objects.all()
+    all_selfgovs_types = SovietType.objects.all().order_by("order")
 
     context = {
         "selfgovs_types": all_selfgovs_types,
@@ -70,7 +79,7 @@ def selfgov_create(request):
 def selfgov_edit(request, selfgov_id):
     selfgov = get_object_or_404(Soviet, id=selfgov_id)
 
-    all_selfgovs_types = SovietType.objects.all()
+    all_selfgovs_types = SovietType.objects.all().order_by("order")
 
     if selfgov.author != request.user:
         return HttpResponseForbidden(_("You are not allowed to edit this project"))

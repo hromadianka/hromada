@@ -15,14 +15,20 @@
     </div>
 
     <div style="margin: 50px 0 0 0" class="">
-        <select name="soviet_type" class="form-field">
+        <select name="selfgov_type" 
+                hx-get="{% url 'selfgov_list' %}" 
+                hx-trigger="change" 
+                hx-target="#card-container" 
+                hx-indicator=".loader"
+                class="form-field">
+            <option value="">All Types</option>
             {% for selfgovs_type in selfgovs_types %}
-            <option value="">{% trans selfgovs_type.description %}</option>
+            <option value="{{ selfgovs_type.id }}">{% trans selfgovs_type.description %}</option>
             {% endfor %}
         </select>
     </div>
 
-    <div class="projects-container" style="padding-top: 40px; padding-bottom: 40px">
+    <div id="card-container" class="projects-container" style="padding-top: 40px; padding-bottom: 40px">
         {% for selfgov in selfgovs %}
         <div class="card">
             <h3 style="margin-bottom: 0">
@@ -34,6 +40,7 @@
             <p>{{ selfgov.description|striptags|truncatechars:160|safe|default:"" }}</p>
         </div>
         {% endfor %}
+        <div class="loader htmx-indicator">Preloader...</div>
     </div>
 
     <a class="button" style="margin-top: 20px" href="{% url 'selfgov_create' %}">{% trans 'Create a council'  %}</a>

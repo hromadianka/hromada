@@ -7,6 +7,10 @@ class SovietType(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=64)
     description = models.CharField(max_length=128)
+    order = models.PositiveIntegerField(
+        default=0,
+        help_text="Lowest number appears first",
+    )
 
     class Meta:
         ordering = ["name"]

@@ -14,12 +14,22 @@
         </span>
     </div>
 
+    <div style="margin: 50px 0 0 0" class="">
+        <select name="soviet_type" class="form-field">
+            {% for selfgovs_type in selfgovs_types %}
+            <option value="">{% trans selfgovs_type.description %}</option>
+            {% endfor %}
+        </select>
+    </div>
+
     <div class="projects-container" style="padding-top: 40px; padding-bottom: 40px">
-        {% for selfgov in all_selfgovs %}
+        {% for selfgov in selfgovs %}
         <div class="card">
-            <h3 style="margin-bottom: 0"><a href="{% url 'selfgov_detail' selfgov.id %}">{{ selfgov.title }}</a></h3>
-            <p class="soviet-type soviet-type-{{ selfgov.soviet_type }}" style="margin-bottom: 10px">
-                {{ selfgov.get_soviet_type_display }}
+            <h3 style="margin-bottom: 0">
+                <a href="{% url 'selfgov_detail' selfgov.id %}">{{ selfgov.title }}</a>
+            </h3>
+            <p class="soviet-type" style="margin-bottom: 10px">
+                {{ selfgov.soviet_type.name }}
             </p>
             <p>{{ selfgov.description|striptags|truncatechars:160|safe|default:"" }}</p>
         </div>

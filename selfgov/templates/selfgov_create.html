@@ -10,6 +10,7 @@
        {% csrf_token %}
         <input type="text" class="form-field" placeholder="{% trans 'Title of the council' %}" name="title" required>
         <input type="url" class="form-field" placeholder="{% trans 'Link to a chat of the council in a secure messenger' %}" name="chat_link" required>
+        
         <textarea
         id="description-editor"
         class="form-field"
@@ -20,19 +21,18 @@
 
         <label class="form-label">{% trans "Type of council" %}</label>
 
-<select name="soviet_type" class="form-field">
-    <option value="0">{% trans "General" %}</option>
-    <option value="1">{% trans "By place of residence" %}</option>
-    <option value="2">{% trans "By place of study" %}</option>
-    <option value="3">{% trans "By place of work" %}</option>
-    <option value="4">{% trans "Other" %}</option>
-</select>
+        <div style="margin: 50px 0 0 0" class="">
+            <select name="soviet_type" class="form-field">
+                {% for selfgovs_type in selfgovs_types %}
+                <option value="{{ selfgovs_type.id }}">{% trans selfgovs_type.description %}</option>
+                {% endfor %}
+            </select>
+        </div>
 
-<label class="form-label">{% trans "Location on map (optional)" %}</label>
-<div id="map" style="height: 300px; border-radius: 8px;"></div>
-<input type="hidden" name="latitude" id="latitude">
-<input type="hidden" name="longitude" id="longitude">
-
+        <label class="form-label">{% trans "Location on map (optional)" %}</label>
+        <div id="map" style="height: 300px; border-radius: 8px;"></div>
+        <input type="hidden" name="latitude" id="latitude">
+        <input type="hidden" name="longitude" id="longitude">
 
         <button type="submit" class="button" style="margin-left: auto; margin-right: auto">{% trans 'Submit to moderation' %}</button>
     </form>

@@ -1,6 +1,8 @@
 from django.contrib import admin
-from .models import Soviet
-
-# Register your models here.
+from .models import (
+    Soviet,
+    SovietType,
+)
 
 admin.site.register(Soviet)
+admin.site.register(SovietType)

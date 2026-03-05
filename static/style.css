@@ -359,6 +359,54 @@ main {
     align-items: center;
 }
 
+/* Toggle */
+
+.toggle {
+    padding-inline-start: 0em;
+    list-style-type: none;
+    margin-left: 1.7em;
+    margin-bottom: 10px;
+}
+
+summary {
+    margin-bottom: 10px;
+}
+
+.toggle *:last-child {
+    margin-bottom: 0;
+}
+
+/* Form */
+
+.form button {
+    margin-top: 25px;
+}
+
+.form-field, .form .ck-editor {
+    margin-bottom: 10px !important;
+}
+
+.form-field::last-child, .form .ck-editor::last-child {
+    margin-bottom: 0;
+}
+
+/* Footer */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    padding: 15px 0;
+    display: none;
+}
+
     /* Main Page */
 
 .main-page-text {
@@ -864,52 +912,4 @@ input[type="range"] {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-}
-
-/* Toggle */
-
-.toggle {
-    padding-inline-start: 0em;
-    list-style-type: none;
-    margin-left: 1.7em;
-    margin-bottom: 10px;
-}
-
-summary {
-    margin-bottom: 10px;
-}
-
-.toggle *:last-child {
-    margin-bottom: 0;
-}
-
-/* Form */
-
-.form button {
-    margin-top: 25px;
-}
-
-.form-field, .form .ck-editor {
-    margin-bottom: 10px !important;
-}
-
-.form-field::last-child, .form .ck-editor::last-child {
-    margin-bottom: 0;
-}
-
-/* Footer */
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    flex: 1;
-}
-
-footer {
-    padding: 15px 0;
-    display: none;
 }

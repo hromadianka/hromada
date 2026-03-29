@@ -404,7 +404,18 @@ main {
 
 footer {
     padding: 15px 0;
-    display: none;
+}
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-media-icons img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
 
     /* Main Page */

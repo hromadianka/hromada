@@ -33,13 +33,13 @@
 
         <label class="form-label">{% trans "Type of council" %}</label>
 
-        <select name="soviet_type" class="form-field">
-            <option value="0" {% if selfgov.soviet_type == 0 %}selected{% endif %}>{% trans "General" %}</option>
-            <option value="1" {% if selfgov.soviet_type == 1 %}selected{% endif %}>{% trans "By place of residence" %}</option>
-            <option value="2" {% if selfgov.soviet_type == 2 %}selected{% endif %}>{% trans "By place of study" %}</option>
-            <option value="3" {% if selfgov.soviet_type == 3 %}selected{% endif %}>{% trans "By place of work" %}</option>
-            <option value="4" {% if selfgov.soviet_type == 4 %}selected{% endif %}>{% trans "Other" %}</option>
-        </select>
+        <div style="margin: 50px 0 0 0" class="">
+            <select name="soviet_type" class="form-field">
+                {% for selfgovs_type in selfgovs_types %}
+                <option value="{{ selfgovs_type.id }}">{% trans selfgovs_type.description %}</option>
+                {% endfor %}
+            </select>
+        </div>
 
         <label class="form-label">{% trans "Location on map (optional)" %}</label>
 

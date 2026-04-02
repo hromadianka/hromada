@@ -4,6 +4,22 @@
 
 {% block content %}
 
+<style>
+    select.form-field {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding-right: 10px;
+
+    background-color: white;
+    background-image: url("{% static 'images/icons/arrow-down.svg' %}");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 22px;
+}
+</style>
+
 <div class="container">
     <h1>{% trans 'Self-government' %}</h1>
 
@@ -45,5 +61,7 @@
 
     <a class="button" style="margin-top: 20px" href="{% url 'selfgov_create' %}">{% trans 'Create a council'  %}</a>
 </div>
+
+
 
 {% endblock %}

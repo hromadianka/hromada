@@ -27,15 +27,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = os.environ["SECRET_KEY"]
-SECRET_KEY = "p24^u(vh86=6zjkgbe#c&m-ps_)l*p0l@h02%18f&5wz8b4v1c"
+SECRET_KEY = os.environ["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-DEBUG = True
+DEBUG = False
+# DEBUG = True
 
-# ALLOWED_HOSTS = ["hromada-b4df642e405d.herokuapp.com", "hromada.me", "www.hromada.me"]
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "[::1]"]
+ALLOWED_HOSTS = ["hromada-b4df642e405d.herokuapp.com", "hromada.me", "www.hromada.me"]
+# ALLOWED_HOSTS = ["localhost", "127.0.0.1", "[::1]"]
 
 
 # Application definition
@@ -99,33 +98,33 @@ AUTH_USER_MODEL = "account.User"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# jawsdb_url = os.environ.get("JAWSDB_URL")
-# DATABASE_URL = os.environ["JAWSDB_URL"]
+jawsdb_url = os.environ.get("JAWSDB_URL")
+DATABASE_URL = os.environ["JAWSDB_URL"]
 
-# if jawsdb_url:
-#     url = urlparse(jawsdb_url)
+if jawsdb_url:
+    url = urlparse(jawsdb_url)
 
-#     DATABASES = {
-#         "default": {
-#             "ENGINE": "django.db.backends.mysql",
-#             "NAME": url.path[1:],
-#             "USER": url.username,
-#             "PASSWORD": url.password,
-#             "HOST": url.hostname,
-#             "PORT": url.port,
-#             "OPTIONS": {
-#                 "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
-#                 "charset": "utf8mb4",
-#             },
-#         }
-#     }
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.mysql",
+            "NAME": url.path[1:],
+            "USER": url.username,
+            "PASSWORD": url.password,
+            "HOST": url.hostname,
+            "PORT": url.port,
+            "OPTIONS": {
+                "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
+                "charset": "utf8mb4",
+            },
+        }
     }
-}
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -196,14 +195,14 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
 
 
-# CLOUDINARY_URL = os.environ.get("CLOUDINARY_URL")
+CLOUDINARY_URL = os.environ.get("CLOUDINARY_URL")
 
-# cloudinary.config(
-#     cloud_name=os.environ.get("CLOUDINARY_CLOUD_NAME"),
-#     api_key=os.environ.get("CLOUDINARY_API_KEY"),
-#     api_secret=os.environ.get("CLOUDINARY_API_SECRET"),
-#     secure=True,
-# )
+cloudinary.config(
+    cloud_name=os.environ.get("CLOUDINARY_CLOUD_NAME"),
+    api_key=os.environ.get("CLOUDINARY_API_KEY"),
+    api_secret=os.environ.get("CLOUDINARY_API_SECRET"),
+    secure=True,
+)
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
@@ -222,12 +221,12 @@ LOGOUT_URL = "logout"
 
 # Email server configuration
 
-# EMAIL_HOST = "smtp.gmail.com"
-# EMAIL_HOST_USER = os.environ["EMAIL_HOST_USER"]
-# EMAIL_HOST_PASSWORD = os.environ["EMAIL_HOST_PASSWORD"]
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# DEFAULT_FROM_EMAIL = os.environ["DEFAULT_FROM_EMAIL"]
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER = os.environ["EMAIL_HOST_USER"]
+EMAIL_HOST_PASSWORD = os.environ["EMAIL_HOST_PASSWORD"]
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = os.environ["DEFAULT_FROM_EMAIL"]
 
 # CKEditor
 
@@ -245,11 +244,8 @@ CKEDITOR_CONFIGS = {
 
 # Security
 
-# SECURE_SSL_REDIRECT = True
-# SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
-
-SECURE_SSL_REDIRECT = False
-SECURE_PROXY_SSL_HEADER = None
+SECURE_SSL_REDIRECT = True
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 # Referrer
 

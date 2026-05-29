@@ -1,24 +1,33 @@
 import uuid
 from django.db import models
 from django.conf import settings
+from parler.models import TranslatableModel, TranslatedFields
 
 
-class SovietType(models.Model):
+class SovietType(TranslatableModel):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    name = models.CharField(max_length=64)
-    description = models.CharField(max_length=128)
+
+    translations = TranslatedFields(
+        name=models.CharField(max_length=64),
+        description=models.CharField(max_length=128),
+    )
+
     order = models.PositiveIntegerField(
         default=0,
         help_text="Lowest number appears first",
     )
 
     class Meta:
-        ordering = ["name"]
+        ordering = ["order"]
         verbose_name = "Soviet Type"
         verbose_name_plural = "Soviet Types"
 
     def __str__(self):
-        return self.name
+        return self.safe_translation_getter(
+            "name",
+            language_code="en",
+            any_language=True,
+        )
 
 
 class Soviet(models.Model):

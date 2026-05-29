@@ -616,3 +616,6 @@ msgstr "Moderatsiyaga yollamaq"
 
 msgid "Mail Callout Text"
 msgstr "Bizimnen bağlantı qurmaq ister misin? Yaz"
+
+msgid "All Types"
+msgstr "Bütün türler"

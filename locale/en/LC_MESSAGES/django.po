@@ -602,3 +602,6 @@ msgstr "Submit to moderation"
 
 msgid "Mail Callout Text"
 msgstr "Want to contact us?"
+
+msgid "All Types"
+msgstr "All Types"

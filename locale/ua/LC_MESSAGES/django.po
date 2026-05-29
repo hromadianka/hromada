@@ -611,3 +611,6 @@ msgstr "Надіслати на модерацію"
 
 msgid "Mail Callout Text"
 msgstr "Хочеш з нами зв'язатись? Пиши"
+
+msgid "All Types"
+msgstr "Всі типи"

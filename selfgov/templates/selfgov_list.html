@@ -37,7 +37,7 @@
                 hx-target="#card-container" 
                 hx-indicator=".loader"
                 class="form-field">
-            <option value="">All Types</option>
+            <option value="">{% trans 'All Types' %}</option>
             {% for selfgovs_type in selfgovs_types %}
             <option value="{{ selfgovs_type.id }}">{% trans selfgovs_type.description %}</option>
             {% endfor %}

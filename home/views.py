@@ -11,7 +11,7 @@ from django.utils.translation import get_language
 # Create your views here.
 
 def home_page(request):
-    featured_projects = Project.objects.filter(is_featured=True).order_by("-created_at")
+    featured_projects = Project.objects.filter(is_featured=True, is_approved=True).order_by("-created_at")
 
     selected_language = get_language()
     social_reasons = SocialReason.objects.filter(was_approved=True, language=selected_language)

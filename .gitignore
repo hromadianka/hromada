@@ -1,5 +1,4 @@
 *.pyc
 hromada/settings.py
 .venv
-__pycache__/
 .idea/

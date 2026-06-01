@@ -2,6 +2,10 @@
 
 from django.db import migrations, models
 
+def approve_existing_projects(apps, schema_editor):
+    project = apps.get_model("project", "Project")
+    project.objects.update(is_approved=True)
+
 
 class Migration(migrations.Migration):
 
@@ -15,4 +19,5 @@ class Migration(migrations.Migration):
             name='is_approved',
             field=models.BooleanField(default=False),
         ),
+        migrations.RunPython(approve_existing_projects, migrations.RunPython.noop),
     ]

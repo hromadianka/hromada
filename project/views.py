@@ -7,7 +7,7 @@ from django.http import HttpResponseForbidden, JsonResponse, Http404
 # Create your views here.
 
 def project_detail(request, project_id):
-    project = get_object_or_404(Project, id=project_id)
+    project = get_object_or_404(Project, id = project_id)
     if not project.is_approved and project.author != request.user:
         raise Http404
 

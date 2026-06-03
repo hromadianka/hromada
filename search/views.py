@@ -4,5 +4,5 @@ from project.models import Project
 # Create your views here.
 
 def search(request):
-    all_projects = Project.objects.all()
+    all_projects = Project.objects.filter(is_approved=True) # get only projects approved by admin
     return render(request, 'search.html', {'all_projects': all_projects})

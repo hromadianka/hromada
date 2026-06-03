@@ -2,12 +2,14 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import Project
 from django.contrib.auth.decorators import login_required
 from django.utils.translation import gettext as _
-from django.http import HttpResponseForbidden, JsonResponse
+from django.http import HttpResponseForbidden, JsonResponse, Http404
 
 # Create your views here.
 
 def project_detail(request, project_id):
     project = get_object_or_404(Project, id = project_id)
+    if not project.is_approved and project.author != request.user:
+        raise Http404
 
     return render(request, 'project_detail.html', {'project': project})
 

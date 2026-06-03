@@ -1,3 +1,4 @@
 *.pyc
 hromada/settings.py
 .venv
+.idea/

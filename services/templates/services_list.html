@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container">
+    <h1>{% trans 'Services' %}</h1>
+    <div class="projects-container">
+        {% for service in services %}
+        <div class="card">
+            <h3><a href="{% url 'service_detail' service.slug %}">{{ service.name }}</a></h3>
+            <p>{{ service.short_description }}</p>
+        </div>
+        {% empty %}
+        <p>{% trans 'No services available' %}</p>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

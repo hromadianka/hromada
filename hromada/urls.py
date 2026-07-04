@@ -34,6 +34,7 @@ urlpatterns = [
     path('wiki/', include('wiki.urls')),
     path('self-gov/', include('selfgov.urls')),
     path('favicon.ico', RedirectView.as_view(url=static_file('images/logo.svg'))),
+    path('services/', include('services.urls')),
 ]
 
 if settings.DEBUG:

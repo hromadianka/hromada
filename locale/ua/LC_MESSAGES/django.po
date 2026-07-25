@@ -654,3 +654,12 @@ msgstr "Сервіси"
 
 msgid "No services available"
 msgstr "Сервіси недоступні"
+
+msgid "Social Support Service Name"
+msgstr "Служба соціальної допомоги"
+
+msgid "Social Support Service Description"
+msgstr "Програма підтримки мешканців Криму у складних життєвих ситуаціях"
+
+msgid "Social Support Service Instruction"
+msgstr "Долучайся до роздачі продуктових пакетів, яка відбувається кожні два тижні. Заповни заявку нижче - і ми зв'яжемося з тобою."

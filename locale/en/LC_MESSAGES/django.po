@@ -644,3 +644,12 @@ msgstr "Services"
 
 msgid "No services available"
 msgstr "No services available"
+
+msgid "Social Support Service Name"
+msgstr "Social Support Service"
+
+msgid "Social Support Service Description"
+msgstr "A support program for Crimea residents in difficult life situations"
+
+msgid "Social Support Service Instruction"
+msgstr "Join our food package distribution that takes place every two weeks. Fill out the application below and we will contact you."

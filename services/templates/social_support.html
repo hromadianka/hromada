@@ -15,22 +15,21 @@
     {% endfor %}
     {% endif %}
 
-    <h1>{{ service.name }}</h1>
-    <p>{{ service.short_description }}</p>
+    <h1>{% trans 'Social Support Service Name' %}</h1>
+    <p>{% trans 'Social Support Service Description' %}</p>
 
     <div class="callout" style="margin-top: 30px">
-        <span>{% autoescape off %}{{ service.instruction }}{% endautoescape %}</span>
+        <span>{% trans 'Social Support Service Instruction' %}</span>
     </div>
 
-    {% if service.brochure_embed_url %}
     <div style="margin-top: 30px">
-        <iframe src="{{ service.brochure_embed_url }}"
+        <iframe src="https://www.canva.com/design/DAHOzqJvz7c/8RhwqkY5eR0IE8oMz9Mr9A/view?embed"
                 style="width: 100%; height: 500px; border: none; border-radius: 8px;">
         </iframe>
     </div>
-    {% endif %}
     <div style="margin-top: 15px; text-align: center">
-        <a href="{{ service.brochure_url }}" target="_blank" class="button">
+        <a href="https://www.canva.com/design/DAHOzqJvz7c/8RhwqkY5eR0IE8oMz9Mr9A/edit"
+           target="_blank" class="button">
             {% trans 'Open brochure' %}
         </a>
     </div>
@@ -120,12 +119,9 @@
     </div>
 </div>
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const map = L.map('grantMap').setView([48.3794, 31.1656], 6);
-
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap'
         }).addTo(map);
@@ -141,7 +137,6 @@
 
         map.on('click', function (e) {
             setMarker(e.latlng.lat, e.latlng.lng);
-
             fetch(`https://nominatim.openstreetmap.org/reverse?lat=${e.latlng.lat}&lon=${e.latlng.lng}&format=json`)
                 .then(r => r.json())
                 .then(data => {

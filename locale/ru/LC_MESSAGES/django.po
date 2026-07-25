@@ -657,3 +657,12 @@ msgstr "Сервисы"
 
 msgid "No services available"
 msgstr "Сервисы недоступны"
+
+msgid "Social Support Service Name"
+msgstr "Служба социальной помощи"
+
+msgid "Social Support Service Description"
+msgstr "Программа поддержки жителей Крыма в трудных жизненных ситуациях"
+
+msgid "Social Support Service Instruction"
+msgstr "Присоединяйся к раздаче продуктовых пакетов, которая проходит каждые две недели. Заполни заявку ниже - и мы свяжемся с тобой."

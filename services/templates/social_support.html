@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load i18n %}
+{% load static %}
 
 {% block content %}
 
@@ -31,6 +32,13 @@
         <a href="https://www.canva.com/design/DAHOzqJvz7c/8RhwqkY5eR0IE8oMz9Mr9A/edit"
            target="_blank" class="button">
             {% trans 'Open brochure' %}
+        </a>
+    </div>
+
+    <div style="margin-top: 20px; text-align: center">
+        <a href="https://t.me/chat" target="_blank" style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none;">
+            <img src="{% static 'images/icons/telegram-icon.svg' %}" alt="" style="width: 30px; height: 30px;">
+            <span class="button">{% trans 'Join coordination chat' %}</span>
         </a>
     </div>
 

@@ -663,3 +663,12 @@ msgstr "Програма підтримки мешканців Криму у с�
 
 msgid "Social Support Service Instruction"
 msgstr "Долучайся до роздачі продуктових пакетів, яка відбувається кожні два тижні. Заповни заявку нижче - і ми зв'яжемося з тобою."
+
+msgid "Feedback success message"
+msgstr "Дякуємо за відгук!"
+
+msgid "Grant success message"
+msgstr "Заявку надіслано!"
+
+msgid "Join coordination chat"
+msgstr "Доєднуйся до координаційного чату"

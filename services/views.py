@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from .forms import ServiceFeedbackForm, GrantApplicationForm
+from django.utils.translation import gettext as _
 
 
 def services_list(request):
@@ -18,7 +19,7 @@ def social_support(request):
                 feedback = feedback_form.save(commit=False)
                 feedback.service_slug = 'social-support'
                 feedback.save()
-                messages.success(request, 'Дякуємо за відгук!')
+                messages.success(request, _('Feedback success message'))
                 return redirect('social_support')
 
         elif 'grant_submit' in request.POST:
@@ -27,8 +28,8 @@ def social_support(request):
                 application = grant_form.save(commit=False)
                 application.service_slug = 'social-support'
                 application.save()
-                messages.success(request, 'Заявку надіслано!')
-                return redirect('service_detail')
+                messages.success(request, _('Grant success message'))
+                return redirect('social_support')
 
     return render(request, 'social_support.html', {
         'feedback_form': feedback_form,

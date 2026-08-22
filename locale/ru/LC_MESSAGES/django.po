@@ -666,3 +666,12 @@ msgstr "Программа поддержки жителей Крыма в тр�
 
 msgid "Social Support Service Instruction"
 msgstr "Присоединяйся к раздаче продуктовых пакетов, которая проходит каждые две недели. Заполни заявку ниже - и мы свяжемся с тобой."
+
+msgid "Feedback success message"
+msgstr "Спасибо за отзыв!"
+
+msgid "Grant success message"
+msgstr "Заявка отправлена!"
+
+msgid "Join coordination chat"
+msgstr "Присоединяйся к координационному чату"

@@ -667,3 +667,12 @@ msgstr "Qırım sakinlerine zor hayat durumlarında destek programı"
 
 msgid "Social Support Service Instruction"
 msgstr "Her iki haftada bir gerçekleşen gıda paketi dağıtımına katıl. Aşağıdaki formu doldur - seninle iletişime geçeceğiz."
+
+msgid "Feedback success message"
+msgstr "Geri bildiriminiz için teşekkürler!"
+
+msgid "Grant success message"
+msgstr "Başvurunuz gönderildi!"
+
+msgid "Join coordination chat"
+msgstr "Koordinasyon sohbetine katıl"

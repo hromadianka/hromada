@@ -653,3 +653,12 @@ msgstr "A support program for Crimea residents in difficult life situations"
 
 msgid "Social Support Service Instruction"
 msgstr "Join our food package distribution that takes place every two weeks. Fill out the application below and we will contact you."
+
+msgid "Feedback success message"
+msgstr "Thank you for your feedback!"
+
+msgid "Grant success message"
+msgstr "Application submitted!"
+
+msgid "Join coordination chat"
+msgstr "Join the coordination chat"

@@ -47,6 +47,9 @@ msgstr "Qıdırmaq"
 msgid "Самоуправление"
 msgstr "Öz-idaresi"
 
+msgid "Сервисы"
+msgstr "Hizmetler"
+
 msgid "Main Page Text"
 msgstr ""
 "Qırımğa seniñ emeğin, kreativligiñ ve teşebbüsüñ kerek! Bizim yarımadamızda "
@@ -619,3 +622,57 @@ msgstr "Bizimnen bağlantı qurmaq ister misin? Yaz"
 
 msgid "All Types"
 msgstr "Bütün türler"
+
+msgid "Open brochure"
+msgstr "Broşüranı aç"
+
+msgid "Feedback"
+msgstr "Geri bildirim"
+
+msgid "Email (optional)"
+msgstr "Email (isteğe bağlı)"
+
+msgid "Your feedback"
+msgstr "Geri bildiriminiz"
+
+msgid "Send feedback"
+msgstr "Geri bildirim gönder"
+
+msgid "Grant application"
+msgstr "Hibe başvurusu"
+
+msgid "Team name or your name"
+msgstr "Takım adı veya adınız"
+
+msgid "City / Location"
+msgstr "Şehir / Konum"
+
+msgid "Application text"
+msgstr "Başvuru metni"
+
+msgid "Submit application"
+msgstr "Başvuruyu gönder"
+
+msgid "Services"
+msgstr "Hizmetler"
+
+msgid "No services available"
+msgstr "Hizmet yok"
+
+msgid "Social Support Service Name"
+msgstr "Sosyal yardım hizmeti"
+
+msgid "Social Support Service Description"
+msgstr "Qırım sakinlerine zor hayat durumlarında destek programı"
+
+msgid "Social Support Service Instruction"
+msgstr "Her iki haftada bir gerçekleşen gıda paketi dağıtımına katıl. Aşağıdaki formu doldur - seninle iletişime geçeceğiz."
+
+msgid "Feedback success message"
+msgstr "Geri bildiriminiz için teşekkürler!"
+
+msgid "Grant success message"
+msgstr "Başvurunuz gönderildi!"
+
+msgid "Join coordination chat"
+msgstr "Koordinasyon sohbetine katıl"

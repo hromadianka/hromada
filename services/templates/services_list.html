@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container">
+    <h1>{% trans 'Services' %}</h1>
+    <div class="projects-container">
+        <div class="card">
+            <h3><a href="{% url 'social_support' %}">{% trans 'Social Support Service Name' %}</a></h3>
+            <p>{% trans 'Social Support Service Description' %}</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

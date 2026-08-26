@@ -14,7 +14,8 @@ Setup:
    source .venv/bin/activate
 3. Install dependencies:
    pip install -r requirements.txt
-4. Run the development server:
+4. Generate and set the SECRET_KEY
+5. Run the development server:
    python manage.py runserver
 
 Next time:
@@ -51,7 +52,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # dev: 1 | KEY
 # -------------------------------------------------------------------------start
 # SECRET_KEY = os.environ["SECRET_KEY"]
-SECRET_KEY = "p24^u(vh86=6zjkgbe#c&m-ps_)l*p0l@h02%18f&5wz8b4v1c"
+SECRET_KEY = ""
 # ---------------------------------------------------------------------------end
 # end dev: 1
 

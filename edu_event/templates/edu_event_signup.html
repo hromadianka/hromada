@@ -18,7 +18,7 @@
     <br>
     {% trans 'Гость' %}: <strong>{{ registration.user.username }}</strong>
     <br>
-    {% trans 'Код' %}: <strong>{{ registration.code }}</strong>
+    {% trans 'Код регистрации' %}: <strong>{{ registration.code }}</strong>
   </p>
 
   {% else %}
@@ -26,7 +26,9 @@
   <p>
     {% trans 'Пожалуйста, попробуйте ешё раз.' %}
     <br>
-    {% trans 'Если ошибка повторяется, <a href="mailto:hromada-mail@proton.me">напишите нам на почту</a>.' %}
+    {% blocktrans trimmed with email='mailto:hromada-mail@proton.me' %}
+    Если ошибка повторяется, <a href="{{ email }}">напишите нам на почту</a>.
+    {% endblocktrans %}
     <form method="post">
       {% csrf_token %}
       <button type="submit" class="button" style="width: 100%">{% trans "Зарегистрироваться на мероприятие" %}</button>

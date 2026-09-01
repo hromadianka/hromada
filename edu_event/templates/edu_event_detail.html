@@ -25,7 +25,7 @@
     <br>
     {% trans 'Гость' %}: <strong>{{ registration.user.username }}</strong>
     <br>
-    {% trans 'Код' %}: <strong>{{ registration.code }}</strong>
+    {% trans 'Код регистрации' %}: <strong>{{ registration.code }}</strong>
   </p>
 
   <hr style="margin-top: 24px; margin-bottom: 24px;">
@@ -38,7 +38,11 @@
 
   {% elif authenticated %}
   <p>{% trans 'Регистрация на образовательные мероприятия доступна пользователям с бесплатной подпиской.' %}</p>
-  <p>{% trans 'Для оформления подписки напишите нам на <a href="mailto:hromada-mail@proton.me">почту</a>, расскажите о своих активностях в сообществе и о заинтересовавших вас мероприятиях.' %}</p>
+  <p>
+    {% blocktrans trimmed with email='mailto:hromada-mail@proton.me' %}
+    Для оформления подписки напишите нам на <a href="{{ email }}">почту</a>, расскажите о своих активностях в сообществе и о заинтересовавших вас мероприятиях.
+    {% endblocktrans %}
+  </p>
   <hr style="margin-top: 24px; margin-bottom: 24px;">
 
   {% else %}

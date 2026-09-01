@@ -8,47 +8,356 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-27 16:31+0200\n"
+"POT-Creation-Date: 2026-09-02 00:23+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
-#: .\hromada\settings.py:115
-msgid "English"
+
+#: account/forms.py:9
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: account/forms.py:13
+msgid "Email"
+msgstr "Электронная почта"
+
+#: account/forms.py:17
+msgid "Password"
+msgstr "Пароль"
+
+#: account/forms.py:21
+msgid "Repeat password"
+msgstr "Повтори пароль"
+
+#: account/forms.py:35
+msgid "Passwords don't match"
+msgstr "Пароли не совпадают"
+
+#: account/templates/account/account.html:8 templates/base.html:86
+msgid "My account"
+msgstr "Мой аккаунт"
+
+#: account/templates/account/account.html:11
+msgid "Change password"
+msgstr "Изменить пароль"
+
+#: account/templates/account/account.html:14
+msgid "Log out"
+msgstr "Выйти"
+
+#: account/templates/account/account.html:17
+msgid "Delete my data"
+msgstr "Удалить мои данные"
+
+#: account/templates/account/account.html:22
+msgid "Are you sure you want to delete your account and all associated data?"
+msgstr "Ты уверен, что хочешь удалить свой аккаунт и все связанные данные?"
+
+#: account/templates/account/account.html:23
+#: account/templates/account/account.html:51
+#: account/templates/account/account.html:61
+msgid "Delete"
+msgstr "Удалить"
+
+#: account/templates/account/account.html:24
+#: account/templates/account/account.html:62
+msgid "Cancel"
+msgstr "Отмена"
+
+#: account/templates/account/account.html:39
+msgid "Projects"
+msgstr "Проекты"
+
+#: account/templates/account/account.html:45
+msgid "Pending approval"
 msgstr ""
 
-#: .\hromada\settings.py:116
-msgid "Українська"
+#: account/templates/account/account.html:54
+msgid "Edit"
+msgstr "Редактировать"
+
+#: account/templates/account/account.html:60
+msgid "Are you sure you want to delete this project?"
+msgstr "Ты уверен, что хочешь удалить этот проект?"
+
+#: account/templates/account/account.html:77
+#: account/templates/account/account.html:106
+#: edu_event/templates/edu_event_list.html:8 templates/base.html:77
+msgid "Образовательные мероприятия"
+msgstr "Образовательные мероприятия"
+
+#: account/templates/account/account.html:77
+msgid "Я – гость"
+msgstr "Я – гость"
+
+#: account/templates/account/account.html:106
+msgid "Я – организатор"
+msgstr "Я – организатор"
+
+#: account/templates/account/account.html:169
+msgid "Unable to delete project"
+msgstr "Невозможно удалить проект"
+
+#: account/templates/account/account.html:213
+msgid "Unable to delete account"
+msgstr "Не удалось удалить аккаунт"
+
+#: account/templates/account/register.html:6
+msgid "Sign-up"
+msgstr "Регистрация"
+
+#: account/templates/account/register.html:29
+#: account/templates/registration/login.html:26
+msgid "Register Button"
+msgstr "Зарегистрироваться"
+
+#: account/templates/account/register.html:36
+msgid "Log-in Button"
+msgstr "Войти"
+
+#: account/templates/registration/login.html:7
+#: account/templates/registration/login.html:22
+#: edu_event/templates/edu_event_detail.html:55
+msgid "Log-in"
+msgstr "Вход"
+
+#: account/templates/registration/login.html:10
+msgid "Your username and password didn't match. Please try again"
+msgstr "Твоё имя пользователя и пароль не совпадают. Попробуй еще раз"
+
+#: account/templates/registration/login.html:30
+msgid "Forgotten password Button"
+msgstr "Забыл пароль?"
+
+#: account/templates/registration/password_change_form.html:7
+msgid "Change your password"
+msgstr "Изменить пароль"
+
+#: account/templates/registration/password_change_form.html:23
+msgid "Change"
+msgstr "Изменить"
+
+#: account/templates/registration/password_reset_complete.html:6
+msgid "Password set"
+msgstr "Пароль установлен"
+
+#: account/templates/registration/password_reset_complete.html:9
+#, fuzzy, python-format
+#| msgid ""
+#| "Your password has been set. You can <a href=\"%(url)s\">log in now</a>."
+msgid ""
+"Your password has been set. You can <a href=\"%(login_url)s\">log in now</a>."
+msgstr "Пароль был установлен. Ты можешь <a href=\"%(url)s\">войти сейчас</a>."
+
+#: account/templates/registration/password_reset_confirm.html:7
+#: account/templates/registration/password_reset_done.html:6
+msgid "Reset your password"
+msgstr "Сброс пароля"
+
+#: account/templates/registration/password_reset_confirm.html:10
+msgid "Please enter your new password twice"
+msgstr "Пожалуйста, введи новый пароль дважды"
+
+#: account/templates/registration/password_reset_confirm.html:26
+#, fuzzy
+#| msgid "Change password"
+msgid "Change my password"
+msgstr "Изменить пароль"
+
+#: account/templates/registration/password_reset_confirm.html:30
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset"
+msgstr ""
+"Ссылка для сброса пароля недействительна, возможно, она уже была "
+"использована. Запроси сброс пароля снова"
+
+#: account/templates/registration/password_reset_done.html:7
+msgid "We've emailed you instructions for setting your password."
+msgstr "Мы отправили тебе инструкции по установке пароля на электронную почту."
+
+#: account/templates/registration/password_reset_done.html:8
+msgid ""
+"If you don't receive an email, make sure you entered the address you "
+"registered with."
+msgstr ""
+"Если ты не получил письмо, убедись, что ты ввёл адрес, на который "
+"регистрировал аккаунт."
+
+#: account/templates/registration/password_reset_email.html:3
+#, fuzzy, python-format
+#| msgid "Someone requested a password reset for the email {{ email }}."
+msgid "Someone requested a password reset for the email %(email)s."
+msgstr "Кто-то запросил сброс пароля для электронной почты {{ email }}."
+
+#: account/templates/registration/password_reset_email.html:4
+msgid "Follow the link below to reset your password:"
+msgstr "Перейди по ссылке ниже, чтобы сбросить пароль:"
+
+#: account/templates/registration/password_reset_email.html:8
+#, fuzzy, python-format
+#| msgid "Your username, in case you've forgotten: {{ username }}"
+msgid "Your username, in case you've forgotten: %(username)s"
+msgstr "Твоё имя пользователя, если ты не помнишь: {{ username }}"
+
+#: account/templates/registration/password_reset_form.html:7
+msgid "Forgotten your password?"
+msgstr "Забыл пароль?"
+
+#: account/templates/registration/password_reset_form.html:8
+msgid "Enter your e-mail address to obtain a new password"
+msgstr "Введи свой адрес электронной почты, чтобы получить новый пароль"
+
+#: account/templates/registration/password_reset_form.html:25
+msgid "Send e-mail"
+msgstr "Отправить письмо"
+
+#: account/views.py:55
+msgid "Account deleted"
+msgstr "Аккаунт удалён"
+
+#: account/views.py:57 project/views.py:27
+msgid "Invalid request"
 msgstr ""
 
-#: .\hromada\settings.py:117
-msgid "Русский"
-msgstr ""
+#: create/templates/create_project.html:17
+msgid "Create a project"
+msgstr "Создать проект"
 
-#: .\hromada\settings.py:118
-msgid "Qirimtatar"
-msgstr ""
+#: create/templates/create_project.html:20
+#: project/templates/project_edit.html:20
+msgid "Project name"
+msgstr "Название проекта"
 
-msgid "Дом"
-msgstr "Дом"
+#: create/templates/create_project.html:21
+msgid "Project description"
+msgstr "Описание проекта"
 
-msgid "Вики"
-msgstr "Вики"
-
-msgid "Создать"
+#: create/templates/create_project.html:22
+msgid "Create"
 msgstr "Создать"
 
-msgid "Поиск"
-msgstr "Поиск"
+#: edu_event/templates/edu_event_detail.html:22
+#: edu_event/templates/edu_event_signup.html:15
+msgid "Вы зарегистрированы на мероприятие!"
+msgstr "Вы зарегистрированы на мероприятие!"
 
-msgid "Самоуправление"
-msgstr "Самоуправление"
+#: edu_event/templates/edu_event_detail.html:24
+#: edu_event/templates/edu_event_signup.html:17
+msgid "При посещении мероприятия предъявите организатору эти данные"
+msgstr "При посещении мероприятия предъявите организатору эти данные"
 
+#: edu_event/templates/edu_event_detail.html:26
+#: edu_event/templates/edu_event_registrations_list.html:17
+#: edu_event/templates/edu_event_signup.html:19
+msgid "Гость"
+msgstr "Гость"
+
+#: edu_event/templates/edu_event_detail.html:28
+#: edu_event/templates/edu_event_registrations_list.html:19
+#: edu_event/templates/edu_event_signup.html:21
+msgid "Код регистрации"
+msgstr "Код регистрации"
+
+#: edu_event/templates/edu_event_detail.html:36
+#: edu_event/templates/edu_event_signup.html:34
+msgid "Зарегистрироваться на мероприятие"
+msgstr "Зарегистрироваться на мероприятие"
+
+#: edu_event/templates/edu_event_detail.html:40
+msgid ""
+"Регистрация на образовательные мероприятия доступна пользователям с "
+"бесплатной подпиской."
+msgstr ""
+"Регистрация на образовательные мероприятия доступна пользователям с "
+"бесплатной подпиской."
+
+#: edu_event/templates/edu_event_detail.html:42
+#, python-format
+msgid ""
+"Для оформления подписки напишите нам на <a href=\"%(email)s\">почту</a>, "
+"расскажите о своих активностях в сообществе и о заинтересовавших вас "
+"мероприятиях."
+msgstr ""
+"Для оформления подписки напишите нам на <a href=\"%(email)s\">почту</a>, "
+"расскажите о своих активностях в сообществе и о заинтересовавших вас "
+"мероприятиях."
+
+#: edu_event/templates/edu_event_detail.html:50
+msgid ""
+"Регистрация на образовательные мероприятия доступна только авторизованным "
+"пользователям с бесплатной подпиской."
+msgstr ""
+"Регистрация на образовательные мероприятия доступна только авторизованным "
+"пользователям с бесплатной подпиской."
+
+#: edu_event/templates/edu_event_detail.html:52
+msgid "Войдите в аккаунт, чтобы узнать больше."
+msgstr "Войдите в аккаунт, чтобы узнать больше."
+
+#: edu_event/templates/edu_event_detail.html:61
+#: edu_event/templates/edu_event_registrations_list.html:14
+msgid "Список зарегистрированных гостей"
+msgstr "Список зарегистрированных гостей"
+
+#: edu_event/templates/edu_event_detail.html:65
+msgid "Все мероприятия"
+msgstr "Все мероприятия"
+
+#: edu_event/templates/edu_event_list.html:13
+msgid ""
+"Примите участие в наших образовательных мероприятиях: лекциях, мастер-"
+"классах, курсах и не только"
+msgstr ""
+"Примите участие в наших образовательных мероприятиях: лекциях, мастер-"
+"классах, курсах и не только"
+
+#: edu_event/templates/edu_event_list.html:17
+msgid "Предстоящие мероприятия"
+msgstr "Предстоящие мероприятия"
+
+#: edu_event/templates/edu_event_list.html:40
+msgid "Недавние мероприятия"
+msgstr "Недавние мероприятия"
+
+#: edu_event/templates/edu_event_registrations_list.html:23
+msgid "Нет зарегистрированных пользователей"
+msgstr "Нет зарегистрированных пользователей"
+
+#: edu_event/templates/edu_event_registrations_list.html:28
+#: edu_event/templates/edu_event_signup.html:39
+msgid "На страницу мероприятия"
+msgstr "На страницу мероприятия"
+
+#: edu_event/templates/edu_event_signup.html:25
+msgid "Не удалось зарегистрироваться на мероприятие"
+msgstr "Не удалось зарегистрироваться на мероприятие"
+
+#: edu_event/templates/edu_event_signup.html:27
+msgid "Пожалуйста, попробуйте ешё раз."
+msgstr "Пожалуйста, попробуйте ешё раз."
+
+#: edu_event/templates/edu_event_signup.html:29
+#, python-format
+msgid ""
+"Если ошибка повторяется, <a href=\"%(email)s\">напишите нам на почту</a>."
+msgstr ""
+"Если ошибка повторяется, <a href=\"%(email)s\">напишите нам на почту</a>."
+
+#: edu_event/views.py:76
+#, fuzzy
+#| msgid "You are not allowed to delete this project"
+msgid "You are not allowed to see the list of attendees for this event."
+msgstr "Ты не имеешь права смотреть список гостей этого мероприятия"
+
+#: home/templates/home_page.html:22
 msgid "Main Page Text"
 msgstr ""
 "Крыму нужна твоя работа, твоя креативность и инициатива! Наш полуостров "
@@ -59,562 +368,645 @@ msgstr ""
 "которые каждый день поддерживают друг друга и строят систему общего действия "
 "и принятия решений.\n"
 "\n"
-"Объединяйся с теми, с кем ты живёшь, учишься и работаешь. Реализуй собственные "
-"идеи. Защищай свой полуостров от всех, кто угрожает свободе живущих на нём "
-"людей. Ради себя, ради своей земли и её народа, ради своих детей и внуков."
+"Объединяйся с теми, с кем ты живёшь, учишься и работаешь. Реализуй "
+"собственные идеи. Защищай свой полуостров от всех, кто угрожает свободе "
+"живущих на нём людей. Ради себя, ради своей земли и её народа, ради своих "
+"детей и внуков."
 
+#: home/templates/home_page.html:23
 msgid "Main Page Button"
 msgstr "Начать действовать"
 
+#: home/templates/home_page.html:41
 msgid "Question 1"
 msgstr "Зачем нужна Громада Крым?"
 
+#: home/templates/home_page.html:43
 msgid "Answer 1"
 msgstr ""
-"Громада Крым помогает найти вдохновение и идеи, даёт возможность присоединиться к "
-"уже существующей инициативе и найти исполнителя или какие-то ресурсы для своего "
-"собственного проекта. Мы всегда готовы помочь данными или дать консультацию. Короче "
-"говоря, Громада Крым – это пространство, в котором становится возможной реализация идей "
-"и целей. \n"
+"Громада Крым помогает найти вдохновение и идеи, даёт возможность "
+"присоединиться к уже существующей инициативе и найти исполнителя или какие-"
+"то ресурсы для своего собственного проекта. Мы всегда готовы помочь данными "
+"или дать консультацию. Короче говоря, Громада Крым – это пространство, в "
+"котором становится возможной реализация идей и целей. \n"
 "\n"
-"Одна из наших задач – это привлечь как можно больше крымчан к гражданской деятельности. "
-"Мы объединяем людей и инициативы, чтобы создать в Крыму систему низового самоуправления: "
-"систему, которая сможет совместно и организованно принимать решения и действовать на "
-"благо всех крымчан. С помощью Громады Крым ты можешь присоединиться к этой системе и "
-"высказать свой голос."
+"Одна из наших задач – это привлечь как можно больше крымчан к гражданской "
+"деятельности. Мы объединяем людей и инициативы, чтобы создать в Крыму "
+"систему низового самоуправления: систему, которая сможет совместно и "
+"организованно принимать решения и действовать на благо всех крымчан. С "
+"помощью Громады Крым ты можешь присоединиться к этой системе и высказать "
+"свой голос."
 
+#: home/templates/home_page.html:47
 msgid "Question 2"
 msgstr "Зачем МНЕ принимать в этом участие?"
 
+#: home/templates/home_page.html:49
 msgid "Answer 2"
 msgstr ""
-"Современный человек часто чувствует себя одиноким и неспособным на что-то повлиять. "
-"Получается парадоксальная ситуация: наше будущее в глобализированном мире как никогда "
-"зависит друг от друга, но мы как никогда друг от друга оторваны. В Громаде Крым твой "
-"голос будет услышан. Ты станешь частью сообщества и через него будешь напрямую влиять "
-"на будущее своей земли и, соответственно, своё будущее."
+"Современный человек часто чувствует себя одиноким и неспособным на что-то "
+"повлиять. Получается парадоксальная ситуация: наше будущее в "
+"глобализированном мире как никогда зависит друг от друга, но мы как никогда "
+"друг от друга оторваны. В Громаде Крым твой голос будет услышан. Ты станешь "
+"частью сообщества и через него будешь напрямую влиять на будущее своей земли "
+"и, соответственно, своё будущее."
 
+#: home/templates/home_page.html:53
 msgid "Question 3"
 msgstr "Всё равно ничего не изменить."
 
+#: home/templates/home_page.html:55
 msgid "Answer 3"
 msgstr ""
-"Мы с этим абсолютно не согласны! История знает миллион примеров, когда умные, "
-"креативные и инициативные граждане меняли её ход. Каждый день мы можем наблюдать, "
-"как участники нашего движения ставят цели и выполняют их, и мы видим, как эти небольшие "
-"шаги ведут нас к глобальным изменениям. Нас очень много, мы великая сила, и мы напрямую "
-"влияем на будущее нашей земли."
+"Мы с этим абсолютно не согласны! История знает миллион примеров, когда "
+"умные, креативные и инициативные граждане меняли её ход. Каждый день мы "
+"можем наблюдать, как участники нашего движения ставят цели и выполняют их, и "
+"мы видим, как эти небольшие шаги ведут нас к глобальным изменениям. Нас "
+"очень много, мы великая сила, и мы напрямую влияем на будущее нашей земли."
 
+#: home/templates/home_page.html:59
 msgid "Question 4"
 msgstr "У меня нет на это времени. Я должен заниматься своей жизнью."
 
+#: home/templates/home_page.html:61
 msgid "Answer 4"
 msgstr ""
-"Тебе не нужно тратить на гражданскую активность много времени. Ниже ты можешь "
-"выбрать себе задание, на выполнение которого уйдёт всего около 15 минут – быстрее, "
-"чем проголосовать на выборах. Каждый твой маленький шаг – это часть большого общего пути. "
-"Участие в гражданской жизни – признак таких качеств, как ответственность и осознанность, "
-"без которых вряд ли можно достичь успеха и в других сферах жизни."
+"Тебе не нужно тратить на гражданскую активность много времени. Ниже ты "
+"можешь выбрать себе задание, на выполнение которого уйдёт всего около 15 "
+"минут – быстрее, чем проголосовать на выборах. Каждый твой маленький шаг – "
+"это часть большого общего пути. Участие в гражданской жизни – признак таких "
+"качеств, как ответственность и осознанность, без которых вряд ли можно "
+"достичь успеха и в других сферах жизни."
 
+#: home/templates/home_page.html:65
 msgid "Question 5"
 msgstr "Как устроена Громада Крым?"
 
+#: home/templates/home_page.html:67
 msgid "Answer 5"
 msgstr ""
-"Наше движение децентрализовано: это значит, что у нас нет никакого “центра” или “руководства”. "
-"Громадой Крым управляют её участники, а участником может стать любой, кто разделяет нашу " 
-"общую цель."
+"Наше движение децентрализовано: это значит, что у нас нет никакого “центра” "
+"или “руководства”. Громадой Крым управляют её участники, а участником может "
+"стать любой, кто разделяет нашу общую цель."
 
+#: home/templates/home_page.html:71
 msgid "Question 6"
 msgstr "Как мне принять в этом участие?"
 
+#: home/templates/home_page.html:73
 msgid "Answer 6"
 msgstr ""
 "Чтобы стать участником нашего сообщества, тебе нужно просто создать на нашей "
-"онлайн-платформе свою инициативу или присоединиться к уже существующей. Мы окажем тебе любую "
-"помощь, которую только сможем: предоставим консультацию и нужные данные, сведём с "
-"исполнителями задач, постараемся помочь твоей инициативе деньгами и другими ресурсами. Ниже "
-"ты найдёшь примеры заданий, выполнение которых займёт не больше 15 минут."
-
-msgid "Survey"
-msgstr "Опрос"
-
-msgid "Survey Callout Text"
-msgstr ""
-"Прими участие в опросе! Он поможет нам лучше определять наши тактики, чтобы привлекать к "
-"гражданской деятельности как можно больше людей."
-
-msgid "Survey Age Question"
-msgstr "Возраст"
-
-msgid "Survey Income Question"
-msgstr "Доход (если у тебя нет собственного дохода, укажи средний доход на члена семьи)"
-
-msgid "Survey Income Question Answer 1"
-msgstr "Меньше 15 000 рублей"
-
-msgid "Survey Income Question Answer 2"
-msgstr "15 000-25 000 рублей"
-
-msgid "Survey Income Question Answer 3"
-msgstr "25 000-40 000 рублей"
-
-msgid "Survey Income Question Answer 4"
-msgstr "40 000-65 000 рублей"
-
-msgid "Survey Income Question Answer 5"
-msgstr "65 000-90 000 рублей"
-
-msgid "Survey Income Question Answer 6"
-msgstr "90 000-140 000 рублей"
-
-msgid "Survey Income Question Answer 7"
-msgstr "Больше 140 000 рублей"
-
-msgid "Survey Social Status Question"
-msgstr "Социальный статус"
-
-msgid "Survey Social Status Question Answer 1"
-msgstr "Школьник или студент"
-
-msgid "Survey Social Status Question Answer 2"
-msgstr "Безработный"
-
-msgid "Survey Social Status Question Answer 3"
-msgstr "Предприниматель"
-
-msgid "Survey Social Status Question Answer 4"
-msgstr "Работник"
-
-msgid "Survey Social Status Question Answer 5"
-msgstr "Индивидуальный предприниматель"
-
-msgid "Survey Education Question"
-msgstr "Образование"
-
-msgid "Survey Education Question Answer 1"
-msgstr "Учусь в школе (1-9 класс)"
-
-msgid "Survey Education Question Answer 2"
-msgstr "Базовое образование (9 классов)"
-
-msgid "Survey Education Question Answer 3"
-msgstr "Учусь в школе (10-11 класс)"
-
-msgid "Survey Education Question Answer 4"
-msgstr "Среднее общее"
-
-msgid "Survey Education Question Answer 5"
-msgstr "Учусь в учреждении среднего специального образования (ПТУ, колледж)"
-
-msgid "Survey Education Question Answer 6"
-msgstr "Среднее специальное"
-
-msgid "Survey Education Question Answer 7"
-msgstr "Учусь в вузе"
-
-msgid "Survey Education Question Answer 8"
-msgstr "Высшее образование"
-
-msgid "Survey Veterans Question"
-msgstr "У тебя есть родственники или близкие друзья, которые воевали или воюют в СВО? Или, возможно, ты сам таким являешься?"
-
-msgid "Survey Dead Veterans Question"
-msgstr "У тебя есть родственники или близкие друзья, которые погибли в СВО?"
-
-msgid "Yes"
-msgstr "Да"
-
-msgid "No"
-msgstr "Нет"
-
-msgid "Survey Birth Place Question"
-msgstr "Где ты родился?"
-
-msgid "Survey Residence Question"
-msgstr "В каком населенном пункте ты живешь сейчас?"
-
-msgid "Start entering"
-msgstr "Начни вводить"
-
-msgid "Survey Participating Question"
-msgstr "Как ты участвовал в общественной жизни?"
-
-msgid "Survey Participating Question Answer 1"
-msgstr "Голосовал на выборах"
-
-msgid "Survey Participating Question Answer 2"
-msgstr "Участвовал в деятельности политических партий"
-
-msgid "Survey Participating Question Answer 3"
-msgstr "Был наблюдателем на выборах"
-
-msgid "Survey Participating Question Answer 4"
-msgstr "Занимался политическим или гражданским активизмом"
-
-msgid "Survey Participating Question Answer 5"
-msgstr "Занимался волонтерством"
-
-msgid "Survey Participating Question Answer 6"
-msgstr "Реализовывал совместные инициативы с соседями"
-
-msgid "Survey Participating Question Answer 7"
-msgstr "Реализовывал совместные инициативы с людьми, с которыми учился или учишься"
-
-msgid "Survey Participating Question Answer 8"
-msgstr "Реализовывал совместные инициативы с людьми, с которыми работал или работаешь"
-
-msgid "Survey Participating Question Answer 9"
-msgstr "Реализовывал другие гражданские инициативы"
-
-msgid "Survey Participating Question Answer 10"
-msgstr "Участвовал в общественной или политической жизни каким-то другим способом"
-
-msgid "Survey Participating Question Answer 11"
-msgstr "Никак не участвовал"
-
-msgid "Survey Participating About Question"
-msgstr "Если хочешь, можешь подробнее рассказать о своем участии в жизни общества"
-
-msgid "Survey Participating Reasons Question"
-msgstr "Что побуждало тебя участвовать (или не участвовать) в жизни общества?"
-
-msgid "Survey Participating More Question"
-msgstr "Что могло бы побудить тебя больше участвовать в жизни общества?"
-
-msgid "Survey Political Interest Question"
-msgstr "Насколько ты интересуешься политической жизнью?"
-
-msgid "Survey Civil Interest Question"
-msgstr "Насколько ты интересуешься общественной жизнью?"
-
-msgid "Survey Why So Question"
-msgstr "Почему так?"
-
-msgid "Survey Government Question"
-msgstr "Для чего, по твоему мнению, больше всего нужна государственная власть? Выбери до 3 вариантов"
-
-msgid "Survey Government Question Answer 1"
-msgstr "Для распределения благ и обеспечения социальных гарантий (зарплат, пенсий)"
-
-msgid "Survey Government Question Answer 2"
-msgstr "Для безопасности в стране"
-
-msgid "Survey Government Question Answer 3"
-msgstr "Для соблюдения и защиты прав граждан"
-
-msgid "Survey Government Question Answer 4"
-msgstr "Для защиты от внешних врагов"
-
-msgid "Survey Government Question Answer 5"
-msgstr "Для защиты культурного, исторического и/или религиозного наследия страны"
-
-msgid "Survey Government Question Answer 6"
-msgstr "Для наказания виновных"
-
-msgid "Survey Government Question Answer 7"
-msgstr "Для выполнения воли граждан"
-
-msgid "Survey Government Question Answer 8"
-msgstr "Для определения направления развития общества"
-
-msgid "Survey Government Additional Question"
-msgstr "Здесь можешь вписать свои варианты и размышления по этому поводу"
-
-msgid "Survey Social Status Additional Question 1"
-msgstr "Какая твоя профессия?"
-
-msgid "Survey Social Status Additional Question 2"
-msgstr "В какой сфере ты работаешь?"
-
-msgid "Send"
-msgstr "Отправить"
-
-msgid "Task Section Heading"
-msgstr "Начни действовать"
-
-msgid "Task Section Text"
-msgstr ""
-"Здесь ты можешь выбрать задание, которое тебе больше всего по душе, и пообещать его выполнить. Каждое из этих заданий "
-"в среднем занимает около 15 минут, но для движения это будет важный шаг, ведь нас много, и вместе мы — большая сила. "
-"Ты можешь выбрать столько заданий, сколько захочешь, но мы советуем начать с одного-двух."
-
-msgid "Task 1"
-msgstr "Рассказать одному знакомому о Громаде Крым"
-
-msgid "Task 2"
-msgstr "Запостить о Громаде Крым в своих социальных сетях"
-
-msgid "Task 3"
-msgstr "Пройти опрос ниже"
-
-msgid "Task 4"
-msgstr "Сделать дизайн листовки, цель которой — привлекать людей к общественной деятельности. Отправить дизайн на "
-
-msgid "Task 5"
-msgstr "Придумать идею для акции, цель которой — привлекать людей к общественной деятельности. Отправить идею на "
-
-msgid "Task 6"
-msgstr "Создать чат соседей, коллег или однокурсников (если его ещё нет) и расклеить объявления в подъезде"
-
-msgid "Task 7"
-msgstr "Прийти на встречу соседей (или организовать её) и вместе решить, как улучшить или разнообразить жизнь дома"
-
-msgid "Task 8"
-msgstr "Определить цели борьбы за свои права или другие общие задачи на месте учёбы или работы. "
-"Создать чат для реализации общих целей или просто пригласить своих товарищей к работе"
-
-msgid "Task 9"
-msgstr "Расклеить несколько листовок по готовым макетам"
-
-msgid "Task 10"
-msgstr "Заказать расклейку листовок по готовым макетам в рамках акции «Волна»"
-
-msgid "Task Section Button"
-msgstr "Выбрать задание"
-
-msgid "Survey Success Message"
-msgstr "Ваш ответ успешно сохранен. Мы очень благодарны вам за участие❤"
-
-msgid "Tasks Success Message"
-msgstr "🎉 Запиши где-нибудь. Ты взял на себя такие задачи:"
-
-msgid "Tasks Failure Message"
-msgstr "Ой, ты не выбрал ни одной задачи :("
-
-msgid "My account"
-msgstr "Мой аккаунт"
-
-msgid "Change password"
-msgstr "Изменить пароль"
-
-msgid "Log out"
-msgstr "Выйти"
-
-msgid "Log-in"
-msgstr "Вход"
-
-msgid "Your username and password didn't match. Please try again"
-msgstr "Твоё имя пользователя и пароль не совпадают. Попробуй еще раз"
-
-msgid "Log-in Button"
-msgstr "Войти"
-
-msgid "Register Button"
-msgstr "Зарегистрироваться"
-
-msgid "Forgotten password Button"
-msgstr "Забыл пароль?"
-
-msgid "Sign-up"
-msgstr "Регистрация"
-
-msgid "Change your password"
-msgstr "Изменить пароль"
-
-msgid "Change"
-msgstr "Изменить"
-
-msgid "Forgotten your password?"
-msgstr "Забыл пароль?"
-
-msgid "Enter your e-mail address to obtain a new password"
-msgstr "Введи свой адрес электронной почты, чтобы получить новый пароль"
-
-msgid "Send e-mail"
-msgstr "Отправить письмо"
-
-msgid "Reset your password"
-msgstr "Сброс пароля"
-
-msgid "Please enter your new password twice"
-msgstr "Пожалуйста, введи новый пароль дважды"
-
-msgid "The password reset link was invalid, possibly because it has already been used. Please request a new password reset"
-msgstr "Ссылка для сброса пароля недействительна, возможно, она уже была использована. Запроси сброс пароля снова"
-
-msgid "Someone requested a password reset for the email {{ email }}."
-msgstr "Кто-то запросил сброс пароля для электронной почты {{ email }}."
-
-msgid "Follow the link below to reset your password:"
-msgstr "Перейди по ссылке ниже, чтобы сбросить пароль:"
-
-msgid "Your username, in case you've forgotten: {{ username }}"
-msgstr "Твоё имя пользователя, если ты не помнишь: {{ username }}"
-
-msgid "We've emailed you instructions for setting your password."
-msgstr "Мы отправили тебе инструкции по установке пароля на электронную почту."
-
-msgid "If you don't receive an email, make sure you entered the address you registered with."
-msgstr "Если ты не получил письмо, убедись, что ты ввёл адрес, на который регистрировал аккаунт."
-
-msgid "Password set"
-msgstr "Пароль установлен"
-
-msgid "Your password has been set. You can <a href=\"%(url)s\">log in now</a>."
-msgstr "Пароль был установлен. Ты можешь <a href=\"%(url)s\">войти сейчас</a>."
-
-msgid "Username"
-msgstr "Имя пользователя"
-
-msgid "Email"
-msgstr "Электронная почта"
-
-msgid "Password"
-msgstr "Пароль"
-
-msgid "Repeat password"
-msgstr "Повтори пароль"
-
-msgid "Passwords don't match"
-msgstr "Пароли не совпадают"
-
-msgid "Create a project"
-msgstr "Создать проект"
-
-msgid "Project name"
-msgstr "Название проекта"
-
-msgid "Project description"
-msgstr "Описание проекта"
-
-msgid "Create"
-msgstr "Создать"
-
-msgid "Projects"
-msgstr "Проекты"
-
-msgid "Delete"
-msgstr "Удалить"
-
-msgid "Cancel"
-msgstr "Отмена"
-
-msgid "Are you sure you want to delete this project?"
-msgstr "Ты уверен, что хочешь удалить этот проект?"
-
-msgid "Unable to delete project"
-msgstr "Невозможно удалить проект"
-
-msgid "You are not allowed to delete this project"
-msgstr "Ты не имеешь права удалять этот проект"
-
-msgid "Project deleted successfully"
-msgstr "Проект успешно удалён"
-
-msgid "You are not allowed to edit this project"
-msgstr "Ты не имеешь права редактировать этот проект"
-
-msgid "Edit project"
-msgstr "Редактировать проект"
-
-msgid "Save"
-msgstr "Сохранить"
-
-msgid "Edit"
-msgstr "Редактировать"
-
-msgid "Delete my data"
-msgstr "Удалить мои данные"
-
-msgid "Are you sure you want to delete your account and all associated data?"
-msgstr "Ты уверен, что хочешь удалить свой аккаунт и все связанные данные?"
-
-msgid "Unable to delete account"
-msgstr "Не удалось удалить аккаунт"
-
-msgid "Account deleted"
-msgstr "Аккаунт удалён"
-
+"онлайн-платформе свою инициативу или присоединиться к уже существующей. Мы "
+"окажем тебе любую помощь, которую только сможем: предоставим консультацию и "
+"нужные данные, сведём с исполнителями задач, постараемся помочь твоей "
+"инициативе деньгами и другими ресурсами. Ниже ты найдёшь примеры заданий, "
+"выполнение которых займёт не больше 15 минут."
+
+#: home/templates/home_page.html:106
 msgid "Why do our activists take part in Hromada?"
 msgstr "Почему наши активисты участвуют в Громаде?"
 
+#: home/templates/home_page.html:107
 msgid "You can add your own reason to inspire others"
 msgstr "Ты можешь добавить свою причину, чтобы вдохновить других"
 
+#: home/templates/home_page.html:119
 msgid "Your reason has been submitted for moderation"
 msgstr "Твоя причина отправлена на модерацию"
 
-msgid "Editing"
-msgstr "Редактирование"
+#: home/templates/home_page.html:127
+msgid "Task Section Heading"
+msgstr "Начни действовать"
 
-msgid "Editing Child"
-msgstr "Редактирование подраздела"
+#: home/templates/home_page.html:131
+msgid "Task Section Text"
+msgstr ""
+"Здесь ты можешь выбрать задание, которое тебе больше всего по душе, и "
+"пообещать его выполнить. Каждое из этих заданий в среднем занимает около 15 "
+"минут, но для движения это будет важный шаг, ведь нас много, и вместе мы — "
+"большая сила. Ты можешь выбрать столько заданий, сколько захочешь, но мы "
+"советуем начать с одного-двух."
 
-msgid "Back to Wiki"
-msgstr "Назад в Вики"
+#: home/templates/home_page.html:139 home/templates/home_page.html:140
+msgid "Task 1"
+msgstr "Рассказать одному знакомому о Громаде Крым"
 
+#: home/templates/home_page.html:145 home/templates/home_page.html:146
+msgid "Task 2"
+msgstr "Запостить о Громаде Крым в своих социальных сетях"
+
+#: home/templates/home_page.html:151 home/templates/home_page.html:152
+msgid "Task 3"
+msgstr "Пройти опрос ниже"
+
+#: home/templates/home_page.html:157 home/templates/home_page.html:158
+#: home/views.py:54
+msgid "Task 4"
+msgstr ""
+"Сделать дизайн листовки, цель которой — привлекать людей к общественной "
+"деятельности. Отправить дизайн на "
+
+#: home/templates/home_page.html:163 home/templates/home_page.html:164
+#: home/views.py:55
+msgid "Task 5"
+msgstr ""
+"Придумать идею для акции, цель которой — привлекать людей к общественной "
+"деятельности. Отправить идею на "
+
+#: home/templates/home_page.html:169 home/templates/home_page.html:170
+msgid "Task 6"
+msgstr ""
+"Создать чат соседей, коллег или однокурсников (если его ещё нет) и расклеить "
+"объявления в подъезде"
+
+#: home/templates/home_page.html:175 home/templates/home_page.html:176
+msgid "Task 7"
+msgstr ""
+"Прийти на встречу соседей (или организовать её) и вместе решить, как "
+"улучшить или разнообразить жизнь дома"
+
+#: home/templates/home_page.html:181 home/templates/home_page.html:182
+msgid "Task 8"
+msgstr ""
+"Определить цели борьбы за свои права или другие общие задачи на месте учёбы "
+"или работы. Создать чат для реализации общих целей или просто пригласить "
+"своих товарищей к работе"
+
+#: home/templates/home_page.html:186
+msgid "Task Section Button"
+msgstr "Выбрать задание"
+
+#: home/templates/home_page.html:191
+msgid "Survey"
+msgstr "Опрос"
+
+#: home/templates/home_page.html:194
+msgid "Survey Callout Text"
+msgstr ""
+"Прими участие в опросе! Он поможет нам лучше определять наши тактики, чтобы "
+"привлекать к гражданской деятельности как можно больше людей."
+
+#: home/templates/home_page.html:200
+msgid "Survey Age Question"
+msgstr "Возраст"
+
+#: home/templates/home_page.html:204
+msgid "Survey Income Question"
+msgstr ""
+"Доход (если у тебя нет собственного дохода, укажи средний доход на члена "
+"семьи)"
+
+#: home/templates/home_page.html:208
+msgid "Survey Income Question Answer 1"
+msgstr "Меньше 15 000 рублей"
+
+#: home/templates/home_page.html:213
+msgid "Survey Income Question Answer 2"
+msgstr "15 000-25 000 рублей"
+
+#: home/templates/home_page.html:218
+msgid "Survey Income Question Answer 3"
+msgstr "25 000-40 000 рублей"
+
+#: home/templates/home_page.html:223
+msgid "Survey Income Question Answer 4"
+msgstr "40 000-65 000 рублей"
+
+#: home/templates/home_page.html:228
+msgid "Survey Income Question Answer 5"
+msgstr "65 000-90 000 рублей"
+
+#: home/templates/home_page.html:233
+msgid "Survey Income Question Answer 6"
+msgstr "90 000-140 000 рублей"
+
+#: home/templates/home_page.html:238
+msgid "Survey Income Question Answer 7"
+msgstr "Больше 140 000 рублей"
+
+#: home/templates/home_page.html:243
+msgid "Survey Social Status Question"
+msgstr "Социальный статус"
+
+#: home/templates/home_page.html:247
+msgid "Survey Social Status Question Answer 1"
+msgstr "Школьник или студент"
+
+#: home/templates/home_page.html:252
+msgid "Survey Social Status Question Answer 2"
+msgstr "Безработный"
+
+#: home/templates/home_page.html:257
+msgid "Survey Social Status Question Answer 3"
+msgstr "Предприниматель"
+
+#: home/templates/home_page.html:262
+msgid "Survey Social Status Question Answer 4"
+msgstr "Работник"
+
+#: home/templates/home_page.html:267
+msgid "Survey Social Status Question Answer 5"
+msgstr "Индивидуальный предприниматель"
+
+#: home/templates/home_page.html:272
+msgid "Survey Social Status Additional Question 1"
+msgstr "Какая твоя профессия?"
+
+#: home/templates/home_page.html:277
+msgid "Survey Social Status Additional Question 2"
+msgstr "В какой сфере ты работаешь?"
+
+#: home/templates/home_page.html:282
+msgid "Survey Education Question"
+msgstr "Образование"
+
+#: home/templates/home_page.html:285
+msgid "Survey Education Question Answer 1"
+msgstr "Учусь в школе (1-9 класс)"
+
+#: home/templates/home_page.html:290
+msgid "Survey Education Question Answer 2"
+msgstr "Базовое образование (9 классов)"
+
+#: home/templates/home_page.html:295
+msgid "Survey Education Question Answer 3"
+msgstr "Учусь в школе (10-11 класс)"
+
+#: home/templates/home_page.html:300
+msgid "Survey Education Question Answer 4"
+msgstr "Среднее общее"
+
+#: home/templates/home_page.html:305
+msgid "Survey Education Question Answer 5"
+msgstr "Учусь в учреждении среднего специального образования (ПТУ, колледж)"
+
+#: home/templates/home_page.html:310
+msgid "Survey Education Question Answer 6"
+msgstr "Среднее специальное"
+
+#: home/templates/home_page.html:315
+msgid "Survey Education Question Answer 7"
+msgstr "Учусь в вузе"
+
+#: home/templates/home_page.html:320
+msgid "Survey Education Question Answer 8"
+msgstr "Высшее образование"
+
+#: home/templates/home_page.html:325
+msgid "Survey Veterans Question"
+msgstr ""
+"У тебя есть родственники или близкие друзья, которые воевали или воюют в "
+"СВО? Или, возможно, ты сам таким являешься?"
+
+#: home/templates/home_page.html:328 home/templates/home_page.html:341
+msgid "Yes"
+msgstr "Да"
+
+#: home/templates/home_page.html:333 home/templates/home_page.html:346
+msgid "No"
+msgstr "Нет"
+
+#: home/templates/home_page.html:338
+msgid "Survey Dead Veterans Question"
+msgstr "У тебя есть родственники или близкие друзья, которые погибли в СВО?"
+
+#: home/templates/home_page.html:351
+msgid "Survey Birth Place Question"
+msgstr "Где ты родился?"
+
+#: home/templates/home_page.html:352
+#, fuzzy
+#| msgid "Start entering"
+msgid " Start entering"
+msgstr "Начни вводить"
+
+#: home/templates/home_page.html:356
+msgid "Survey Residence Question"
+msgstr "В каком населенном пункте ты живешь сейчас?"
+
+#: home/templates/home_page.html:363
+msgid "Survey Participating Question"
+msgstr "Как ты участвовал в общественной жизни?"
+
+#: home/templates/home_page.html:367
+msgid "Survey Participating Question Answer 1"
+msgstr "Голосовал на выборах"
+
+#: home/templates/home_page.html:372
+msgid "Survey Participating Question Answer 2"
+msgstr "Участвовал в деятельности политических партий"
+
+#: home/templates/home_page.html:377
+msgid "Survey Participating Question Answer 3"
+msgstr "Был наблюдателем на выборах"
+
+#: home/templates/home_page.html:382
+msgid "Survey Participating Question Answer 4"
+msgstr "Занимался политическим или гражданским активизмом"
+
+#: home/templates/home_page.html:387
+msgid "Survey Participating Question Answer 5"
+msgstr "Занимался волонтерством"
+
+#: home/templates/home_page.html:392
+msgid "Survey Participating Question Answer 6"
+msgstr "Реализовывал совместные инициативы с соседями"
+
+#: home/templates/home_page.html:397
+msgid "Survey Participating Question Answer 7"
+msgstr ""
+"Реализовывал совместные инициативы с людьми, с которыми учился или учишься"
+
+#: home/templates/home_page.html:402
+msgid "Survey Participating Question Answer 8"
+msgstr ""
+"Реализовывал совместные инициативы с людьми, с которыми работал или работаешь"
+
+#: home/templates/home_page.html:407
+msgid "Survey Participating Question Answer 9"
+msgstr "Реализовывал другие гражданские инициативы"
+
+#: home/templates/home_page.html:412
+msgid "Survey Participating Question Answer 10"
+msgstr ""
+"Участвовал в общественной или политической жизни каким-то другим способом"
+
+#: home/templates/home_page.html:417
+msgid "Survey Participating Question Answer 11"
+msgstr "Никак не участвовал"
+
+#: home/templates/home_page.html:422
+msgid "Survey Participating About Question"
+msgstr ""
+"Если хочешь, можешь подробнее рассказать о своем участии в жизни общества"
+
+#: home/templates/home_page.html:427
+msgid "Survey Participating Reasons Question"
+msgstr "Что побуждало тебя участвовать (или не участвовать) в жизни общества?"
+
+#: home/templates/home_page.html:432
+msgid "Survey Participating More Question"
+msgstr "Что могло бы побудить тебя больше участвовать в жизни общества?"
+
+#: home/templates/home_page.html:438
+msgid "Survey Political Interest Question"
+msgstr "Насколько ты интересуешься политической жизнью?"
+
+#: home/templates/home_page.html:446
+msgid "Survey Civil Interest Question"
+msgstr "Насколько ты интересуешься общественной жизнью?"
+
+#: home/templates/home_page.html:453
+msgid "Survey Why So Question"
+msgstr "Почему так?"
+
+#: home/templates/home_page.html:458
+msgid "Survey Government Question"
+msgstr ""
+"Для чего, по твоему мнению, больше всего нужна государственная власть? "
+"Выбери до 3 вариантов"
+
+#: home/templates/home_page.html:462
+msgid "Survey Government Question Answer 1"
+msgstr ""
+"Для распределения благ и обеспечения социальных гарантий (зарплат, пенсий)"
+
+#: home/templates/home_page.html:467
+msgid "Survey Government Question Answer 2"
+msgstr "Для безопасности в стране"
+
+#: home/templates/home_page.html:472
+msgid "Survey Government Question Answer 3"
+msgstr "Для соблюдения и защиты прав граждан"
+
+#: home/templates/home_page.html:477
+msgid "Survey Government Question Answer 4"
+msgstr "Для защиты от внешних врагов"
+
+#: home/templates/home_page.html:482
+msgid "Survey Government Question Answer 5"
+msgstr ""
+"Для защиты культурного, исторического и/или религиозного наследия страны"
+
+#: home/templates/home_page.html:487
+msgid "Survey Government Question Answer 6"
+msgstr "Для наказания виновных"
+
+#: home/templates/home_page.html:492
+msgid "Survey Government Question Answer 7"
+msgstr "Для выполнения воли граждан"
+
+#: home/templates/home_page.html:497
+msgid "Survey Government Question Answer 8"
+msgstr "Для определения направления развития общества"
+
+#: home/templates/home_page.html:502
+msgid "Survey Government Additional Question"
+msgstr "Здесь можешь вписать свои варианты и размышления по этому поводу"
+
+#: home/templates/home_page.html:506
+msgid "Send"
+msgstr "Отправить"
+
+#: home/templates/home_page.html:619 wiki/templates/wiki_add.html:83
+#: wiki/templates/wiki_add.html:88 wiki/templates/wiki_edit.html:95
+#: wiki/templates/wiki_edit.html:100 wiki/views.py:98
 msgid "Something went wrong"
 msgstr "Что-то пошло не так"
 
-msgid "Це наша Вікі: інформація, яку ти можеш використовувати у своєму активізмі. Ти можеш редагувати і доповнювати цю інформацію"
-msgstr "Это наша Вики: информация, которую ты можешь использовать в своем активизме. Ты можешь редактировать и дополнять эту информацию"
+#: home/views.py:44
+msgid "Survey Success Message"
+msgstr "Ваш ответ успешно сохранен. Мы очень благодарны вам за участие❤"
 
-msgid "Тут поки немає контенту. Але він невдовзі з'явиться!"
-msgstr "Здесь пока нет контента. Но он скоро появится!"
+#: home/views.py:62
+msgid "Tasks Success Message"
+msgstr "🎉 Запиши где-нибудь. Ты взял на себя такие задачи:"
 
-msgid "Your edits have been submitted for moderation!"
-msgstr "Ваши правки были отправлены на модерацию!"
+#: home/views.py:65
+msgid "Tasks Failure Message"
+msgstr "Ой, ты не выбрал ни одной задачи :("
 
-msgid "Add New Toggle"
-msgstr "Добавить новый раздел"
+#: hromada/settings.py:154
+msgid "English"
+msgstr ""
 
-msgid "Content cannot be empty"
-msgstr "Содержимое не может быть пустым"
+#: hromada/settings.py:155
+msgid "Українська"
+msgstr ""
 
-msgid "Self-government"
-msgstr "Самоуправление"
+#: hromada/settings.py:156
+msgid "Русский"
+msgstr ""
 
-msgid "Доєднуйся до рад там, де ви живете, навчаєтесь або працюєте, і бери участь в управлінні Кримом"
-msgstr "Присоединяйтесь к советам там, где вы живёте, учитесь или работаете, и участвуйте в управлении Крымом"
+#: hromada/settings.py:157
+msgid "Qirimtatar"
+msgstr ""
 
+#: project/templates/project_edit.html:17
+msgid "Edit project"
+msgstr "Редактировать проект"
+
+#: project/templates/project_edit.html:22 wiki/templates/wiki_add.html:19
+#: wiki/templates/wiki_edit.html:26
+msgid "Save"
+msgstr "Сохранить"
+
+#: project/views.py:22
+msgid "You are not allowed to delete this project"
+msgstr "Ты не имеешь права удалять этот проект"
+
+#: project/views.py:25
+msgid "Project deleted successfully"
+msgstr "Проект успешно удалён"
+
+#: project/views.py:34 selfgov/views.py:85
+msgid "You are not allowed to edit this project"
+msgstr "Ты не имеешь права редактировать этот проект"
+
+#: selfgov/templates/selfgov_create.html:7
+#: selfgov/templates/selfgov_list.html:66
 msgid "Create a council"
 msgstr "Создать совет"
 
-msgid "Join"
-msgstr "Присоединиться"
-
-msgid "Edit council"
-msgstr "Редактировать совет"
-
-msgid "Type of council"
-msgstr "Тип совета"
-
-msgid "General"
-msgstr "Общий"
-
-msgid "By place of residence"
-msgstr "По месту проживания"
-
-msgid "By place of study"
-msgstr "По месту учёбы"
-
-msgid "By place of work"
-msgstr "По месту работы"
-
-msgid "Other"
-msgstr "Другое"
-
-msgid "Location on map (optional)"
-msgstr "Местоположение на карте (необязательно)"
-
-msgid "Save changes"
-msgstr "Сохранить изменения"
-
+#: selfgov/templates/selfgov_create.html:11
 msgid "Title of the council"
 msgstr "Название совета"
 
+#: selfgov/templates/selfgov_create.html:12
 msgid "Link to a chat of the council in a secure messenger"
 msgstr "Ссылка на чат совета в защищённом мессенджере"
 
+#: selfgov/templates/selfgov_create.html:17
 msgid "Description of the council"
 msgstr "Описание совета"
 
+#: selfgov/templates/selfgov_create.html:22
+#: selfgov/templates/selfgov_edit.html:34
+#: selfgov/templates/selfgov_list.html:41
+msgid "Type of council"
+msgstr "Тип совета"
+
+#: selfgov/templates/selfgov_create.html:32
+#: selfgov/templates/selfgov_edit.html:44
+msgid "Location on map (optional)"
+msgstr "Местоположение на карте (необязательно)"
+
+#: selfgov/templates/selfgov_create.html:37
 msgid "Submit to moderation"
 msgstr "Отправить на модерацию"
 
-msgid "Mail Callout Text"
-msgstr "Хочешь с нами связаться? Пиши"
+#: selfgov/templates/selfgov_detail.html:44
+msgid "Join"
+msgstr "Присоединиться"
 
+#: selfgov/templates/selfgov_detail.html:53
+#: selfgov/templates/selfgov_edit.html:7
+msgid "Edit council"
+msgstr "Редактировать совет"
+
+#: selfgov/templates/selfgov_edit.html:52
+msgid "Save changes"
+msgstr "Сохранить изменения"
+
+#: selfgov/templates/selfgov_list.html:24
+msgid "Self-government"
+msgstr "Самоуправление"
+
+#: selfgov/templates/selfgov_list.html:29
+msgid ""
+"Доєднуйся до рад там, де ви живете, навчаєтесь або працюєте, і бери участь в "
+"управлінні Кримом"
+msgstr ""
+"Присоединяйтесь к советам там, где вы живёте, учитесь или работаете, и "
+"участвуйте в управлении Крымом"
+
+#: selfgov/templates/selfgov_list.html:42
 msgid "All Types"
 msgstr "Все типы"
+
+#: templates/base.html:69
+msgid "Дом"
+msgstr "Дом"
+
+#: templates/base.html:73
+msgid "Сервисы"
+msgstr "Сервисы"
+
+#: templates/base.html:82 wiki/templates/wiki.html:9
+msgid "Вики"
+msgstr "Вики"
+
+#: templates/base.html:83
+msgid "Создать"
+msgstr "Создать"
+
+#: templates/base.html:84
+msgid "Поиск"
+msgstr "Поиск"
+
+#: templates/base.html:85
+msgid "Самоуправление"
+msgstr "Самоуправление"
+
+#: wiki/templates/wiki.html:14
+msgid ""
+"Це наша Вікі: інформація, яку ти можеш використовувати у своєму активізмі. "
+"Ти можеш редагувати і доповнювати цю інформацію"
+msgstr ""
+"Это наша Вики: информация, которую ты можешь использовать в своем активизме. "
+"Ты можешь редактировать и дополнять эту информацию"
+
+#: wiki/templates/wiki.html:22
+msgid "Тут поки немає контенту. Але він невдовзі з'явиться!"
+msgstr "Здесь пока нет контента. Но он скоро появится!"
+
+#: wiki/templates/wiki.html:32 wiki/templates/wiki_add.html:8
+msgid "Add New Toggle"
+msgstr "Добавить новый раздел"
+
+#: wiki/templates/wiki_add.html:24 wiki/templates/wiki_edit.html:29
+msgid "Back to Wiki"
+msgstr "Назад в Вики"
+
+#: wiki/templates/wiki_add.html:29 wiki/templates/wiki_edit.html:51
+#: wiki/views.py:92
+msgid "Your edits have been submitted for moderation!"
+msgstr "Ваши правки были отправлены на модерацию!"
+
+#: wiki/templates/wiki_edit.html:10
+msgid "Editing"
+msgstr "Редактирование"
+
+#: wiki/templates/wiki_edit.html:20
+msgid "Editing Child"
+msgstr "Редактирование подраздела"
+
+#: wiki/views.py:37 wiki/views.py:70 wiki/views.py:71
+msgid "Content cannot be empty"
+msgstr "Содержимое не может быть пустым"
+
+#~ msgid "Task 9"
+#~ msgstr "Расклеить несколько листовок по готовым макетам"
+
+#~ msgid "Task 10"
+#~ msgstr ""
+#~ "Заказать расклейку листовок по готовым макетам в рамках акции «Волна»"
+
+#~ msgid "General"
+#~ msgstr "Общий"
+
+#~ msgid "By place of residence"
+#~ msgstr "По месту проживания"
+
+#~ msgid "By place of study"
+#~ msgstr "По месту учёбы"
+
+#~ msgid "By place of work"
+#~ msgstr "По месту работы"
+
+#~ msgid "Other"
+#~ msgstr "Другое"
+
+#~ msgid "Mail Callout Text"
+#~ msgstr "Хочешь с нами связаться? Пиши"

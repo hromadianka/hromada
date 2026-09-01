@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     "search.apps.SearchConfig",
     "wiki.apps.WikiConfig",
     "selfgov.apps.SelfgovConfig",
+    "edu_event.apps.EduEventConfig",
 ]
 
 MIDDLEWARE = [
@@ -169,6 +170,10 @@ PARLER_LANGUAGES = {
         "hide_untranslated": False,
     },
 }
+
+DATETIME_FORMAT = "d.m.Y H:i"
+DATE_FORMAT = "d.m.Y"
+SHORT_DATE_FORMAT = "d.m.Y"
 
 TIME_ZONE = "Europe/Simferopol"
 

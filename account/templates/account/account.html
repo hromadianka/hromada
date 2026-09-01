@@ -73,6 +73,65 @@
         </div>
     </section>
 
+    <section style="margin-top: 30px" class="my-edu-events-attendee">
+        <h2>{% trans 'Образовательные мероприятия' %}: {% trans 'Я – гость' %}</h2>
+        <div class="projects-container">
+            {% for event in edu_events %}
+            <div class="card">
+                <h3 style="margin-bottom: 0">
+                    <a href="{% url 'edu_event_detail' event.id %}">{{ event.title }}</a>
+                </h3>
+                <p class="card-subtitle">
+                    {{ event.event_type.name }}
+                </p>
+                <p class="card-subtitle">
+                    👤 {{ event.author }}
+                </p>
+                <p class="card-subtitle">
+                    🗓 {{ event.start_date }}
+                </p>
+                <p style="margin-top: 12px">{{ event.description|striptags|truncatechars:160|safe|default:"" }}</p>
+            </div>
+            {% empty %}
+            <style>
+                .my-edu-events-attendee {
+                    display: none;
+                }
+            </style>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section style="margin-top: 30px" class="my-edu-events-author">
+        <h2>{% trans 'Образовательные мероприятия' %}: {% trans 'Я – организатор' %}</h2>
+        <div class="projects-container">
+            {% for event in edu_events_created %}
+            <div class="card">
+                <h3 style="margin-bottom: 0">
+                    <a href="{% url 'edu_event_detail' event.id %}">{{ event.title }}</a>
+                </h3>
+                <p class="card-subtitle">
+                    {{ event.event_type.name }}
+                </p>
+                <p class="card-subtitle">
+                    👤 {{ event.author }}
+                </p>
+                <p class="card-subtitle">
+                    🗓 {{ event.start_date }}
+                </p>
+                <p style="margin-top: 12px">{{ event.description|striptags|truncatechars:160|safe|default:"" }}</p>
+            </div>
+            {% empty %}
+            <style>
+                .my-edu-events-author {
+                    display: none;
+                }
+            </style>
+            {% endfor %}
+        </div>
+    </section>
+
+
 </div>
 
 <script>

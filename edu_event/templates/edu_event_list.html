@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <h1>{% trans 'Образовательные мероприятия' %}</h1>
+
+    <div class="callout" style="margin-bottom: 15px">
+<!--        <img src="{% static 'images/icons/classical-building.jpg' %}" alt="" />-->
+        <span>
+            {% trans 'Примите участие в наших образовательных мероприятиях: лекциях, мастер-классах, курсах и других' %}
+        </span>
+    </div>
+    {% if events %}
+    <h2>{% trans 'Предстоящие мероприятия' %}</h2>
+    <div id="events-container" class="projects-container" style="padding-top: 40px; padding-bottom: 40px">
+        {% for event in events %}
+        <div class="card">
+            <h3 style="margin-bottom: 0">
+                <a href="{% url 'edu_event_detail' event.id %}">{{ event.title }}</a>
+            </h3>
+            <p class="card-subtitle">
+                {{ event.event_type.name }}
+            </p>
+            <p class="card-subtitle">
+                👤 {{ event.author }}
+            </p>
+            <p class="card-subtitle">
+                🗓 {{ event.start_date }}
+            </p>
+            <p style="margin-top: 12px">{{ event.description|striptags|truncatechars:160|safe|default:"" }}</p>
+        </div>
+        {% endfor %}
+        <div class="loader htmx-indicator">Preloader...</div>
+    </div>
+    {% endif %}
+    {% if recent %}
+    <h2>{% trans 'Недавние мероприятия' %}</h2>
+    <div id="recent-events-container" class="projects-container" style="padding-top: 40px; padding-bottom: 40px">
+        {% for event in recent %}
+        <div class="card">
+            <h3 style="margin-bottom: 0">
+                <a href="{% url 'edu_event_detail' event.id %}">{{ event.title }}</a>
+            </h3>
+            <p class="card-subtitle">
+                {{ event.event_type.name }}
+            </p>
+            <p class="card-subtitle">
+                👤 {{ event.author }}
+            </p>
+            <p class="card-subtitle">
+                🗓 {{ event.start_date }}
+            </p>
+            <p style="margin-top: 12px">{{ event.description|striptags|truncatechars:160|safe|default:"" }}</p>
+        </div>
+        {% endfor %}
+        <div class="loader htmx-indicator">Preloader...</div>
+    </div>
+    {% endif %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+{% block content %}
+
+<div class="container">
+  <h1>{{ event.title }}</h1>
+  <p class="edu-event-subtitle">{{ event.event_type.name }}</p>
+  <p class="edu-event-subtitle">👤 {{ event.author }}</p>
+  <p class="edu-event-subtitle">🗓 {{ event.start_date }}</p>
+  {% if registration or can_sign_up %}
+  <p class="edu-event-subtitle">📍 {{ event.address }}</p>
+  {% endif %}
+
+  <hr style="margin-top: 12px;">
+  <p style="margin-top: 24px; margin-bottom: 24px;">{% autoescape off %}{{ event.description|safe }}{% endautoescape %}</p>
+  <hr style="margin-bottom: 24px; margin-top: 24px;">
+
+  {% if registration %}
+  <h3>{% trans 'Вы зарегистрированы на мероприятие!' %}</h3>
+  <p>
+    {% trans 'При посещении мероприятия предъявите организатору эти данные' %}:
+    <br>
+    {% trans 'Гость' %}: <strong>{{ registration.user.username }}</strong>
+    <br>
+    {% trans 'Код' %}: <strong>{{ registration.code }}</strong>
+  </p>
+
+  <hr style="margin-top: 24px; margin-bottom: 24px;">
+  {% elif is_author %}
+  {% elif can_sign_up %}
+  <form method="post" action="{% url 'edu_event_signup' event.id %}">
+    {% csrf_token %}
+    <button type="submit" class="button" style="width: 100%">{% trans "Зарегистрироваться на мероприятие" %}</button>
+  </form>
+
+  {% elif authenticated %}
+  <p>{% trans 'Регистрация на образовательные мероприятия доступна пользователям с бесплатной подпиской.' %}</p>
+  <p>{% trans 'Для оформления подписки напишите нам на <a href="mailto:hromada-mail@proton.me">почту</a>, расскажите о своих активностях в сообществе и о заинтересовавших вас мероприятиях.' %}</p>
+  <hr style="margin-top: 24px; margin-bottom: 24px;">
+
+  {% else %}
+  <p>
+    {% trans 'Регистрация на образовательные мероприятия доступна только авторизованным пользователям с бесплатной подпиской.' %}
+    <br>
+    {% trans 'Войдите в аккаунт, чтобы узнать больше.' %}
+  </p>
+  <p>
+    <a class="button" href="{% url 'login' %}">{% trans 'Log-in' %}</a>
+  </p>
+  <hr style="margin-top: 24px; margin-bottom: 24px;">
+  {% endif %}
+
+  {% if is_author or is_superuser %}
+  <a class="button" href="{% url 'edu_event_registrations_list' event.id %}">{% trans 'Список зарегистрированных гостей' %}</a>
+  <hr style="margin-top: 24px; margin-bottom: 24px;">
+  {% endif %}
+
+  <a class="button" href="{% url 'edu_event_list' %}">{% trans 'Все мероприятия' %}</a>
+</div>
+
+{% endblock %}

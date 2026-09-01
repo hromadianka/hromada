@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container">
+  <h1>{{ event.title }}</h1>
+  <p class="edu-event-subtitle">{{ event.event_type.name }}</p>
+  <p class="edu-event-subtitle">👤 {{ event.author }}</p>
+  <p class="edu-event-subtitle">🗓 {{ event.start_date }}</p>
+  <p class="edu-event-subtitle">📍 {{ event.address }}</p>
+
+  <hr style="margin-top: 12px;">
+  <h2>{% trans 'Список зарегистрированных гостей' %}</h2>
+  {% for registration in registrations %}
+  <p>
+    {% trans 'Гость' %}: <strong>{{ registration.user.username }}</strong>
+    <br>
+    {% trans 'Код' %}: <strong>{{ registration.code }}</strong>
+  </p>
+  {% empty %}
+  <p>
+    {% trans 'Нет зарегистрированных пользователей' %}
+  </p>
+  {% endfor %}
+
+  <hr style="margin-bottom: 12px;">
+  <a class="button" href="{% url 'edu_event_detail' event.id %}">{% trans 'На страницу мероприятия' %}</a>
+</div>
+
+{% endblock %}

@@ -35,6 +35,7 @@
     {% csrf_token %}
     <button type="submit" class="button" style="width: 100%">{% trans "Зарегистрироваться на мероприятие" %}</button>
   </form>
+  <hr style="margin-top: 24px; margin-bottom: 24px;">
 
   {% elif authenticated %}
   <p>{% trans 'Регистрация на образовательные мероприятия доступна пользователям с бесплатной подпиской.' %}</p>

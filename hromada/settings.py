@@ -33,7 +33,7 @@ SECRET_KEY = os.environ["SECRET_KEY"]
 DEBUG = True
 # DEBUG = True
 
-ALLOWED_HOSTS = ["hromada-b4df642e405d.herokuapp.com", "hromada.me", "www.hromada.me"]
+ALLOWED_HOSTS = ["hromada-3fc3a43a6372.herokuapp.com", "hromada.me", "www.hromada.me"]
 # ALLOWED_HOSTS = ["localhost", "127.0.0.1", "[::1]"]
 
 

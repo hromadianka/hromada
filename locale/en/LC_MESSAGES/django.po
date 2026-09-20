@@ -47,6 +47,9 @@ msgstr "Search"
 msgid "Самоуправление"
 msgstr "Self-government"
 
+msgid "Сервисы"
+msgstr "Services"
+
 msgid "Main Page Text"
 msgstr ""
 "Crimea needs your work, your creativity, and your initiative! Our peninsula "
@@ -605,3 +608,57 @@ msgstr "Want to contact us?"
 
 msgid "All Types"
 msgstr "All Types"
+
+msgid "Open brochure"
+msgstr "Open brochure"
+
+msgid "Feedback"
+msgstr "Feedback"
+
+msgid "Email (optional)"
+msgstr "Email (optional)"
+
+msgid "Your feedback"
+msgstr "Your feedback"
+
+msgid "Send feedback"
+msgstr "Send feedback"
+
+msgid "Grant application"
+msgstr "Grant application"
+
+msgid "Team name or your name"
+msgstr "Team name or your name"
+
+msgid "City / Location"
+msgstr "City / Location"
+
+msgid "Application text"
+msgstr "Application text"
+
+msgid "Submit application"
+msgstr "Submit application"
+
+msgid "Services"
+msgstr "Services"
+
+msgid "No services available"
+msgstr "No services available"
+
+msgid "Social Support Service Name"
+msgstr "Social Support Service"
+
+msgid "Social Support Service Description"
+msgstr "A support program for Crimea residents in difficult life situations"
+
+msgid "Social Support Service Instruction"
+msgstr "Join our food package distribution that takes place every two weeks. Fill out the application below and we will contact you."
+
+msgid "Feedback success message"
+msgstr "Thank you for your feedback!"
+
+msgid "Grant success message"
+msgstr "Application submitted!"
+
+msgid "Join coordination chat"
+msgstr "Join the coordination chat"

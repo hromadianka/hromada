@@ -47,6 +47,9 @@ msgstr "Пошук"
 msgid "Самоуправление"
 msgstr "Самоврядування"
 
+msgid "Сервисы"
+msgstr "Сервіси"
+
 msgid "Main Page Text"
 msgstr ""
 "Криму потрібна твоя праця, твоя креативність і ініціатива! Наш півострів "
@@ -614,3 +617,58 @@ msgstr "Хочеш з нами зв'язатись? Пиши"
 
 msgid "All Types"
 msgstr "Всі типи"
+
+
+msgid "Open brochure"
+msgstr "Відкрити брошуру"
+
+msgid "Feedback"
+msgstr "Відгук"
+
+msgid "Email (optional)"
+msgstr "Email (необов'язково)"
+
+msgid "Your feedback"
+msgstr "Ваш відгук"
+
+msgid "Send feedback"
+msgstr "Надіслати відгук"
+
+msgid "Grant application"
+msgstr "Заявка на грант"
+
+msgid "Team name or your name"
+msgstr "Назва команди або ім'я"
+
+msgid "City / Location"
+msgstr "Місто / Локація"
+
+msgid "Application text"
+msgstr "Текст заявки"
+
+msgid "Submit application"
+msgstr "Надіслати заявку"
+
+msgid "Services"
+msgstr "Сервіси"
+
+msgid "No services available"
+msgstr "Сервіси недоступні"
+
+msgid "Social Support Service Name"
+msgstr "Служба соціальної допомоги"
+
+msgid "Social Support Service Description"
+msgstr "Програма підтримки мешканців Криму у складних життєвих ситуаціях"
+
+msgid "Social Support Service Instruction"
+msgstr "Долучайся до роздачі продуктових пакетів, яка відбувається кожні два тижні. Заповни заявку нижче - і ми зв'яжемося з тобою."
+
+msgid "Feedback success message"
+msgstr "Дякуємо за відгук!"
+
+msgid "Grant success message"
+msgstr "Заявку надіслано!"
+
+msgid "Join coordination chat"
+msgstr "Доєднуйся до координаційного чату"

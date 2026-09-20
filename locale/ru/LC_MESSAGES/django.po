@@ -49,6 +49,9 @@ msgstr "Поиск"
 msgid "Самоуправление"
 msgstr "Самоуправление"
 
+msgid "Сервисы"
+msgstr "Сервисы"
+
 msgid "Main Page Text"
 msgstr ""
 "Крыму нужна твоя работа, твоя креативность и инициатива! Наш полуостров "
@@ -618,3 +621,57 @@ msgstr "Хочешь с нами связаться? Пиши"
 
 msgid "All Types"
 msgstr "Все типы"
+
+msgid "Open brochure"
+msgstr "Открыть брошюру"
+
+msgid "Feedback"
+msgstr "Отзыв"
+
+msgid "Email (optional)"
+msgstr "Email (необязательно)"
+
+msgid "Your feedback"
+msgstr "Ваш отзыв"
+
+msgid "Send feedback"
+msgstr "Отправить отзыв"
+
+msgid "Grant application"
+msgstr "Заявка на грант"
+
+msgid "Team name or your name"
+msgstr "Название команды или имя"
+
+msgid "City / Location"
+msgstr "Город / Локация"
+
+msgid "Application text"
+msgstr "Текст заявки"
+
+msgid "Submit application"
+msgstr "Отправить заявку"
+
+msgid "Services"
+msgstr "Сервисы"
+
+msgid "No services available"
+msgstr "Сервисы недоступны"
+
+msgid "Social Support Service Name"
+msgstr "Служба социальной помощи"
+
+msgid "Social Support Service Description"
+msgstr "Программа поддержки жителей Крыма в трудных жизненных ситуациях"
+
+msgid "Social Support Service Instruction"
+msgstr "Присоединяйся к раздаче продуктовых пакетов, которая проходит каждые две недели. Заполни заявку ниже - и мы свяжемся с тобой."
+
+msgid "Feedback success message"
+msgstr "Спасибо за отзыв!"
+
+msgid "Grant success message"
+msgstr "Заявка отправлена!"
+
+msgid "Join coordination chat"
+msgstr "Присоединяйся к координационному чату"

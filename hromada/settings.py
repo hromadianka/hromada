@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     "search.apps.SearchConfig",
     "wiki.apps.WikiConfig",
     "selfgov.apps.SelfgovConfig",
+    "services.apps.ServicesConfig",
 ]
 
 MIDDLEWARE = [

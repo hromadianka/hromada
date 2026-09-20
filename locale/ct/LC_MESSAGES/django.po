@@ -8,50 +8,355 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-27 16:31+0200\n"
+"POT-Creation-Date: 2026-09-02 00:53+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: .\hromada\settings.py:115
-msgid "English"
+#: account/forms.py:9
+msgid "Username"
+msgstr "Qullanıcı adı"
+
+#: account/forms.py:13
+msgid "Email"
+msgstr "E-mail"
+
+#: account/forms.py:17
+msgid "Password"
+msgstr "Parol"
+
+#: account/forms.py:21
+msgid "Repeat password"
+msgstr "Parolni tekrar kirsetiñiz"
+
+#: account/forms.py:35
+msgid "Passwords don't match"
+msgstr "Parollar uyuşmay"
+
+#: account/templates/account/account.html:8 templates/base.html:86
+msgid "My account"
+msgstr "Meniñ hesabım"
+
+#: account/templates/account/account.html:11
+msgid "Change password"
+msgstr "Parolni deñiştir"
+
+#: account/templates/account/account.html:14
+msgid "Log out"
+msgstr "Çıq"
+
+#: account/templates/account/account.html:17
+msgid "Delete my data"
+msgstr "Meniñ malümatlarımnı öçür"
+
+#: account/templates/account/account.html:22
+msgid "Are you sure you want to delete your account and all associated data?"
+msgstr "Eminsiñmi ki, hesabıñnı ve bağlı malümatlarnı öçürmek isteysiñ?"
+
+#: account/templates/account/account.html:23
+#: account/templates/account/account.html:51
+#: account/templates/account/account.html:61
+msgid "Delete"
+msgstr "Sil"
+
+#: account/templates/account/account.html:24
+#: account/templates/account/account.html:62
+msgid "Cancel"
+msgstr "İptal et"
+
+#: account/templates/account/account.html:39
+msgid "Projects"
+msgstr "Layihalar"
+
+#: account/templates/account/account.html:45
+msgid "Pending approval"
 msgstr ""
 
-#: .\hromada\settings.py:116
-msgid "Українська"
+#: account/templates/account/account.html:54
+msgid "Edit"
+msgstr "Tahrir et"
+
+#: account/templates/account/account.html:60
+msgid "Are you sure you want to delete this project?"
+msgstr "Sen bu layiheni silmek istegeniñge eminmisiñ?"
+
+#: account/templates/account/account.html:77
+#: account/templates/account/account.html:106
+#: edu_event/templates/edu_event_list.html:8 templates/base.html:77
+msgid "Образовательные мероприятия"
+msgstr "Maarifî tedbirler"
+
+#: account/templates/account/account.html:77
+msgid "Я – гость"
+msgstr "Men — misafir"
+
+#: account/templates/account/account.html:106
+msgid "Я – организатор"
+msgstr "Men — teşkilâtçı"
+
+#: account/templates/account/account.html:169
+msgid "Unable to delete project"
+msgstr "Layiheni silmek mümkün degil"
+
+#: account/templates/account/account.html:213
+msgid "Unable to delete account"
+msgstr "Hesap öçürülemedi"
+
+#: account/templates/account/register.html:6
+msgid "Sign-up"
+msgstr "Qayd etilüv"
+
+#: account/templates/account/register.html:29
+#: account/templates/registration/login.html:26
+msgid "Register Button"
+msgstr "Qayd etil"
+
+#: account/templates/account/register.html:36
+msgid "Log-in Button"
+msgstr "Kiriş"
+
+#: account/templates/registration/login.html:7
+#: account/templates/registration/login.html:22
+#: edu_event/templates/edu_event_detail.html:55
+msgid "Log-in"
+msgstr "Kiriş"
+
+#: account/templates/registration/login.html:10
+msgid "Your username and password didn't match. Please try again"
+msgstr "Qullanıcı adıñız ve parolñız uyuşmay. Lütfen yañıdan deneyiñiz"
+
+#: account/templates/registration/login.html:30
+msgid "Forgotten password Button"
+msgstr "Parolni unuttıñızmı?"
+
+#: account/templates/registration/password_change_form.html:7
+msgid "Change your password"
+msgstr "Parolñıznı deñiştir"
+
+#: account/templates/registration/password_change_form.html:23
+msgid "Change"
+msgstr "Deñiştir"
+
+#: account/templates/registration/password_reset_complete.html:6
+msgid "Password set"
+msgstr "Parol quraştırıldı"
+
+#: account/templates/registration/password_reset_complete.html:9
+#, fuzzy, python-format
+#| msgid ""
+#| "Your password has been set. You can <a href=\"%(url)s\">log in now</a>."
+msgid ""
+"Your password has been set. You can <a href=\"%(login_url)s\">log in now</a>."
+msgstr "Parolñız quraştırıldı. Endi <a href=\"%(url)s\">kire bilesiñiz</a>."
+
+#: account/templates/registration/password_reset_confirm.html:7
+#: account/templates/registration/password_reset_done.html:6
+msgid "Reset your password"
+msgstr "Parolñıznı sıfırla"
+
+#: account/templates/registration/password_reset_confirm.html:10
+msgid "Please enter your new password twice"
+msgstr "Lütfen yañı parolñıznı eki kere kirsetiñiz"
+
+#: account/templates/registration/password_reset_confirm.html:26
+#, fuzzy
+#| msgid "Change password"
+msgid "Change my password"
+msgstr "Parolni deñiştir"
+
+#: account/templates/registration/password_reset_confirm.html:30
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset"
+msgstr ""
+"Parol sıfırlav içün berilgen bağlama geçersiz, belek ki, o, artıq "
+"qullanıldı. Lütfen yañıdan sıfırlav talap etiñiz"
+
+#: account/templates/registration/password_reset_done.html:7
+msgid "We've emailed you instructions for setting your password."
+msgstr "Parolñıznı quraştırmaq içün talimatlarnı sizge e-mailnen yolladıq."
+
+#: account/templates/registration/password_reset_done.html:8
+msgid ""
+"If you don't receive an email, make sure you entered the address you "
+"registered with."
+msgstr ""
+"Eger e-mail almadıñızsa, qaydiyattan keçken adresiñizni doğru kirsettiñizmi, "
+"onı teklifiñiz."
+
+#: account/templates/registration/password_reset_email.html:3
+#, fuzzy, python-format
+#| msgid "Someone requested a password reset for the email {{ email }}."
+msgid "Someone requested a password reset for the email %(email)s."
+msgstr "Kimdir {{ email }} e-mail içün parol sıfırlavını talap etti."
+
+#: account/templates/registration/password_reset_email.html:4
+msgid "Follow the link below to reset your password:"
+msgstr "Parolñıznı sıfırlamaq içün aşağıdaki bağlamanı basıñız:"
+
+#: account/templates/registration/password_reset_email.html:8
+#, fuzzy, python-format
+#| msgid "Your username, in case you've forgotten: {{ username }}"
+msgid "Your username, in case you've forgotten: %(username)s"
+msgstr "Eger unutqan bolsañız, qullanıcı adıñız: {{ username }}"
+
+#: account/templates/registration/password_reset_form.html:7
+msgid "Forgotten your password?"
+msgstr "Parolñıznı unuttıñızmı?"
+
+#: account/templates/registration/password_reset_form.html:8
+msgid "Enter your e-mail address to obtain a new password"
+msgstr "Yañı parol almak içün e-mail adresiñizni kirsetiñiz"
+
+#: account/templates/registration/password_reset_form.html:25
+msgid "Send e-mail"
+msgstr "E-mail yolla"
+
+#: account/views.py:55
+msgid "Account deleted"
+msgstr "Hesap öçürüldi"
+
+#: account/views.py:57 project/views.py:27
+msgid "Invalid request"
 msgstr ""
 
-#: .\hromada\settings.py:117
-msgid "Русский"
+#: create/templates/create_project.html:17
+#, fuzzy
+#| msgid "Create project"
+msgid "Create a project"
+msgstr "Layihanı yarat"
+
+#: create/templates/create_project.html:20
+#: project/templates/project_edit.html:20
+msgid "Project name"
+msgstr "Layihanıñ adı"
+
+#: create/templates/create_project.html:21
+msgid "Project description"
+msgstr "Layihanıñ tarifı"
+
+#: create/templates/create_project.html:22
+msgid "Create"
+msgstr "Yarat"
+
+#: edu_event/templates/edu_event_detail.html:22
+#: edu_event/templates/edu_event_signup.html:15
+msgid "Вы зарегистрированы на мероприятие!"
+msgstr "Siz tedbirge qayd oldıñız!"
+
+#: edu_event/templates/edu_event_detail.html:24
+#: edu_event/templates/edu_event_signup.html:17
+msgid "При посещении мероприятия предъявите организатору эти данные"
+msgstr "Tedbirge kelgeniñizde bu malümatnı teşkilâtçığa kösteriñiz"
+
+#: edu_event/templates/edu_event_detail.html:26
+#: edu_event/templates/edu_event_registrations_list.html:17
+#: edu_event/templates/edu_event_signup.html:19
+msgid "Гость"
+msgstr "Misafir"
+
+#: edu_event/templates/edu_event_detail.html:28
+#: edu_event/templates/edu_event_registrations_list.html:19
+#: edu_event/templates/edu_event_signup.html:21
+msgid "Код регистрации"
+msgstr "Qayd kodı"
+
+#: edu_event/templates/edu_event_detail.html:36
+#: edu_event/templates/edu_event_signup.html:34
+msgid "Зарегистрироваться на мероприятие"
+msgstr "Tedbirge qayd olmaq"
+
+#: edu_event/templates/edu_event_detail.html:40
+msgid ""
+"Регистрация на образовательные мероприятия доступна пользователям с "
+"бесплатной подпиской."
+msgstr "Maarifî tedbirlerge qayd olmaq ücretsiz abuneligi olğan qullanıcılar içün mümkündür."
+
+#: edu_event/templates/edu_event_detail.html:42
+#, python-format
+msgid ""
+"Для оформления подписки напишите нам на <a href=\"%(email)s\">почту</a>, "
+"расскажите о своих активностях в сообществе и о заинтересовавших вас "
+"мероприятиях."
 msgstr ""
+"Abunelikni resmiylestirmek içün bizge <a href=\"%(email)s\">eposta</a> ile yazıñız, "
+"cemaatteki faaliyetiñiz ve sizi alâqalandırğan tedbirler aqqında maǵlümat beriñiz."
 
-#: .\hromada\settings.py:118
-msgid "Qirimtatar"
+#: edu_event/templates/edu_event_detail.html:50
+msgid ""
+"Регистрация на образовательные мероприятия доступна только авторизованным "
+"пользователям с бесплатной подпиской."
+msgstr "Maarifî tedbirlerge qayd olmaq yalnız hesabına kirgen ve ücretsiz abuneligi olğan qullanıcılar içün mümkündür."
+
+#: edu_event/templates/edu_event_detail.html:52
+msgid "Войдите в аккаунт, чтобы узнать больше."
+msgstr "Daa çoq malümat almaq içün hesabıñızğa kiriñiz."
+
+#: edu_event/templates/edu_event_detail.html:61
+#: edu_event/templates/edu_event_registrations_list.html:14
+msgid "Список зарегистрированных гостей"
+msgstr "Qayd olğan misafirlerniñ listesi"
+
+#: edu_event/templates/edu_event_detail.html:65
+msgid "Все мероприятия"
+msgstr "Bütün tedbirler"
+
+#: edu_event/templates/edu_event_list.html:13
+msgid ""
+"Примите участие в наших образовательных мероприятиях: лекциях, мастер-"
+"классах, курсах и не только"
 msgstr ""
+"Bizniñ maarifî tedbirlerimizde — konferensiyalarda, ustalıq derslerinde, "
+"kurslarda ve daa ziyade — iştirak etiñiz"
 
-msgid "Дом"
-msgstr "Evi"
+#: edu_event/templates/edu_event_list.html:17
+msgid "Предстоящие мероприятия"
+msgstr "Olacaq tedbirler"
 
-msgid "Вики"
-msgstr "Viki"
+#: edu_event/templates/edu_event_list.html:40
+msgid "Недавние мероприятия"
+msgstr "Yaqında olğan tedbirler"
 
-msgid "Создать"
-msgstr "Yaratmaq"
+#: edu_event/templates/edu_event_registrations_list.html:23
+msgid "Нет зарегистрированных пользователей"
+msgstr "Qayd olğan qullanıcılar yoq"
 
-msgid "Поиск"
-msgstr "Qıdırmaq"
+#: edu_event/templates/edu_event_registrations_list.html:28
+#: edu_event/templates/edu_event_signup.html:39
+msgid "На страницу мероприятия"
+msgstr "Tedbir sayfasına"
 
-msgid "Самоуправление"
-msgstr "Öz-idaresi"
+#: edu_event/templates/edu_event_signup.html:25
+msgid "Не удалось зарегистрироваться на мероприятие"
+msgstr "Tedbirge qayd olmaq mümkün olmadı"
 
+#: edu_event/templates/edu_event_signup.html:27
+msgid "Пожалуйста, попробуйте ешё раз."
+msgstr "Lütfen, tekrar talanıp körüñiz."
+
+#: edu_event/templates/edu_event_signup.html:29
+#, python-format
+msgid ""
+"Если ошибка повторяется, <a href=\"%(email)s\">напишите нам на почту</a>."
+msgstr ""
+"Eger hata tekrar olsa, <a href=\"%(email)s\">bizge eposta ile yazıñız</a>."
+
+#: edu_event/views.py:76
+#, fuzzy
+#| msgid "You are not allowed to delete this project"
+msgid "You are not allowed to see the list of attendees for this event."
+msgstr "Bu tedbirde iştirak etkenlerniñ listesini köstermege haqqıñız yoq."
+
+#: home/templates/home_page.html:22
 msgid "Main Page Text"
 msgstr ""
 "Qırımğa seniñ emeğin, kreativligiñ ve teşebbüsüñ kerek! Bizim yarımadamızda "
-"aqıllı, qayğıruvçı ve fedakâr insanlar yaşay, olar öz-özüni teşkil ete bilirler. "
-"Hatta tamğamızda bile: «Birlikte refah» dep yazılğan.\n"
+"aqıllı, qayğıruvçı ve fedakâr insanlar yaşay, olar öz-özüni teşkil ete "
+"bilirler. Hatta tamğamızda bile: «Birlikte refah» dep yazılğan.\n"
 "\n"
 "Hromada Qırım seni er künü birbirine yardam berip, ortak hareket ve qarar "
 "qabul etüv sisteması qura turğan büyük bir qırımtatar cemaatine qoşulmağa "
@@ -61,561 +366,637 @@ msgstr ""
 "keçir. Yarımadañnı, onda yaşağan insanlarnıñ azatlığına tehdit olğanlardan "
 "müdafaa et. Özüñ içün, yeriñ ve halqıñ içün, evlatlarıñ ve torunlarıñ içün."
 
+#: home/templates/home_page.html:23
 msgid "Main Page Button"
 msgstr "Hareketke keç"
 
+#: home/templates/home_page.html:41
 msgid "Question 1"
-msgstr "Hromada Qırım ne içün kerek?"  
+msgstr "Hromada Qırım ne içün kerek?"
 
+#: home/templates/home_page.html:43
 msgid "Answer 1"
 msgstr ""
-"Hromada Qırım ilham ve fikir tapmağa yardam ete, bar olğan bir teşebbüske qoşulmaq, "
-"ve ya öz teşebbüsiñiz içün icracı ve resurslar tapmaq imkânı berir. Biz sizge her zaman "
-"malümat bermege ve maslahat bermege hazırmız. Qısqaçası, Hromada Qırım – "
-"fikirler ve meqsedlerni hayata keçirme mümküniyetini temin etken bir meydandır.\n"
+"Hromada Qırım ilham ve fikir tapmağa yardam ete, bar olğan bir teşebbüske "
+"qoşulmaq, ve ya öz teşebbüsiñiz içün icracı ve resurslar tapmaq imkânı "
+"berir. Biz sizge her zaman malümat bermege ve maslahat bermege hazırmız. "
+"Qısqaçası, Hromada Qırım – fikirler ve meqsedlerni hayata keçirme "
+"mümküniyetini temin etken bir meydandır.\n"
 "\n"
-"Bizim vazifelerimizden biri mümkün qadar çoq qırımlını vatandaş faaliyetine celb etmek. "
-"Biz insanlarnı ve teşebbüslerni birleşdirip, Qırımda bir yerel öz-idare sistemi "
-"yaratmaq istedikte, bu sistem ümumen ve tertipli bir şekilde qarar qabul etip, "
-"bütün qırımlılar içün faydalı iş bilecek. Hromada Qırım'ğa qoşulıp, bu sisteme iştirak etip, "
-"öz sesiñizni qaldıra bilirsiniz."
+"Bizim vazifelerimizden biri mümkün qadar çoq qırımlını vatandaş faaliyetine "
+"celb etmek. Biz insanlarnı ve teşebbüslerni birleşdirip, Qırımda bir yerel "
+"öz-idare sistemi yaratmaq istedikte, bu sistem ümumen ve tertipli bir "
+"şekilde qarar qabul etip, bütün qırımlılar içün faydalı iş bilecek. Hromada "
+"Qırım'ğa qoşulıp, bu sisteme iştirak etip, öz sesiñizni qaldıra bilirsiniz."
 
+#: home/templates/home_page.html:47
 msgid "Question 2"
 msgstr "Men ne içün bunge iştirak eteyim?"
 
+#: home/templates/home_page.html:49
 msgid "Answer 2"
 msgstr ""
-"Bugünki insan çoğu vaqıt yalğız ve dünyanıñ gidişatına tesir ete bilmegen kibi "
-"hiss ete. Neticede bir paradoks peyda olğan: globalleşken dünyada "
-"biz bir-birimizge eñ çok bağlıyız, amma bir-birimizden eñ çok uzaqta bulunamız. "
-"Hromada Qırım'da sesiñiz eşitilecek. Siz bir cemaatniñ bir parçası olıp, "
-"ve bu vasıta ile öz toprağıñıznıñ ve öz kelcegiñizniñ üstünde "
-"doğrudan-doğruya tesir etesiñiz."
+"Bugünki insan çoğu vaqıt yalğız ve dünyanıñ gidişatına tesir ete bilmegen "
+"kibi hiss ete. Neticede bir paradoks peyda olğan: globalleşken dünyada biz "
+"bir-birimizge eñ çok bağlıyız, amma bir-birimizden eñ çok uzaqta bulunamız. "
+"Hromada Qırım'da sesiñiz eşitilecek. Siz bir cemaatniñ bir parçası olıp, ve "
+"bu vasıta ile öz toprağıñıznıñ ve öz kelcegiñizniñ üstünde doğrudan-doğruya "
+"tesir etesiñiz."
 
+#: home/templates/home_page.html:53
 msgid "Question 3"
 msgstr "Baribir heç bir şey deñişmez."
 
+#: home/templates/home_page.html:55
 msgid "Answer 3"
 msgstr ""
-"Biz bunı asla qabul etmeymiz! Tarix, aqıllı, kretiv ve tesirli vatandaşlarnıñ "
-"onıñ yolunu nasıl deñiştirgeni aqqında milyonla misallerni bilip. "
-"Her kün bizniñ arefdeşlerimizniñ meqsed qoyğanını ve onı yerine ketirgenini körip, "
-"bu kiçik adımlarnıñ nasıl büyük deñişikliklerge yol açqanını körümüz. "
-"Bizniñ sayımız çoq, biz büyük bir küçmüz ve öz toprağıñıznıñ kelcegine "
-"doğrudan tesir ete bilimiz."
+"Biz bunı asla qabul etmeymiz! Tarix, aqıllı, kretiv ve tesirli "
+"vatandaşlarnıñ onıñ yolunu nasıl deñiştirgeni aqqında milyonla misallerni "
+"bilip. Her kün bizniñ arefdeşlerimizniñ meqsed qoyğanını ve onı yerine "
+"ketirgenini körip, bu kiçik adımlarnıñ nasıl büyük deñişikliklerge yol "
+"açqanını körümüz. Bizniñ sayımız çoq, biz büyük bir küçmüz ve öz "
+"toprağıñıznıñ kelcegine doğrudan tesir ete bilimiz."
 
+#: home/templates/home_page.html:59
 msgid "Question 4"
 msgstr "Menda bunğa vaqt yoq. Men öz hayatımnen meşğul olmağa kerek."
 
+#: home/templates/home_page.html:61
 msgid "Answer 4"
 msgstr ""
-"Vatandaş faaliyeti içün çoq vaqt sarf etmege mecbur degilsiz. "
-"Aşağıda 15 daqiqadan fazla almayacaq vazifelerni sayladıq – "
-"bu, saylavlarda ses bermege ketirgen vaqttan da kısa. "
-"Her kiçik adımıñız büyük bir yolun bir parçasıdır. "
-"Vatandaş hayata iştirak etmek mesüliyet ve şuurlılıq belgileridir, "
-"bu hususiyetler er bir sahada muvafaqiyet qazanmaq içün şarttır."
+"Vatandaş faaliyeti içün çoq vaqt sarf etmege mecbur degilsiz. Aşağıda 15 "
+"daqiqadan fazla almayacaq vazifelerni sayladıq – bu, saylavlarda ses bermege "
+"ketirgen vaqttan da kısa. Her kiçik adımıñız büyük bir yolun bir parçasıdır. "
+"Vatandaş hayata iştirak etmek mesüliyet ve şuurlılıq belgileridir, bu "
+"hususiyetler er bir sahada muvafaqiyet qazanmaq içün şarttır."
 
+#: home/templates/home_page.html:65
 msgid "Question 5"
 msgstr "Hromada Qırım nasıl teşkil etilgen?"
 
+#: home/templates/home_page.html:67
 msgid "Answer 5"
 msgstr ""
-"Hareketimiz merkeziyetsizdir: yani bizniñ 'merkez' ve ya 'başçılıq' degildir. "
-"Hromada Qırım öz iştirakçılarnen idare etile, ve bizniñ umumi meqsedimizni "
-"paylaşqan er kim iştirakçı ola bilir."
+"Hareketimiz merkeziyetsizdir: yani bizniñ 'merkez' ve ya 'başçılıq' "
+"degildir. Hromada Qırım öz iştirakçılarnen idare etile, ve bizniñ umumi "
+"meqsedimizni paylaşqan er kim iştirakçı ola bilir."
 
+#: home/templates/home_page.html:71
 msgid "Question 6"
 msgstr "Men bunge nasıl iştirak ete bilirim?"
 
+#: home/templates/home_page.html:73
 msgid "Answer 6"
 msgstr ""
-"Bizniñ cemaatimizniñ bir parçası olmaq içün online platformamızda "
-"öz teşebbüsüñizni yaratıp ya da bar olğan teşebbüske qoşulmanız yeterlidir. "
-"Biz size elimizden kelgen yardamnı beremez: maslahat beririz, lazım olğan malümatnı "
-"temin etemez, icracılarnen tanıştıra bilemiz ve teşebbüsüñiz içün "
+"Bizniñ cemaatimizniñ bir parçası olmaq içün online platformamızda öz "
+"teşebbüsüñizni yaratıp ya da bar olğan teşebbüske qoşulmanız yeterlidir. Biz "
+"size elimizden kelgen yardamnı beremez: maslahat beririz, lazım olğan "
+"malümatnı temin etemez, icracılarnen tanıştıra bilemiz ve teşebbüsüñiz içün "
 "maliye ve başka resurslar tapmağa çalışamız. Aşağıda 15 daqiqadan çoq "
 "olmaycaq vazifelerni tapabilirsiniz."
 
+#: home/templates/home_page.html:106
+msgid "Why do our activists take part in Hromada?"
+msgstr "Faqlılarımız ne içün Hromada'da iştirak ete?"
+
+#: home/templates/home_page.html:107
+msgid "You can add your own reason to inspire others"
+msgstr "Sen başqalarını ilhamlandırmaq içün öz sebebiñni qoşabilesiñ"
+
+#: home/templates/home_page.html:119
+msgid "Your reason has been submitted for moderation"
+msgstr "Sebebiñ moderatsiya içün yiberildi"
+
+#: home/templates/home_page.html:127
+msgid "Task Section Heading"
+msgstr "Hareket et!"
+
+#: home/templates/home_page.html:131
+msgid "Task Section Text"
+msgstr ""
+"Bu yerde özüne en yakın vazifeni seçip, onı yerine ketirmek içün söz "
+"berebilirsin. Bu vazifelerden biri ortalama olaraq 15 daqıqa alır, ama bu "
+"areket içün müim bir adım olacaqtır, çünki biz çoquz ve beraber büyük bir "
+"quvetmız. Ne qadar isterseñ vazife seçebilirsin, ama biz bir ya da eki "
+"vazifeden başlamaqnı tavsiye etemiz."
+
+#: home/templates/home_page.html:139 home/templates/home_page.html:140
+msgid "Task 1"
+msgstr "Bir tanışına Qırım Cemaati aqqında añlatmaq"
+
+#: home/templates/home_page.html:145 home/templates/home_page.html:146
+msgid "Task 2"
+msgstr "Qırım Cemaati aqqında sosial mediyada paylaşıq yapmak"
+
+#: home/templates/home_page.html:151 home/templates/home_page.html:152
+msgid "Task 3"
+msgstr "Aşağıdaki sorğuda iştirak etmek"
+
+#: home/templates/home_page.html:157 home/templates/home_page.html:158
+#: home/views.py:54
+msgid "Task 4"
+msgstr ""
+"İnsanlarnı ictimai faaliyete celp etmek içün bir afişa tasarlamaq. Dizaynı "
+"şu yere yolla: "
+
+#: home/templates/home_page.html:163 home/templates/home_page.html:164
+#: home/views.py:55
+msgid "Task 5"
+msgstr ""
+"İnsanlarnı ictimai faaliyete celp etmek içün bir aksiya fikrini uydurmaq. "
+"Fikri şu yere yolla: "
+
+#: home/templates/home_page.html:169 home/templates/home_page.html:170
+msgid "Task 6"
+msgstr ""
+"Komşılarnıñ, işdaşlarınıñ ya da talebelerniñ sohbet guruhını yaratmaq (eger "
+"o yoqsa) ve binada ilân yapıştırmaq"
+
+#: home/templates/home_page.html:175 home/templates/home_page.html:176
+msgid "Task 7"
+msgstr ""
+"Komşılar ile topraşmaq (ya da toplaşuv teşkil etmek) ve beraber evniñ "
+"hayatını nasıl yahşılaştırmaq olacağı aqqında müzakere etmek"
+
+#: home/templates/home_page.html:181 home/templates/home_page.html:182
+msgid "Task 8"
+msgstr ""
+"Öğrenim ya da iş yerinde insan aqqı yahut başqa ortak meseleler içün müim "
+"saiklerni belirlemek. Bu ortak saikler içün bir sohbet yaratmaq ya da adiyen "
+"işdaşlarıñı bu faaliyete celp etmek"
+
+#: home/templates/home_page.html:186
+msgid "Task Section Button"
+msgstr "Vazifeni sayla"
+
+#: home/templates/home_page.html:191
 msgid "Survey"
 msgstr "Sorğu"
 
+#: home/templates/home_page.html:194
 msgid "Survey Callout Text"
 msgstr ""
 "Anketamızğa iştirak et! Bu bizge strategiïâlarımıznı daa yahşı belgiläp, "
 "cemaât faaliyetine mümkün qadar çoq insan cälb etmekke yardim etecek."
 
+#: home/templates/home_page.html:200
 msgid "Survey Age Question"
 msgstr "Yaş"
 
+#: home/templates/home_page.html:204
 msgid "Survey Income Question"
-msgstr "Kirim (eger öz kirimiñiz yoqsa, aile azasına ortalama kirimni belgileñiz)"
+msgstr ""
+"Kirim (eger öz kirimiñiz yoqsa, aile azasına ortalama kirimni belgileñiz)"
 
+#: home/templates/home_page.html:208
 msgid "Survey Income Question Answer 1"
 msgstr "15.000 rublden az"
 
+#: home/templates/home_page.html:213
 msgid "Survey Income Question Answer 2"
 msgstr "15.000-25.000 rubl"
 
+#: home/templates/home_page.html:218
 msgid "Survey Income Question Answer 3"
 msgstr "25.000-40.000 rubl"
 
+#: home/templates/home_page.html:223
 msgid "Survey Income Question Answer 4"
 msgstr "40.000-65.000 rubl"
 
+#: home/templates/home_page.html:228
 msgid "Survey Income Question Answer 5"
 msgstr "65.000-90.000 rubl"
 
+#: home/templates/home_page.html:233
 msgid "Survey Income Question Answer 6"
 msgstr "90.000-140.000 rubl"
 
+#: home/templates/home_page.html:238
 msgid "Survey Income Question Answer 7"
 msgstr "140.000 rublden fazla"
 
+#: home/templates/home_page.html:243
 msgid "Survey Social Status Question"
 msgstr "Sotsial status"
 
+#: home/templates/home_page.html:247
 msgid "Survey Social Status Question Answer 1"
 msgstr "Mektep talebesi ya da student"
 
+#: home/templates/home_page.html:252
 msgid "Survey Social Status Question Answer 2"
 msgstr "İşsiz"
 
+#: home/templates/home_page.html:257
 msgid "Survey Social Status Question Answer 3"
 msgstr "Ticaretçi"
 
+#: home/templates/home_page.html:262
 msgid "Survey Social Status Question Answer 4"
 msgstr "İşçi"
 
+#: home/templates/home_page.html:267
 msgid "Survey Social Status Question Answer 5"
 msgstr "Ferdi ticaretçi"
 
-msgid "Survey Education Question"
-msgstr "Tahsil"
-
-msgid "Survey Education Question Answer 1"
-msgstr "Mektepte oqıyman (1-9 sınıf)"
-
-msgid "Survey Education Question Answer 2"
-msgstr "Esasi tahsil (9 sınıf)"
-
-msgid "Survey Education Question Answer 3"
-msgstr "Mektepte oqıyman (10-11 sınıf)"
-
-msgid "Survey Education Question Answer 4"
-msgstr "Orta umumi tahsil"
-
-msgid "Survey Education Question Answer 5"
-msgstr "Orta meslek tahsili müessesesinde oqıyman (PTU, kolledj)"
-
-msgid "Survey Education Question Answer 6"
-msgstr "Orta meslek tahsili"
-
-msgid "Survey Education Question Answer 7"
-msgstr "Ali tahsil müessesesinde oqıyman"
-
-msgid "Survey Education Question Answer 8"
-msgstr "Ali tahsil"
-
-msgid "Survey Veterans Question"
-msgstr "Sizniñ SVO’da savaşqan ya da su vaqıtta savaşqan qardaşlarıñız ya da yaqın dostlarıñız barmı? Yoki, siz özünüz oylemiñiz?"
-
-msgid "Survey Dead Veterans Question"
-msgstr "Sizniñ SVO’da halâk olğan qardaşlarıñız ya da yaqın dostlarıñız barmı?"
-
-msgid "Yes"
-msgstr "Evet"
-
-msgid "No"
-msgstr "Yoq"
-
-msgid "Survey Birth Place Question"
-msgstr "Siz qay yerde doğduñız?"
-
-msgid "Survey Residence Question"
-msgstr "Siz qay şeer ya da köyde yaşıysıñız?"
-
-msgid "Start entering"
-msgstr "Yazmağa başlayıñız"
-
-msgid "Survey Participating Question"
-msgstr "Siz cemaat hayatına nasıl iştirak ettiniz?"
-
-msgid "Survey Participating Question Answer 1"
-msgstr "Seçimlerde oydım"
-
-msgid "Survey Participating Question Answer 2"
-msgstr "Siyasiy partiyeler faaliyetine qatnaştım"
-
-msgid "Survey Participating Question Answer 3"
-msgstr "Seçimlerge nezaretçi oldım"
-
-msgid "Survey Participating Question Answer 4"
-msgstr "Siyasiy ya da cemaat faaliyetine qatnaştım"
-
-msgid "Survey Participating Question Answer 5"
-msgstr "Gönüllü oldım"
-
-msgid "Survey Participating Question Answer 6"
-msgstr "Qomşularımnen birlikde ortak teşebbüslerni hayata keçirdim"
-
-msgid "Survey Participating Question Answer 7"
-msgstr "Oquğan ya da oquyğan adamlarımnen ortak teşebbüslerni hayata keçirdim"
-
-msgid "Survey Participating Question Answer 8"
-msgstr "İşlegen ya da işlemegen adamlarımnen ortak teşebbüslerni hayata keçirdim"
-
-msgid "Survey Participating Question Answer 9"
-msgstr "Başqa cemaat teşebbüslerini hayata keçirdim"
-
-msgid "Survey Participating Question Answer 10"
-msgstr "Cemaat ya da siyasiy hayata başqa bir şekilde iştirak ettim"
-
-msgid "Survey Participating Question Answer 11"
-msgstr "Hiç bir şekilde iştirak etmedim"
-
-msgid "Survey Participating About Question"
-msgstr "İsterseniz, cemaat hayatına iştirak etmek aqqında daha ayrıntılı ayta bilirsiniz"
-
-msgid "Survey Participating Reasons Question"
-msgstr "Sizni cemaat hayatına iştirak etmekke (ya da etmemekke) ne sebep oldı?"
-
-msgid "Survey Participating More Question"
-msgstr "Sizni cemaat hayatına daa ziyade iştirak etmekke ne teşvik ete bilirdi?"
-
-msgid "Survey Political Interest Question"
-msgstr "Siyasiy hayatqa ne qadar qızıqasınız?"
-
-msgid "Survey Civil Interest Question"
-msgstr "Cemaat hayatqa ne qadar qızıqasınız?"
-
-msgid "Survey Why So Question"
-msgstr "Ne içün böyle?"
-
-msgid "Survey Government Question"
-msgstr "Sizce, devlet ne içün en ziyade lâzım? 3 variantqa qadar saylaŋız"
-
-msgid "Survey Government Question Answer 1"
-msgstr "Sosial ta’minât (maaşlar, pensiyalar) ve baylıqnı paylaşmaq içün"
-
-msgid "Survey Government Question Answer 2"
-msgstr "Memlekette asayişni temin etmek içün"
-
-msgid "Survey Government Question Answer 3"
-msgstr "Vatandaşlarnıñ aqqını qorumaq içün"
-
-msgid "Survey Government Question Answer 4"
-msgstr "Tışqı düşmanlarden qorunmaq içün"
-
-msgid "Survey Government Question Answer 5"
-msgstr "Memleketniñ medeniy, tarihi ve/yaki dini mirasını saqlamaq içün"
-
-msgid "Survey Government Question Answer 6"
-msgstr "Cezalandırmaq içün"
-
-msgid "Survey Government Question Answer 7"
-msgstr "Vatandaşlarnıñ iradesini yerine ketirmek içün"
-
-msgid "Survey Government Question Answer 8"
-msgstr "Cemiyetniñ inkişaf yolunu belirlemek içün"
-
-msgid "Survey Government Additional Question"
-msgstr "Bu yerge öz fikirleriñizni ve variantlarıñıznı yaza bilirsiniz"
-
+#: home/templates/home_page.html:272
 msgid "Survey Social Status Additional Question 1"
 msgstr "Qaysı meslekte çalışasıñ?"
 
+#: home/templates/home_page.html:277
 msgid "Survey Social Status Additional Question 2"
 msgstr "Qaysı sahede çalışasıñ?"
 
+#: home/templates/home_page.html:282
+msgid "Survey Education Question"
+msgstr "Tahsil"
+
+#: home/templates/home_page.html:285
+msgid "Survey Education Question Answer 1"
+msgstr "Mektepte oqıyman (1-9 sınıf)"
+
+#: home/templates/home_page.html:290
+msgid "Survey Education Question Answer 2"
+msgstr "Esasi tahsil (9 sınıf)"
+
+#: home/templates/home_page.html:295
+msgid "Survey Education Question Answer 3"
+msgstr "Mektepte oqıyman (10-11 sınıf)"
+
+#: home/templates/home_page.html:300
+msgid "Survey Education Question Answer 4"
+msgstr "Orta umumi tahsil"
+
+#: home/templates/home_page.html:305
+msgid "Survey Education Question Answer 5"
+msgstr "Orta meslek tahsili müessesesinde oqıyman (PTU, kolledj)"
+
+#: home/templates/home_page.html:310
+msgid "Survey Education Question Answer 6"
+msgstr "Orta meslek tahsili"
+
+#: home/templates/home_page.html:315
+msgid "Survey Education Question Answer 7"
+msgstr "Ali tahsil müessesesinde oqıyman"
+
+#: home/templates/home_page.html:320
+msgid "Survey Education Question Answer 8"
+msgstr "Ali tahsil"
+
+#: home/templates/home_page.html:325
+msgid "Survey Veterans Question"
+msgstr ""
+"Sizniñ SVO’da savaşqan ya da su vaqıtta savaşqan qardaşlarıñız ya da yaqın "
+"dostlarıñız barmı? Yoki, siz özünüz oylemiñiz?"
+
+#: home/templates/home_page.html:328 home/templates/home_page.html:341
+msgid "Yes"
+msgstr "Evet"
+
+#: home/templates/home_page.html:333 home/templates/home_page.html:346
+msgid "No"
+msgstr "Yoq"
+
+#: home/templates/home_page.html:338
+msgid "Survey Dead Veterans Question"
+msgstr "Sizniñ SVO’da halâk olğan qardaşlarıñız ya da yaqın dostlarıñız barmı?"
+
+#: home/templates/home_page.html:351
+msgid "Survey Birth Place Question"
+msgstr "Siz qay yerde doğduñız?"
+
+#: home/templates/home_page.html:352
+#, fuzzy
+#| msgid "Start entering"
+msgid " Start entering"
+msgstr "Yazmağa başlayıñız"
+
+#: home/templates/home_page.html:356
+msgid "Survey Residence Question"
+msgstr "Siz qay şeer ya da köyde yaşıysıñız?"
+
+#: home/templates/home_page.html:363
+msgid "Survey Participating Question"
+msgstr "Siz cemaat hayatına nasıl iştirak ettiniz?"
+
+#: home/templates/home_page.html:367
+msgid "Survey Participating Question Answer 1"
+msgstr "Seçimlerde oydım"
+
+#: home/templates/home_page.html:372
+msgid "Survey Participating Question Answer 2"
+msgstr "Siyasiy partiyeler faaliyetine qatnaştım"
+
+#: home/templates/home_page.html:377
+msgid "Survey Participating Question Answer 3"
+msgstr "Seçimlerge nezaretçi oldım"
+
+#: home/templates/home_page.html:382
+msgid "Survey Participating Question Answer 4"
+msgstr "Siyasiy ya da cemaat faaliyetine qatnaştım"
+
+#: home/templates/home_page.html:387
+msgid "Survey Participating Question Answer 5"
+msgstr "Gönüllü oldım"
+
+#: home/templates/home_page.html:392
+msgid "Survey Participating Question Answer 6"
+msgstr "Qomşularımnen birlikde ortak teşebbüslerni hayata keçirdim"
+
+#: home/templates/home_page.html:397
+msgid "Survey Participating Question Answer 7"
+msgstr "Oquğan ya da oquyğan adamlarımnen ortak teşebbüslerni hayata keçirdim"
+
+#: home/templates/home_page.html:402
+msgid "Survey Participating Question Answer 8"
+msgstr ""
+"İşlegen ya da işlemegen adamlarımnen ortak teşebbüslerni hayata keçirdim"
+
+#: home/templates/home_page.html:407
+msgid "Survey Participating Question Answer 9"
+msgstr "Başqa cemaat teşebbüslerini hayata keçirdim"
+
+#: home/templates/home_page.html:412
+msgid "Survey Participating Question Answer 10"
+msgstr "Cemaat ya da siyasiy hayata başqa bir şekilde iştirak ettim"
+
+#: home/templates/home_page.html:417
+msgid "Survey Participating Question Answer 11"
+msgstr "Hiç bir şekilde iştirak etmedim"
+
+#: home/templates/home_page.html:422
+msgid "Survey Participating About Question"
+msgstr ""
+"İsterseniz, cemaat hayatına iştirak etmek aqqında daha ayrıntılı ayta "
+"bilirsiniz"
+
+#: home/templates/home_page.html:427
+msgid "Survey Participating Reasons Question"
+msgstr "Sizni cemaat hayatına iştirak etmekke (ya da etmemekke) ne sebep oldı?"
+
+#: home/templates/home_page.html:432
+msgid "Survey Participating More Question"
+msgstr ""
+"Sizni cemaat hayatına daa ziyade iştirak etmekke ne teşvik ete bilirdi?"
+
+#: home/templates/home_page.html:438
+msgid "Survey Political Interest Question"
+msgstr "Siyasiy hayatqa ne qadar qızıqasınız?"
+
+#: home/templates/home_page.html:446
+msgid "Survey Civil Interest Question"
+msgstr "Cemaat hayatqa ne qadar qızıqasınız?"
+
+#: home/templates/home_page.html:453
+msgid "Survey Why So Question"
+msgstr "Ne içün böyle?"
+
+#: home/templates/home_page.html:458
+msgid "Survey Government Question"
+msgstr "Sizce, devlet ne içün en ziyade lâzım? 3 variantqa qadar saylaŋız"
+
+#: home/templates/home_page.html:462
+msgid "Survey Government Question Answer 1"
+msgstr "Sosial ta’minât (maaşlar, pensiyalar) ve baylıqnı paylaşmaq içün"
+
+#: home/templates/home_page.html:467
+msgid "Survey Government Question Answer 2"
+msgstr "Memlekette asayişni temin etmek içün"
+
+#: home/templates/home_page.html:472
+msgid "Survey Government Question Answer 3"
+msgstr "Vatandaşlarnıñ aqqını qorumaq içün"
+
+#: home/templates/home_page.html:477
+msgid "Survey Government Question Answer 4"
+msgstr "Tışqı düşmanlarden qorunmaq içün"
+
+#: home/templates/home_page.html:482
+msgid "Survey Government Question Answer 5"
+msgstr "Memleketniñ medeniy, tarihi ve/yaki dini mirasını saqlamaq içün"
+
+#: home/templates/home_page.html:487
+msgid "Survey Government Question Answer 6"
+msgstr "Cezalandırmaq içün"
+
+#: home/templates/home_page.html:492
+msgid "Survey Government Question Answer 7"
+msgstr "Vatandaşlarnıñ iradesini yerine ketirmek içün"
+
+#: home/templates/home_page.html:497
+msgid "Survey Government Question Answer 8"
+msgstr "Cemiyetniñ inkişaf yolunu belirlemek içün"
+
+#: home/templates/home_page.html:502
+msgid "Survey Government Additional Question"
+msgstr "Bu yerge öz fikirleriñizni ve variantlarıñıznı yaza bilirsiniz"
+
+#: home/templates/home_page.html:506
 msgid "Send"
 msgstr "Ibermeq"
 
-msgid "Task Section Heading"
-msgstr "Hareket et!"
-
-msgid "Task Section Text"
-msgstr ""
-"Bu yerde özüne en yakın vazifeni seçip, onı yerine ketirmek içün söz berebilirsin. Bu vazifelerden biri "
-"ortalama olaraq 15 daqıqa alır, ama bu areket içün müim bir adım olacaqtır, çünki biz çoquz ve beraber büyük bir quvetmız. "
-"Ne qadar isterseñ vazife seçebilirsin, ama biz bir ya da eki vazifeden başlamaqnı tavsiye etemiz."
-
-msgid "Task 1"
-msgstr "Bir tanışına Qırım Cemaati aqqında añlatmaq"
-
-msgid "Task 2"
-msgstr "Qırım Cemaati aqqında sosial mediyada paylaşıq yapmak"
-
-msgid "Task 3"
-msgstr "Aşağıdaki sorğuda iştirak etmek"
-
-msgid "Task 4"
-msgstr "İnsanlarnı ictimai faaliyete celp etmek içün bir afişa tasarlamaq. Dizaynı şu yere yolla: "
-
-msgid "Task 5"
-msgstr "İnsanlarnı ictimai faaliyete celp etmek içün bir aksiya fikrini uydurmaq. Fikri şu yere yolla: "
-
-msgid "Task 6"
-msgstr "Komşılarnıñ, işdaşlarınıñ ya da talebelerniñ sohbet guruhını yaratmaq (eger o yoqsa) ve binada ilân yapıştırmaq"
-
-msgid "Task 7"
-msgstr "Komşılar ile topraşmaq (ya da toplaşuv teşkil etmek) ve beraber evniñ hayatını nasıl yahşılaştırmaq olacağı aqqında müzakere etmek"
-
-msgid "Task 8"
-msgstr "Öğrenim ya da iş yerinde insan aqqı yahut başqa ortak meseleler içün müim saiklerni belirlemek. "
-"Bu ortak saikler içün bir sohbet yaratmaq ya da adiyen işdaşlarıñı bu faaliyete celp etmek"
-
-msgid "Task 9"
-msgstr "Hazır tasarımlarğa köre bir qaç afişanı yapıştırmaq"
-
-msgid "Task 10"
-msgstr "«Dalğa» aksiyası çerçivesinde hazır tasarımlarğa köre afişa yapıştırmasını sipariş etmek"
-
-msgid "Task Section Button"
-msgstr "Vazifeni sayla"
-
-msgid "Survey Success Message"
-msgstr "Cevabınız muvafaqiyetli olaraq saqlandı. İştirakınız içün size büyük minnettarlığımızı bildirimiz❤"
-
-msgid "Tasks Success Message"
-msgstr "🎉 Bir yerlere yazıp qoy. Siz özenize şu vazifeleri aldınız:"
-
-msgid "Tasks Failure Message"
-msgstr "Of, siz heç bir vazife seçmediniz :("
-
-msgid "My account"
-msgstr "Meniñ hesabım"
-
-msgid "Change password"
-msgstr "Parolni deñiştir"
-
-msgid "Log out"
-msgstr "Çıq"
-
-msgid "Log-in"
-msgstr "Kiriş"
-
-msgid "Your username and password didn't match. Please try again"
-msgstr "Qullanıcı adıñız ve parolñız uyuşmay. Lütfen yañıdan deneyiñiz"
-
-msgid "Log-in Button"
-msgstr "Kiriş"
-
-msgid "Register Button"
-msgstr "Qayd etil"
-
-msgid "Forgotten password Button"
-msgstr "Parolni unuttıñızmı?"
-
-msgid "Sign-up"
-msgstr "Qayd etilüv"
-
-msgid "Change your password"
-msgstr "Parolñıznı deñiştir"
-
-msgid "Change"
-msgstr "Deñiştir"
-
-msgid "Forgotten your password?"
-msgstr "Parolñıznı unuttıñızmı?"
-
-msgid "Enter your e-mail address to obtain a new password"
-msgstr "Yañı parol almak içün e-mail adresiñizni kirsetiñiz"
-
-msgid "Send e-mail"
-msgstr "E-mail yolla"
-
-msgid "Reset your password"
-msgstr "Parolñıznı sıfırla"
-
-msgid "Please enter your new password twice"
-msgstr "Lütfen yañı parolñıznı eki kere kirsetiñiz"
-
-msgid "The password reset link was invalid, possibly because it has already been used. Please request a new password reset"
-msgstr "Parol sıfırlav içün berilgen bağlama geçersiz, belek ki, o, artıq qullanıldı. Lütfen yañıdan sıfırlav talap etiñiz"
-
-msgid "Someone requested a password reset for the email {{ email }}."
-msgstr "Kimdir {{ email }} e-mail içün parol sıfırlavını talap etti."
-
-msgid "Follow the link below to reset your password:"
-msgstr "Parolñıznı sıfırlamaq içün aşağıdaki bağlamanı basıñız:"
-
-msgid "Your username, in case you've forgotten: {{ username }}"
-msgstr "Eger unutqan bolsañız, qullanıcı adıñız: {{ username }}"
-
-msgid "We've emailed you instructions for setting your password."
-msgstr "Parolñıznı quraştırmaq içün talimatlarnı sizge e-mailnen yolladıq."
-
-msgid "If you don't receive an email, make sure you entered the address you registered with."
-msgstr "Eger e-mail almadıñızsa, qaydiyattan keçken adresiñizni doğru kirsettiñizmi, onı teklifiñiz."
-
-msgid "Password set"
-msgstr "Parol quraştırıldı"
-
-msgid "Your password has been set. You can <a href=\"%(url)s\">log in now</a>."
-msgstr "Parolñız quraştırıldı. Endi <a href=\"%(url)s\">kire bilesiñiz</a>."
-
-msgid "Username"
-msgstr "Qullanıcı adı"
-
-msgid "Email"
-msgstr "E-mail"
-
-msgid "Password"
-msgstr "Parol"
-
-msgid "Repeat password"
-msgstr "Parolni tekrar kirsetiñiz"
-
-msgid "Passwords don't match"
-msgstr "Parollar uyuşmay"
-
-msgid "Create project"
-msgstr "Layihanı yarat"
-
-msgid "Project name"
-msgstr "Layihanıñ adı"
-
-msgid "Project description"
-msgstr "Layihanıñ tarifı"
-
-msgid "Create"
-msgstr "Yarat"
-
-msgid "Projects"
-msgstr "Layihalar"
-
-msgid "Delete"
-msgstr "Sil"
-
-msgid "Cancel"
-msgstr "İptal et"
-
-msgid "Are you sure you want to delete this project?"
-msgstr "Sen bu layiheni silmek istegeniñge eminmisiñ?"
-
-msgid "Unable to delete project"
-msgstr "Layiheni silmek mümkün degil"
-
-msgid "You are not allowed to delete this project"
-msgstr "Sen bu layiheni silmek aqqına sahip degilsiñ"
-
-msgid "Project deleted successfully"
-msgstr "Layihe başarınen silindi"
-
-msgid "You are not allowed to edit this project"
-msgstr "Sen bu layiheni tahrir etmek aqqına sahip degilsiñ"
-
-msgid "Edit project"
-msgstr "Layihanı tahrir et"
-
-msgid "Save"
-msgstr "Saqlа"
-
-msgid "Edit"
-msgstr "Tahrir et"
-
-msgid "Delete my data"
-msgstr "Meniñ malümatlarımnı öçür"
-
-msgid "Are you sure you want to delete your account and all associated data?"
-msgstr "Eminsiñmi ki, hesabıñnı ve bağlı malümatlarnı öçürmek isteysiñ?"
-
-msgid "Unable to delete account"
-msgstr "Hesap öçürülemedi"
-
-msgid "Account deleted"
-msgstr "Hesap öçürüldi"
-
-msgid "Why do our activists take part in Hromada?"
-msgstr "Faqlılarımız ne içün Hromada'da iştirak ete?"
-
-msgid "You can add your own reason to inspire others"
-msgstr "Sen başqalarını ilhamlandırmaq içün öz sebebiñni qoşabilesiñ"
-
-msgid "Your reason has been submitted for moderation"
-msgstr "Sebebiñ moderatsiya içün yiberildi"
-
-msgid "Editing"
-msgstr "Tahrirlash"
-
-msgid "Editing Child"
-msgstr "Bölümni tahrirlav"
-
-msgid "Back to Wiki"
-msgstr "Vikige qaytış"
-
+#: home/templates/home_page.html:619 wiki/templates/wiki_add.html:83
+#: wiki/templates/wiki_add.html:88 wiki/templates/wiki_edit.html:95
+#: wiki/templates/wiki_edit.html:100 wiki/views.py:98
 msgid "Something went wrong"
 msgstr "Bir şey yanlış ketti"
 
-msgid "Це наша Вікі: інформація, яку ти можеш використовувати у своєму активізмі. Ти можеш редагувати і доповнювати цю інформацію"
-msgstr "Bu bizim Viki'mizdir: bu malümatnı öz aktivizmiñizde qullana bileceksiniz. Onı tahrirlap ve toluqlap olabilirsiniz."
+#: home/views.py:44
+msgid "Survey Success Message"
+msgstr ""
+"Cevabınız muvafaqiyetli olaraq saqlandı. İştirakınız içün size büyük "
+"minnettarlığımızı bildirimiz❤"
 
-msgid "Тут поки немає контенту. Але він невдовзі з'явиться!"
-msgstr "Bu yerde içerik yoq. Amma yaqında peyda olacaq!"
+#: home/views.py:62
+msgid "Tasks Success Message"
+msgstr "🎉 Bir yerlere yazıp qoy. Siz özenize şu vazifeleri aldınız:"
 
-msgid "Your edits have been submitted for moderation!"
-msgstr "Tüzetişleriñiz moderatsiya içün yibерildi!"
+#: home/views.py:65
+msgid "Tasks Failure Message"
+msgstr "Of, siz heç bir vazife seçmediniz :("
 
-msgid "Add New Toggle"
-msgstr "Yañı bölük ekle"
+#: hromada/settings.py:154
+msgid "English"
+msgstr ""
 
-msgid "Content cannot be empty"
-msgstr "Mazmun boş olamaz"
+#: hromada/settings.py:155
+msgid "Українська"
+msgstr ""
 
-msgid "Self-government"
-msgstr "Özidare"
+#: hromada/settings.py:156
+msgid "Русский"
+msgstr ""
 
-msgid "Доєднуйся до рад там, де ви живете, навчаєтесь або працюєте, і бери участь в управлінні Кримом"
-msgstr "Yasağan, oqığan ya da çalışqan yerinizdeki şuralarğa qoşulıñız ve Qırımnı idare etüvde iştirak etiñiz"
+#: hromada/settings.py:157
+msgid "Qirimtatar"
+msgstr ""
 
+#: project/templates/project_edit.html:17
+msgid "Edit project"
+msgstr "Layihanı tahrir et"
+
+#: project/templates/project_edit.html:22 wiki/templates/wiki_add.html:19
+#: wiki/templates/wiki_edit.html:26
+msgid "Save"
+msgstr "Saqlа"
+
+#: project/views.py:22
+msgid "You are not allowed to delete this project"
+msgstr "Sen bu layiheni silmek aqqına sahip degilsiñ"
+
+#: project/views.py:25
+msgid "Project deleted successfully"
+msgstr "Layihe başarınen silindi"
+
+#: project/views.py:34 selfgov/views.py:85
+msgid "You are not allowed to edit this project"
+msgstr "Sen bu layiheni tahrir etmek aqqına sahip degilsiñ"
+
+#: selfgov/templates/selfgov_create.html:7
+#: selfgov/templates/selfgov_list.html:66
 msgid "Create a council"
 msgstr "Şura yaratmaq"
 
-msgid "Join"
-msgstr "Qoşulmaq"
-
-msgid "Edit council"
-msgstr "Şuranı tüzeltmek"
-
-msgid "Type of council"
-msgstr "Şura türü"
-
-msgid "General"
-msgstr "Umumiy"
-
-msgid "By place of residence"
-msgstr "Yasağan yer boyunça"
-
-msgid "By place of study"
-msgstr "Oquv yer boyunça"
-
-msgid "By place of work"
-msgstr "Çalışqan yer boyunça"
-
-msgid "Other"
-msgstr "Başqa"
-
-msgid "Location on map (optional)"
-msgstr "Haritada yerleşüv (mecburiy degil)"
-
-msgid "Save changes"
-msgstr "Değişikliklerni saqlamaq"
-
+#: selfgov/templates/selfgov_create.html:11
 msgid "Title of the council"
 msgstr "Şuranıñ adı"
 
+#: selfgov/templates/selfgov_create.html:12
 msgid "Link to a chat of the council in a secure messenger"
 msgstr "Şuranıñ qorğalğan messenjerdeki sohbetine bağlantı"
 
+#: selfgov/templates/selfgov_create.html:17
 msgid "Description of the council"
 msgstr "Şuranıñ tasviri"
 
+#: selfgov/templates/selfgov_create.html:22
+#: selfgov/templates/selfgov_edit.html:34
+#: selfgov/templates/selfgov_list.html:41
+msgid "Type of council"
+msgstr "Şura türü"
+
+#: selfgov/templates/selfgov_create.html:32
+#: selfgov/templates/selfgov_edit.html:44
+msgid "Location on map (optional)"
+msgstr "Haritada yerleşüv (mecburiy degil)"
+
+#: selfgov/templates/selfgov_create.html:37
 msgid "Submit to moderation"
 msgstr "Moderatsiyaga yollamaq"
 
-msgid "Mail Callout Text"
-msgstr "Bizimnen bağlantı qurmaq ister misin? Yaz"
+#: selfgov/templates/selfgov_detail.html:44
+msgid "Join"
+msgstr "Qoşulmaq"
 
+#: selfgov/templates/selfgov_detail.html:53
+#: selfgov/templates/selfgov_edit.html:7
+msgid "Edit council"
+msgstr "Şuranı tüzeltmek"
+
+#: selfgov/templates/selfgov_edit.html:52
+msgid "Save changes"
+msgstr "Değişikliklerni saqlamaq"
+
+#: selfgov/templates/selfgov_list.html:24
+msgid "Self-government"
+msgstr "Özidare"
+
+#: selfgov/templates/selfgov_list.html:29
+msgid ""
+"Доєднуйся до рад там, де ви живете, навчаєтесь або працюєте, і бери участь в "
+"управлінні Кримом"
+msgstr ""
+"Yasağan, oqığan ya da çalışqan yerinizdeki şuralarğa qoşulıñız ve Qırımnı "
+"idare etüvde iştirak etiñiz"
+
+#: selfgov/templates/selfgov_list.html:42
 msgid "All Types"
 msgstr "Bütün türler"
+
+#: templates/base.html:69
+msgid "Дом"
+msgstr "Evi"
+
+#: templates/base.html:73
+msgid "Сервисы"
+msgstr "Servisler"
+
+#: templates/base.html:82 wiki/templates/wiki.html:9
+msgid "Вики"
+msgstr "Viki"
+
+#: templates/base.html:83
+msgid "Создать"
+msgstr "Yaratmaq"
+
+#: templates/base.html:84
+msgid "Поиск"
+msgstr "Qıdırmaq"
+
+#: templates/base.html:85
+msgid "Самоуправление"
+msgstr "Öz-idaresi"
+
+#: wiki/templates/wiki.html:14
+msgid ""
+"Це наша Вікі: інформація, яку ти можеш використовувати у своєму активізмі. "
+"Ти можеш редагувати і доповнювати цю інформацію"
+msgstr ""
+"Bu bizim Viki'mizdir: bu malümatnı öz aktivizmiñizde qullana bileceksiniz. "
+"Onı tahrirlap ve toluqlap olabilirsiniz."
+
+#: wiki/templates/wiki.html:22
+msgid "Тут поки немає контенту. Але він невдовзі з'явиться!"
+msgstr "Bu yerde içerik yoq. Amma yaqında peyda olacaq!"
+
+#: wiki/templates/wiki.html:32 wiki/templates/wiki_add.html:8
+msgid "Add New Toggle"
+msgstr "Yañı bölük ekle"
+
+#: wiki/templates/wiki_add.html:24 wiki/templates/wiki_edit.html:29
+msgid "Back to Wiki"
+msgstr "Vikige qaytış"
+
+#: wiki/templates/wiki_add.html:29 wiki/templates/wiki_edit.html:51
+#: wiki/views.py:92
+msgid "Your edits have been submitted for moderation!"
+msgstr "Tüzetişleriñiz moderatsiya içün yibерildi!"
+
+#: wiki/templates/wiki_edit.html:10
+msgid "Editing"
+msgstr "Tahrirlash"
+
+#: wiki/templates/wiki_edit.html:20
+msgid "Editing Child"
+msgstr "Bölümni tahrirlav"
+
+#: wiki/views.py:37 wiki/views.py:70 wiki/views.py:71
+msgid "Content cannot be empty"
+msgstr "Mazmun boş olamaz"
+
+#~ msgid "Task 9"
+#~ msgstr "Hazır tasarımlarğa köre bir qaç afişanı yapıştırmaq"
+
+#~ msgid "Task 10"
+#~ msgstr ""
+#~ "«Dalğa» aksiyası çerçivesinde hazır tasarımlarğa köre afişa "
+#~ "yapıştırmasını sipariş etmek"
+
+#~ msgid "General"
+#~ msgstr "Umumiy"
+
+#~ msgid "By place of residence"
+#~ msgstr "Yasağan yer boyunça"
+
+#~ msgid "By place of study"
+#~ msgstr "Oquv yer boyunça"
+
+#~ msgid "By place of work"
+#~ msgstr "Çalışqan yer boyunça"
+
+#~ msgid "Other"
+#~ msgstr "Başqa"
+
+#~ msgid "Mail Callout Text"
+#~ msgstr "Bizimnen bağlantı qurmaq ister misin? Yaz"

@@ -33,6 +33,7 @@ urlpatterns = [
     path('search/', include('search.urls')),
     path('wiki/', include('wiki.urls')),
     path('self-gov/', include('selfgov.urls')),
+    path('edu_event/', include('edu_event.urls')),
     path('favicon.ico', RedirectView.as_view(url=static_file('images/logo.svg'))),
 ]
 

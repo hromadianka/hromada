@@ -67,6 +67,18 @@
                     </div>
                     <ul>
                         <li><a href="{% url 'home_page' %}">{% trans "Дом" %}</a></li>
+                        <li>
+                            <details class="services-dropdown">
+                                <summary>
+                                    {% trans "Сервисы" %}
+                                </summary>
+                                <div>
+                                    <ul>
+                                        <li><a href="{% url 'edu_event_list' %}">{% trans "Образовательные мероприятия" %}</a></li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </li>
                         <li><a href="{% url 'wiki' %}">{% trans "Вики" %}</a></li>
                         <li><a href="{% url 'create_project' %}">{% trans "Создать" %}</a></li>
                         <li><a href="{% url 'search' %}">{% trans "Поиск" %}</a></li>

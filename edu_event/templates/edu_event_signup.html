@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container">
+  <h1>{{ event.title }}</h1>
+  <p class="edu-event-subtitle">{{ event.event_type.name }}</p>
+  <p class="edu-event-subtitle">👤 {{ event.author }}</p>
+  <p class="edu-event-subtitle">🗓 {{ event.start_date }}</p>
+  <p class="edu-event-subtitle">📍 {{ event.address }}</p>
+  <hr style="margin-top: 12px; margin-bottom:12px;">
+
+  {% if registration %}
+  <h2>{% trans 'Вы зарегистрированы на мероприятие!' %}</h2>
+  <p>
+    {% trans 'При посещении мероприятия предъявите организатору эти данные' %}:
+    <br>
+    {% trans 'Гость' %}: <strong>{{ registration.user.username }}</strong>
+    <br>
+    {% trans 'Код регистрации' %}: <strong>{{ registration.code }}</strong>
+  </p>
+
+  {% else %}
+  <h2>{% trans 'Не удалось зарегистрироваться на мероприятие' %}</h2>
+  <p>
+    {% trans 'Пожалуйста, попробуйте ешё раз.' %}
+    <br>
+    {% blocktrans trimmed with email='mailto:hromada-mail@proton.me' %}
+    Если ошибка повторяется, <a href="{{ email }}">напишите нам на почту</a>.
+    {% endblocktrans %}
+    <form method="post">
+      {% csrf_token %}
+      <button type="submit" class="button" style="width: 100%">{% trans "Зарегистрироваться на мероприятие" %}</button>
+    </form>
+  </p>
+  {% endif %}
+  <hr style="margin-top: 12px; margin-bottom: 24px;">
+  <p><a class="button" href="{% url 'edu_event_detail' event.id %}">{% trans 'На страницу мероприятия' %}</a></p>
+</div>
+
+{% endblock %}

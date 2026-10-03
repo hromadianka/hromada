@@ -2,3 +2,4 @@
 hromada/settings.py
 .venv
 .idea/
+.python-version

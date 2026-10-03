@@ -106,7 +106,7 @@ p, h4, h5, h6 {
     }
 }*/
 
-a {
+a, .services-dropdown summary {
     font-family: var(--font-main);
     color: inherit;
     text-decoration: underline;
@@ -238,7 +238,9 @@ header ul {
         margin: 0;
     }
 
-    .menu li a {
+    .menu li a,
+    .services-dropdown summary {
+        cursor: pointer;
         text-decoration: none;
         color: var(--white-color);
         font-family: Roboto Condensed, sans-serif;
@@ -246,8 +248,20 @@ header ul {
         font-weight: 300;
     }
 
-    .menu li a:hover {
+    .menu li a:hover,
+    .services-dropdown summary:hover,
+    .services-dropdown:open summary {
         color: var(--red-color);
+    }
+
+    .services-dropdown summary {
+        list-style: none;
+        margin-bottom: 0px;
+    }
+
+    .menu .services-dropdown li a {
+        font-size: 22px;
+        margin-left: 16px;
     }
 
 .language-switcher {
@@ -892,6 +906,17 @@ input[type="range"] {
 
 #map {
     z-index: 0;
+}
+
+/* Educational Events */
+.card-subtitle {
+    font-style: italic;
+    margin: 0px;
+}
+
+p.edu-event-subtitle {
+    font-style: italic;
+    margin: 0px;
 }
 
 /* Modal */
